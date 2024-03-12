@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+/* body styles */
 body{
-    padding: 0.08em;
+    padding: 0.25em;
     background-color: black;
 }
 
@@ -23,8 +28,8 @@ header > div{
 
 /* logo */
 a{
-    /* background-color: green;   */
-    /* border: white solid 1px; */
+    background-color: green;  
+    border: white solid 1px;
 }
 
 img{
@@ -33,3 +38,4 @@ img{
 }
 
 /* navigation options */
+
