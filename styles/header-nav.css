@@ -1,0 +1,24 @@
+/* navigation header */
+header{
+    padding: 1em;
+    background-color: gray;
+    border: solid 1px white;
+    border-radius: 0px 0px 60px 60px;
+}
+
+header > div{
+    background-color: rgb(187, 147, 154);
+}
+
+/* logo */
+a{
+    background-color: green;  
+    border: white solid 1px;
+}
+
+img{
+    width: 200px;
+    border: yellow solid 1px;
+}
+
+/* navigation options */
