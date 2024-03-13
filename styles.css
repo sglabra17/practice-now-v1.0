@@ -11,5 +11,6 @@
 /* body styles */
 body{
     padding: 0.25em;
-    background-color: black;
+    background-color: #DEE1ED;
+    color: white;
 }
