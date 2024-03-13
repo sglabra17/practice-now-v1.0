@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="/styles/header-nav.css">
         <link rel="stylesheet" href="/styles/card.css">
+        <link rel="stylesheet" href="/styles/section.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,20 +35,65 @@
             </div>
         </header>
         <!-- Contenido Principal (Temáticas de Estudio) -->
-        <main style="padding: 1em;">
-            <section>
-                <div><!--Row-->
-                    <div class="card">
-                        <img class="subject-image" src="/images/grammar2.png" alt="Opción de Gramática">
-                        <div class="container">
-                            <h4 class="subject-title"><b>Gramática</b></h4>
-                            <p class="subject-description">Estos sencillos ejercicios te ayudarán a practicar la gramática.</p>
-                        </div>
+        <div class="container">
+            <a class="card-link" href="#">
+                <article class="card">
+                    <img class="subject-image" src="/images/grammar.png" alt="Opción de Gramática">
+                    <div class="title-description-ctnr">
+                        <h4 class="subject-title"><b>Gramática</b></h4>
+                        <p class="subject-description">
+                        Estos sencillos ejercicios te ayudarán
+                        a practicar la gramática.</p>
                     </div>
-                </div>
+                </article>
+            </a>
+            <a class="card-link" href="#">
+                <article class="card">
+                    <img class="subject-image" src="/images/vocabulary.png" alt="Opción de Gramática">
+                    <div class="title-description-ctnr">
+                        <h4 class="subject-title"><b>Vocabulario</b></h4>
+                        <p class="subject-description">
+                        En esta opción estudiarás una serie de palabras y su
+                        significado.</p>
+                    </div>
+                </article>
+            </a>
+            <a class="card-link" href="#">
+                <article class="card">
+                    <img class="subject-image" src="/images/reading.png" alt="Opción de Gramática">
+                    <div class="title-description-ctnr">
+                        <h4 class="subject-title"><b>Lectura</b></h4>
+                        <p class="subject-description">
+                        Pon a prueba tus habilidades de lectura y responde
+                        las preguntas.</p>
+                    </div>
+                </article>
+            </a>
+            <a class="card-link" href="#">
+                <article class="card">
+                    <img class="subject-image" src="/images/pronuntiation.png" alt="Opción de Gramática">
+                    <div class="title-description-ctnr">
+                        <h4 class="subject-title"><b>Pronunciación</b></h4>
+                        <p class="subject-description">
+                        Busca cualquier palabra y escucha la correcta
+                        articulación y entonación.</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+        <!-- <main>
+            <section>
             </section>
-        </main>
-        <!-- Pie de Página -->
-        <footer></footer>
+        </main> -->
+        <footer style="
+        width: 100%;
+        height: 100px;
+        background-color: #F0E4D8;
+        border: solid black 1px;
+        border-radius: 60px 60px 0px 0px;
+        box-shadow: 0px -1px 8px 2px rgba(0,0,0,0.25);
+        ">
+        </footer>
     </body>
 </html>

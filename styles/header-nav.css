@@ -11,7 +11,7 @@ header > div{
 }
 
 /* logo */
-a{
+a[href="/"]{
     background-color: green;  
     border: white solid 1px;
 }
