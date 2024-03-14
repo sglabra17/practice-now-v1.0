@@ -1,12 +1,11 @@
 .card-link{
+    display: inline-block;
     padding-bottom: 4em;
     /* background-color: red; */
-    display: inline-block;
-    height: 100%;
 }
 
 .card{
-    width: 200px;
+    width: 220px;
     height: 350px;
     display: inline-block;
     /* Colors */
@@ -33,14 +32,16 @@
 
 /* title and text container */
 .title-description-ctnr{
-    padding: 16px 16px;
-    line-height: 1.25em;
+    padding: 1em;
+    line-height: 1.5em;
 }
 
-/* title and text */
+/* Card's subject title */
 .subject-title{
+    display: inline-block;
+    width: 100%;
     padding-bottom: 0.75em;
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
