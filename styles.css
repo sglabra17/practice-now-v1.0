@@ -11,7 +11,7 @@
 /* body styles */
 body{
     padding: 0.25em;
-    font-family: Lato, sans-serif;
+    font-family: Lato, sans-serif, Arial, Helvetica;
     background-color: #DEE1ED;
     color: white;
 }
