@@ -1,0 +1,79 @@
+/* top navigation bar */
+.topnav{
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
+    /* other */
+    overflow: hidden;
+    background-color: #293DA3;
+    /* flex */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.50em;
+    text-decoration: none;
+    font-size: 17px;
+    align-self: center;
+}
+
+/* .topnav a:not([href="#home"]):hover{
+    background-color: #F0E4D8;
+    color: #293DA3;
+    border-radius: 1em;
+    font-weight: 900;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+} */
+
+/* Align logo and options to left */
+.topnav *:not(.icon){
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Options <nav> */
+
+.topnav nav{
+    height: 50px;
+    /* background-color: green; */
+    align-self: center;
+    padding-left: 2em;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.topnav nav ul,.topnav nav ul li{
+    align-self: center;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.topnav nav ul li a{
+    color: white;
+    padding: 0.75em;
+}
+
+.topnav nav ul li a:hover{
+    background-color: #F0E4D8;
+    color: #293DA3;
+    border-radius: 1em;
+    font-weight: 800;
+}
+
