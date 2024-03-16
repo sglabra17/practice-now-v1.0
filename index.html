@@ -4,41 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Practice Now</title>
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
         <!-- Styles -->
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="./styles/header-nav.css">
         <link rel="stylesheet" href="./styles/topnav.css">
         <link rel="stylesheet" href="./styles/section.css">
         <link rel="stylesheet" href="./styles/card.css">
-        
         <!-- tab icon -->
         <link rel="icon" href="./images/tab-logo.png" type="image/png">
     </head>
     <body>
 
-        <div class="topnav responsive" id="myTopnav">
-            <div class="logo-and-opts">
-                <a href="./index.html">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="logo-link">
+                <div class="logo-ctnr">
                     <img class="logo" src="./images/logo.png" alt="Logo del Sitio">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="#">Básico</a></li>
-                        <li><a href="#">Intermedio</a></li>
-                        <li><a href="#">Avanzado</a></li>
-                        <li><a href="#">Palabra del Día</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                </div>
+            </a>
+            <nav style="padding-top: 1em;">
+                <ul>
+                    <li><a href="#">Básico</a></li>
+                    <li><a href="#">Intermedio</a></li>
+                    <li><a href="#">Avanzado</a></li>
+                    <li><a href="#">Palabra del Día</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="icon" id="burguer-menu">
                 <img src="./images/burguer-menu.png" alt="Botón de Menú" width="50">
             </a>
         </div>
@@ -129,5 +124,10 @@
 
 
         <footer></footer>
+
+
+
+        <!-- JavaScript links -->
+        <script src="./main.js"></script>
     </body>
 </html>
