@@ -6,21 +6,7 @@
     border-radius: 0 0 1em 1em;
 }
 
-/* logo and <nav> container */
-.topnav{
-    /* display: flex; */
-}
-
 /* logo */
-.logo-link{
-    /* padding: 1em;
-    background-color: rgb(8, 54, 100);  
-    border-radius: 1em; */
-    /* xxxxxx */
-    /* display: block; */
-    /* width: 100%; */
-    /* background-color: blue; */
-}
 .logo{
     width: 200px;
 }
@@ -41,6 +27,7 @@
 
 /* <nav> */
 .topnav nav{
+    padding-top: 1em;
     padding-left: 5em;
 }
 
@@ -66,17 +53,18 @@
     display: none;
 }
 
+/* Disappear options, appear menu icon */
 @media screen and (max-width: 1000px){
     .topnav *:not(:first-child){display: none;}
     .topnav a.icon{
         float: right;
         display: block;
         margin-left: auto;
-        /* background-color: red; */
         padding-top: 1.5em;
     }
 }
 
+/* Styles Applied When: Menu Icon is Pressed (.responsive) */
 @media screen and (max-width: 1000px){
     .topnav.responsive {position: relative;}
 
@@ -89,22 +77,17 @@
     .topnav.responsive *{
         float: none;
         display: block;
-        text-align: left;
     }
 
     .topnav.responsive nav{
-        display: block;
-        text-align: left;
-        padding-top: 1em;
         padding: 0;
+        padding-top: 1em;
     }
 
     .logo-ctnr{
         width: 230px;
         background-color: rgb(8, 54, 100); 
     }
-
-
 }
 
 
