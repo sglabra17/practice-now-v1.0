@@ -48,6 +48,10 @@
     font-weight: 800;
 }
 
+.responsive-logo{
+    display: none;
+}
+
 /* Responsive Menu Button */
 .topnav .icon{
     display: none;
@@ -87,6 +91,25 @@
     .logo-ctnr{
         width: 230px;
         background-color: rgb(8, 54, 100); 
+    }
+
+    .logo-ctnr .responsive-logo{
+        display: none;
+    }
+}
+
+/* Responsive Logo */
+@media screen and (max-width:400px){
+    .logo-ctnr .logo{
+        display: none;
+    }
+    .logo-ctnr .responsive-logo{
+        display: block;
+        width: 50px;
+    }
+    .logo-ctnr{
+        width: 80px;
+        border-radius: 50%;
     }
 }
 
