@@ -1,19 +1,19 @@
 .card-link{
-    display: inline-block;
+    /* display: inline-block; */
     padding-bottom: 4em;
 }
 
 .card{
     width: 220px;
-    height: 350px;
+    /* height: 350px; */
     display: inline-block;
     /* Colors */
     background-color: #DEE1ED;
     color: #293DA3;
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
     transition: 0.3s;
-    border-radius: 16px;
+    border-radius: 1em;
     /* Font */
     font-family: Lato;
 }
@@ -33,15 +33,15 @@
 /* title and text container */
 .title-description-ctnr{
     padding: 1em;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 /* Card's subject title */
 .subject-title{
-    display: inline-block;
-    width: 100%;
+    /* display: inline-block; */
+    /* width: 100%; */
     padding-bottom: 0.75em;
-    font-size: 1.75em;
+    font-size: 1.75rem;/* Titles */
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
