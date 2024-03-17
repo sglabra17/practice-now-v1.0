@@ -1,6 +1,21 @@
+.section-text{
+    padding-top: 2em;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 3rem;
+    color: #293DA3;
+    font-size: 1.75rem;
+}
+
+.section-text p{
+    font-size: 1.5rem;
+}
+
+
+/* Container de las Cards */
 .container-section1{
     width: 100%;
-    padding-top: 5em;
+    padding-top: 4em;
     /* background-color: rgb(86, 80, 80); */
     /* flexbox */
     display: flex;
