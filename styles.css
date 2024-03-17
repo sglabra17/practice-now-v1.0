@@ -7,10 +7,11 @@
 *, *:before, *:after{
     box-sizing: border-box;
 }
-
+html{    
+    background-color: #F0E4D8;
+}
 /* body styles */
 body{
-    /* padding: 0.25em; */
     font-family: Lato, sans-serif, Arial, Helvetica;
     background-color: #DEE1ED;
     color: white;

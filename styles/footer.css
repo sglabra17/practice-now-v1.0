@@ -1,0 +1,37 @@
+footer{
+    width: 100%;
+    padding: 1em 0;
+    background-color: #F0E4D8;
+    color: #7788DD;
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0 -1px 8px 2px #939292;
+    text-align: center;
+    word-spacing: 1rem;
+    line-height: 2rem;
+}
+
+span:not(.slashFooter){
+    word-spacing: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover{
+    color: #9ea9e0;
+    text-decoration: underline;
+}
+
+/* slash separador - responsive */
+.slashFooter{
+    display: none;
+}
+
+@media screen and (max-width: 300px){
+    .slashFooter{
+        display: inline-block;
+        padding-right: .75em;
+    }
+}
