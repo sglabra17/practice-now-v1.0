@@ -7,14 +7,13 @@
 }
 
 /* logo */
-.logo{
-    width: 200px;
-}
-
 .logo-ctnr{
     padding: 1em;
     background-color: rgb(8, 54, 100);  
     border-radius: 1em;
+}
+.logo{
+    width: 200px;
 }
 
 /* Align logo and <nav> to left */
@@ -49,7 +48,7 @@
 }
 
 .responsive-logo{
-    display: none;
+    display: none;  
 }
 
 /* Responsive Menu Button */
@@ -63,7 +62,7 @@
     .topnav a.icon{
         float: right;
         display: block;
-        margin-left: auto;
+        /* margin-left: auto; */
         padding-top: 1.5em;
     }
 }
@@ -90,7 +89,6 @@
 
     .logo-ctnr{
         width: 230px;
-        background-color: rgb(8, 54, 100); 
     }
 
     .logo-ctnr .responsive-logo{
@@ -103,13 +101,13 @@
     .logo-ctnr .logo{
         display: none;
     }
-    .logo-ctnr .responsive-logo{
-        display: block;
-        width: 50px;
-    }
     .logo-ctnr{
         width: 80px;
         border-radius: 50%;
+    }
+    .logo-ctnr .responsive-logo{
+        display: block;
+        width: 50px;
     }
 }
 
