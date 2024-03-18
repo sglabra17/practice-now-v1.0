@@ -10,6 +10,11 @@ footer{
     line-height: 2rem;
 }
 
+footer span{
+    word-spacing: 0.25rem;
+}
+
+/* footer links */
 footer a{
     text-decoration: none;
     color: inherit;
