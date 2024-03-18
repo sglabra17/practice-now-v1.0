@@ -3,24 +3,21 @@
     /* background-color: red; */
     text-align: center;
     line-height: 3rem;
-    color: #293DA3;
-    font-size: 1.75rem;
+    color: #293DA3;/*Color de Texto Principal - Normal*/
+    font-size: 1.75rem;/*Título Grande*/
 }
 
 .section-text p{
-    font-size: 1.5rem;
+    font-size: 1.5rem;/*Subtítulo Grande*/
 }
-
 
 /* Container de las Cards */
 .container-section1{
     width: 100%;
     padding-top: 4em;
-    /* background-color: rgb(86, 80, 80); */
     /* flexbox */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: space-around;
 }
 

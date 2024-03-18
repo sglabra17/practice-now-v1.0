@@ -1,15 +1,13 @@
 .card-link{
-    /* display: inline-block; */
     padding-bottom: 4em;
 }
 
 .card{
     width: 220px;
-    /* height: 350px; */
     display: inline-block;
     /* Colors */
-    background-color: #DEE1ED;
-    color: #293DA3;
+    background-color: #DEE1ED;/*Color de Fondo Primario*/
+    color: #293DA3;/*Color de Texto*/
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
     transition: 0.3s;
@@ -27,7 +25,7 @@
 .subject-image{
     width: 100%;
     height: 200px;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 1em 1em 0px 0px;
 }
 
 /* title and text container */
@@ -38,10 +36,8 @@
 
 /* Card's subject title */
 .subject-title{
-    /* display: inline-block; */
-    /* width: 100%; */
     padding-bottom: 0.75em;
-    font-size: 1.75rem;/* Titles */
+    font-size: 1.75rem;/* Card Titles Font Size */
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;

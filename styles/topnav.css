@@ -1,12 +1,12 @@
 /* top navigation bar */
 .topnav{
     padding: 1.75em 1.25em;
-    overflow: hidden;
+    overflow: hidden;/*importante*/
     background-color: #293DA3;
     border-radius: 0 0 1em 1em;
     box-shadow: 0 3px 2px 0 #706f6f;
     /* background image */
-    background-image: url('../images/prueba.png');
+    background-image: url('../images/header-bgImage.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: 150px;
@@ -26,7 +26,6 @@
 /* Align logo and <nav> to left */
 .topnav *{
     float: left;
-    align-self: center;
     text-decoration: none;
     color: white;
 }
@@ -48,9 +47,7 @@
 }
 
 .topnav nav ul li a:not(.active-navlink):hover{
-    /* background-color: #F0E4D8; */
     background-color: #f0e4d859;
-    /* color: #293DA3; */
     border-radius: 0.50em;
     font-weight: 800;
 }
@@ -72,24 +69,25 @@
 
 /* Disappear options, appear menu icon */
 @media screen and (max-width: 1000px){
-    .topnav{background-position: center;}
     .topnav *:not(:first-child){display: none;}
     .topnav a.icon{
         float: right;
         display: block;
-        /* margin-left: auto; */
         padding-top: 1.5em;
     }
+    .topnav{background-position: center;}
 }
 
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
 @media screen and (max-width: 1000px){
+    .topnav.responsive {background-image: none;}
+
     .topnav.responsive {position: relative;}
 
     .topnav.responsive .icon{
         position: absolute;
-        right: 1em;
-        top: 1em;
+        right: 1.2em;
+        top: 1.7em;
     }
 
     .topnav.responsive *{
@@ -109,11 +107,6 @@
     .logo-ctnr .responsive-logo{
         display: none;
     }
-
-    .topnav nav ul li a:hover{
-        background-color: #F0E4D8;
-        color: #293DA3;
-    }
 }
 
 /* Responsive Logo */
@@ -130,7 +123,7 @@
         width: 50px;
     }
 }
-
+/* Navbar bg image - responsive */
 @media screen and (max-width:400px){
     .topnav{
         background-image: none;

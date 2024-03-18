@@ -7,12 +7,13 @@
 *, *:before, *:after{
     box-sizing: border-box;
 }
+
 html{    
-    background-color: #F0E4D8;
+    background-color: #F0E4D8;/*Color de Fondo Secundario*/
 }
 /* body styles */
 body{
     font-family: Lato, sans-serif, Arial, Helvetica;
-    background-color: #DEE1ED;
+    background-color: #DEE1ED;/*Color de Fondo Primario*/
     color: white;
 }
