@@ -75,7 +75,8 @@
         display: block;
         padding-top: 1.5em;
     }
-    .topnav{background-position: center;}
+    /* .topnav{background-position: center;} */
+    .topnav{background-image: none;}
 }
 
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
