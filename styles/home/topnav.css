@@ -19,9 +19,7 @@
     background-color: rgb(8, 54, 100);  
     border-radius: 1em;
 }
-.logo{
-    width: 200px;
-}
+.logo{width: 200px;}
 
 /* Align logo and <nav> to left */
 .topnav *{
@@ -42,9 +40,7 @@
     list-style: none;
 }
 
-.topnav nav ul li a{
-    padding: 1em;
-}
+.topnav nav ul li a{padding: 1em;}
 
 .topnav nav ul li a:not(.active-navlink):hover{
     background-color: #f0e4d859;
@@ -60,17 +56,12 @@
 }
 
 /* Responsive Menu Button */
-.responsive-logo{
-    display: none;  
-}
-.topnav .icon{
-    display: none;
-}
+.responsive-logo{display: none;}
+.topnav .icon{display: none;}
 
 /* Disappear options, appear menu icon */
 @media screen and (max-width: 1000px){
     .topnav *:not(:first-child){display: none;}
-    /* .topnav a.icon{ */
     .topnav button.icon{
         float: right;
         display: block;
@@ -78,9 +69,7 @@
         background-color:  #293DA3;
         border: none;
     }
-    /* .topnav{background-position: center;} */
     .topnav{background-image: none;}
-
     .topnav{
         width: 100%;
         position: fixed;
@@ -90,15 +79,12 @@
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
 @media screen and (max-width: 1000px){
     .topnav.responsive {background-image: none;}
-
     .topnav.responsive {position: relative;}
 
     .topnav.responsive .icon{
         position: absolute;
         right: 1.5em;
         top: 2.1em;
-        /* right: 1.25em;
-        top: 1.75em; */
     }
 
     .topnav.responsive *{
@@ -111,13 +97,9 @@
         padding-top: 1em;
     }
 
-    .logo-ctnr{
-        width: 230px;
-    }
+    .logo-ctnr{width: 230px;}
 
-    .logo-ctnr .responsive-logo{
-        display: none;
-    }
+    .logo-ctnr .responsive-logo{display: none;}
 
     .topnav.responsive{
         width: 100%;
@@ -136,9 +118,8 @@
 
 /* Responsive Logo */
 @media screen and (max-width:600px){
-    .logo-ctnr .logo{
-        display: none;
-    }
+    .logo-ctnr .logo{display: none;}
+
     .logo-ctnr{
         width: 80px;
         border-radius: 50%;
@@ -151,7 +132,5 @@
 
 /* Navbar bg image - responsive */
 @media screen and (max-width:400px){
-    .topnav{
-        background-image: none;
-    }
+    .topnav{background-image: none;}
 }

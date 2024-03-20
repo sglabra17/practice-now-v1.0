@@ -52,13 +52,10 @@
 
 /* Enlarge image If Mobile */
 @media screen and (max-width: 472px){
-    .card-link{
-        padding-left: 0;
-    }
+    .card-link{padding-left: 0;}
+
     .card{
         width: 250px;
     }
-    .subject-image{
-        height: 220px;
-    }
+    .subject-image{height: 220px;}
 }
