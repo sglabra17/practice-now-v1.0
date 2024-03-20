@@ -70,10 +70,13 @@
 /* Disappear options, appear menu icon */
 @media screen and (max-width: 1000px){
     .topnav *:not(:first-child){display: none;}
-    .topnav a.icon{
+    /* .topnav a.icon{ */
+    .topnav button.icon{
         float: right;
         display: block;
         padding-top: 1.5em;
+        background-color:  #293DA3;
+        border: none;
     }
     /* .topnav{background-position: center;} */
     .topnav{background-image: none;}
@@ -92,8 +95,8 @@
 
     .topnav.responsive .icon{
         position: absolute;
-        right: 1.2em;
-        top: 1.7em;
+        right: 1.5em;
+        top: 2.1em;
         /* right: 1.25em;
         top: 1.75em; */
     }
