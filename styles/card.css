@@ -1,4 +1,5 @@
 .card-link{
+    /* background-color: red; */
     padding-bottom: 4em;
 }
 
@@ -43,8 +44,15 @@
     font-style: normal;
 }
 
+/* Wrap Cards Sooner  */
+@media screen and (max-width: 1000px){
+    .card-link{
+        padding-left: 1em;
+    }
+}
+
 /* Enlarge image If Mobile */
-@media screen and (max-width: 440px){
+@media screen and (max-width: 470px){
     .card{
         width: 250px;
     }
