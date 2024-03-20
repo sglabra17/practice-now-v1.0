@@ -1,5 +1,4 @@
 .card-link{
-    /* background-color: red; */
     padding-bottom: 4em;
 }
 
@@ -52,7 +51,10 @@
 }
 
 /* Enlarge image If Mobile */
-@media screen and (max-width: 470px){
+@media screen and (max-width: 472px){
+    .card-link{
+        padding-left: 0;
+    }
     .card{
         width: 250px;
     }
