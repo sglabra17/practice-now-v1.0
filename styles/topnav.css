@@ -77,6 +77,11 @@
     }
     /* .topnav{background-position: center;} */
     .topnav{background-image: none;}
+
+    .topnav{
+        width: 100%;
+        position: fixed;
+    }
 }
 
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
@@ -110,6 +115,20 @@
     .logo-ctnr .responsive-logo{
         display: none;
     }
+
+    .topnav.responsive{
+        width: 100%;
+        position: fixed;
+        z-index: 50;
+    }
+
+    .whole{
+        width: 100%;    
+        position: absolute;
+        margin-top: 8em;
+        z-index: -1;
+        background-color: #DEE1ED;/*Color de Fondo Primario*/
+    }
 }
 
 /* Responsive Logo */
@@ -126,6 +145,7 @@
         width: 50px;
     }
 }
+
 /* Navbar bg image - responsive */
 @media screen and (max-width:400px){
     .topnav{
