@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice Now - Pronunciación</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../styles/home/topnav.css">
+        <link rel="stylesheet" href="../styles/home/section.css">
+        <link rel="stylesheet" href="../styles/home/card.css">
+        <link rel="stylesheet" href="../styles/home/footer.css">
+        <link rel="stylesheet" href="../styles/pronunciacion/iframe.css">
+        <!-- tab icon -->
+        <link rel="icon" href="../images/tab-logo.png" type="image/png">
+    </head>
+    <body>
+        <!-- Cabecera (Logo y Menú de Navegación) -->
+        <header>
+            <div class="topnav" id="myTopnav">
+                <div class="logo-ctnr">
+                    <a href="../index.html">
+                        <img class="logo" src="../images/logo.png" alt="Logo del Sitio">    
+                        <img class="responsive-logo" src="../images/tab-logo.png" alt="Logo del Sitio Web"/>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active-navlink" id="opBasico">Básico</a></li>
+                        <li><a href="#" id="opInter">Intermedio</a></li>
+                        <li><a href="#" id="opAvanzado">Avanzado</a></li>
+                        <li><a href="#" id="opPalabra">Palabra del Día</a></li>
+                    </ul>
+                </nav>
+                <button class="icon" id="burguer-menu">
+                    <img class="menu-icon" src="../images/burguer-menuMobile.png" alt="botón de menú" width="150">
+                </button>
+                <!-- <a href="#" class="icon" id="burguer-menu"> -->
+                    <!-- <img src="./images/burguer-menu.png" alt="Botón de Menú" width="50"> -->
+                <!-- </a> -->
+            </div>
+        </header>
+        <!-- Contenido Principal (Temáticas de Estudio) -->
+        <div class="whole">
+            <main>
+                <section>
+                    <div class="section-text">
+                        <h3>Pronunciación</h3>
+                        <p>Descubre la correcta entonación y articulación
+                        de cualquier palabra, buscándola en la siguiente sección:</p>
+                    </div>
+                    <div class="container-section1">
+                        <iframe src="https://www.wordreference.com/es/translation.asp?tranword=hello"
+                        frameborder="0"></iframe>
+                    </div>
+                </section>
+            </main>
+            <!-- Pie de Página -->
+            <footer>
+                <p>2024 &#169; <span>Samuel García Labra</span></p>
+                <p>
+                    <a href="mailto:Sam_Garca99@hotmail.com?Subject=Contacto%20:%20Sitio%20Web%20Para%20Practicar%20Inglés">
+                    Contactar</a> / <span><a href="#">Política de Privacidad</a></span> / 
+                    <a href="#"><span>Términos y Condiciones de Uso</span></a>
+                </p>
+            </footer>
+        </div>
+        <!-- JavaScript links -->
+        <script src="../scripts/home/menu-icon.js"></script>
+        <script src="../scripts/home/active-navlinks.js"></script>
+        <script src="../scripts/home/navbar-focus.js"></script>
+    </body>
+</html>
