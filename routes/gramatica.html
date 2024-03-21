@@ -3,18 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Practice Now - Pronunciación</title>
+        <title>Practice Now - Gramática</title>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
-        <!-- Styles : Home Page-->
+        <!-- Styles -->
         <link rel="stylesheet" href="../styles.css">
+        <!-- Home Page styles -->
         <link rel="stylesheet" href="../styles/home/topnav.css">
         <link rel="stylesheet" href="../styles/home/section.css">
+        <link rel="stylesheet" href="../styles/home/card.css">
         <link rel="stylesheet" href="../styles/home/footer.css">
-        <!-- Styles : Pronunciación Page -->
-        <link rel="stylesheet" href="../styles/pronunciacion/iframe.css">
         <!-- tab icon -->
         <link rel="icon" href="../images/tab-logo.png" type="image/png">
     </head>
@@ -30,10 +30,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="gramatica.html" id="opGram">Gramática</a></li>
-                        <li><a href="#" id="opVoca">Vocabulario</a></li>
-                        <li><a href="#" id="opLec">Lectura</a></li>
-                        <li><a href="#" class="active-navlink" id="opPron">Pronunciación</a></li>
+                        <li><a href="#" class="active-navlink" id="opBasico">Gramática</a></li>
+                        <li><a href="#" id="opInter">Vocabulario</a></li>
+                        <li><a href="#" id="opAvanzado">Lectura</a></li>
+                        <li><a href="pronunciacion.html" id="opPalabra">Pronunciación</a></li>
                     </ul>
                 </nav>
                 <button class="icon" id="burguer-menu">
@@ -46,13 +46,12 @@
             <main>
                 <section>
                     <div class="section-text">
-                        <h3>Pronunciación</h3>
-                        <p>Busca la correcta entonación y articulación
-                        de cualquier palabra en la siguiente sección:</p>
+                        <h3 id="subject-title">Gramática</h3>
+                        <p id="subject-subtitle"></p>
                     </div>
                     <div class="container-section1">
-                        <iframe src="https://www.wordreference.com/es/translation.asp?tranword=hello"
-                        frameborder="0"></iframe>
+                        
+                        
                     </div>
                 </section>
             </main>
@@ -68,8 +67,9 @@
         </div>
         <!-- JavaScript links -->
         <script src="../scripts/home/menu-icon.js"></script>
+        <script src="../scripts/home/active-navlinks.js"></script>
         <script src="../scripts/home/navbar-focus.js"></script>
-        <!-- Scripts : Pronunciacion Page -->
-        <script src="../scripts/pronunciacion/active-navlinks.js"></script>
+        <!-- Scripts : Gramatica Page -->
+        <script src="../scripts/gramatica/nivel.js"></script>
     </body>
 </html>

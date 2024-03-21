@@ -4,41 +4,41 @@ const opBasico   = document.querySelector('#opBasico');
 const opInter    = document.querySelector('#opInter');
 const opAvanzado = document.querySelector('#opAvanzado');
 const opPalabra  = document.querySelector('#opPalabra');
+const niveles = [opBasico,opInter,opAvanzado,opPalabra];
 
-// add event to each option
-opBasico.addEventListener('click',()=>{
-    if(!opBasico.className.length){
-        opBasico.className = 'active-navlink';
-        opInter.className    = '';
-        opAvanzado.className = '';
-        opPalabra.className  = '';
-    }
-});
+// Initialize Card's href (basico):
+const cardLinks = document.querySelectorAll('.card-link');
 
-opInter.addEventListener('click',()=>{
-    if(!opInter.className.length){
-        opInter.className = 'active-navlink';
-        opBasico.className   = '';
-        opAvanzado.className = '';
-        opPalabra.className  = '';
-    }
+console.warn('inicial');
+cardLinks.forEach((card)=>{
+    const href = card.getAttribute('href')+`?lvl=basico`;
+    card.setAttribute('href',href);
+    console.log(card.getAttribute('href'));
 });
 
 
-opAvanzado.addEventListener('click',()=>{
-    if(!opAvanzado.className.length){
-        opAvanzado.className = 'active-navlink';
-        opBasico.className  = '';
-        opInter.className   = '';
-        opPalabra.className = '';
-    }
-});
+// Change className if Selected, Also Change Card's href
+niveles.forEach((itm,indx,arr)=>{
 
-opPalabra.addEventListener('click',()=>{
-    if(!opPalabra.className.length){
-        opPalabra.className  = 'active-navlink';
-        opBasico.className   = '';
-        opInter.className    = '';
-        opAvanzado.className = '';
-    }
+    itm.addEventListener('click',()=>{
+        if(itm!==opPalabra){//changing href's
+            const level = itm.innerHTML.replace('á','a').toLowerCase();
+
+            console.warn('nuevos');
+            cardLinks.forEach((card)=>{
+                const href = card.getAttribute('href').split('?')[0];
+                card.setAttribute('href',href+`?lvl=${level}`);
+                console.log(card.getAttribute('href'));
+            });
+        }
+
+        if(!itm.className.length){// active link style
+            itm.className = 'active-navlink';
+            for (const option of arr) {
+                if(itm === option){continue;}
+                option.className = '';
+            }
+        }
+    });
+
 });
