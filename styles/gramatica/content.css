@@ -1,0 +1,41 @@
+/* Contains Form */
+.container-section{
+    margin: 1em;
+    margin-top: 2em;
+    padding: 1em 2em 2em 2em;
+    color: #293DA3;
+    font-size: 1.40em;
+    border-radius: .5em;
+    box-shadow: -1px 1px 3px 1px rgb(155, 153, 153);
+}
+
+/* Title of the Form */
+.formHeader{
+    margin-bottom: 1em;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* Contains Question */
+.question-ctnr{
+    padding-left: 1em;
+}
+
+/* Number of the Question */
+.question-num{
+    padding-bottom: .25em;
+    font-weight: bold;
+    color: #5567bf;
+}
+/* Container for Radio Buttons */
+.answers-ctnr{
+    /* background-color: red; */
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+/* Style for Each answer */
+.answer-ctnr{
+    /* background-color: green; */
+    padding-bottom: 1em;
+}

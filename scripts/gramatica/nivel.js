@@ -1,6 +1,7 @@
 // predefined headers
 const levelHeaders = {
-    'basico' : [' - Nivel Básico','Empieza a practicar inglés con ejercicios de gramática de nivel básico']
+    'basico' : [' - Nivel Básico',
+    'Empieza a practicar inglés con ejercicios de gramática de nivel básico.'],
 }
 
 // get url value
@@ -12,6 +13,7 @@ const title    = document.querySelector('#subject-title');
 const subTitle = document.querySelector('#subject-subtitle');
 
 // Dynamic Titles
-// main
 title.innerHTML    += levelHeaders[nivel][0];
 subTitle.innerHTML =  levelHeaders[nivel][1];
+
+// Dynamic Content
