@@ -11,6 +11,7 @@ console.log(nivel);
 const title    = document.querySelector('#subject-title');
 const subTitle = document.querySelector('#subject-subtitle');
 
+// Dynamic Titles
 // main
 title.innerHTML    += levelHeaders[nivel][0];
-subTitle.innerHTML = levelHeaders[nivel][1];
+subTitle.innerHTML =  levelHeaders[nivel][1];

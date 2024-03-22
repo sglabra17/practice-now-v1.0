@@ -13,16 +13,17 @@ console.warn('inicial');
 cardLinks.forEach((card)=>{
     const href = card.getAttribute('href')+`?lvl=basico`;
     card.setAttribute('href',href);
+    
     console.log(card.getAttribute('href'));
 });
 
 
 // Change className if Selected, Also Change Card's href
-niveles.forEach((itm,indx,arr)=>{
+niveles.forEach((nivel,indx,arr)=>{
 
-    itm.addEventListener('click',()=>{
-        if(itm!==opPalabra){//changing href's
-            const level = itm.innerHTML.replace('á','a').toLowerCase();
+    nivel.addEventListener('click',()=>{
+        if(nivel!==opPalabra){//changing href's
+            const level = nivel.innerHTML.replace('á','a').toLowerCase();
 
             console.warn('nuevos');
             cardLinks.forEach((card)=>{
@@ -32,10 +33,10 @@ niveles.forEach((itm,indx,arr)=>{
             });
         }
 
-        if(!itm.className.length){// active link style
-            itm.className = 'active-navlink';
+        if(!nivel.className.length){// active link style
+            nivel.className = 'active-navlink';
             for (const option of arr) {
-                if(itm === option){continue;}
+                if(nivel === option){continue;}
                 option.className = '';
             }
         }

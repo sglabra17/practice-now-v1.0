@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Lectura</h1>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice Now - Lectura</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles.css">
+        <!-- Home Page styles -->
+        <link rel="stylesheet" href="../styles/home/topnav.css">
+        <link rel="stylesheet" href="../styles/home/section.css">
+        <link rel="stylesheet" href="../styles/home/card.css">
+        <link rel="stylesheet" href="../styles/home/footer.css">
+        <!-- tab icon -->
+        <link rel="icon" href="../images/tab-logo.png" type="image/png">
+    </head>
+    <body>
+        <!-- Cabecera (Logo y Menú de Navegación) -->
+        <header>
+            <div class="topnav" id="myTopnav">
+                <div class="logo-ctnr">
+                    <a href="../index.html">
+                        <img class="logo" src="../images/logo.png" alt="Logo del Sitio">    
+                        <img class="responsive-logo" src="../images/tab-logo.png" alt="Logo del Sitio Web"/>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="gramatica.html" id="opGram">Gramática</a></li>
+                        <li><a href="vocabulario.html" id="opVoca">Vocabulario</a></li>
+                        <li><a href="lectura.html" class="active-navlink" id="opLec">Lectura</a></li>
+                        <li><a href="pronunciacion.html" id="opPron">Pronunciación</a></li>
+                    </ul>
+                </nav>
+                <button class="icon" id="burguer-menu">
+                    <img class="menu-icon" src="../images/burguer-menuMobileV2.png" alt="botón de menú" width="150">
+                </button>
+            </div>
+        </header>
+        <!-- Contenido Principal (Temáticas de Estudio) -->
+        <div class="whole">
+            <main>
+                <section>
+                    <div class="section-text">
+                        <h3 id="subject-title">Lectura</h3>
+                        <p id="subject-subtitle"></p>
+                    </div>
+                    <div class="container-section1">
+                        
+                        
+                    </div>
+                </section>
+            </main>
+            <!-- Pie de Página -->
+            <footer>
+                <p>2024 &#169; <span>Samuel García Labra</span></p>
+                <p>
+                    <a href="mailto:Sam_Garca99@hotmail.com?Subject=Contacto%20:%20Sitio%20Web%20Para%20Practicar%20Inglés">
+                    Contactar</a> / <span><a href="#">Política de Privacidad</a></span> / 
+                    <a href="#"><span>Términos y Condiciones de Uso</span></a>
+                </p>
+            </footer>
+        </div>
+        <!-- JavaScript links -->
+        <script src="../scripts/utilities/active-navlinks.js"></script>
+        <script src="../scripts/utilities/menu-icon.js"></script>
+        <script src="../scripts/utilities/navbar-focus.js"></script>
+        <!-- Scripts : Lectura Page -->
+        <script></script>
+    </body>
 </html>
