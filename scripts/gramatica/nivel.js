@@ -2,7 +2,10 @@
 const levelHeaders = {
     'basico' : [' - Nivel Básico',
     'Empieza a practicar inglés con ejercicios de gramática de nivel básico.'],
-}
+};
+
+// predefined questions
+const questions = {};
 
 // get url value
 let nivel = location.search.split("=")[1];

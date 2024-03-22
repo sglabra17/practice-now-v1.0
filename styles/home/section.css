@@ -1,8 +1,8 @@
 .section-text{
     padding-top: 2em;
+    color: #293DA3;/*Color de Texto Principal - Normal*/
     text-align: center;
     line-height: 3rem;
-    color: #293DA3;/*Color de Texto Principal - Normal*/
     font-size: 1.80rem;/*Título Grande*/
 }
 
@@ -10,7 +10,8 @@
     font-size: 1.6rem;/*Subtítulo Grande*/
 }
 
-/* Container de las Cards */
+
+/* (Estilos para Home Page) Container de las Cards */
 .container-section1{
     width: 100%;
     padding-top: 4em;

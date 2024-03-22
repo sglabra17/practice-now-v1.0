@@ -1,10 +1,11 @@
 /* Contains Form */
 .container-section{
+    /* background-color: red; */
     margin: 1em;
     margin-top: 2em;
     padding: 1em 2em 2em 2em;
     color: #293DA3;
-    font-size: 1.40em;
+    font-size: 1.4rem;
     border-radius: .5em;
     box-shadow: -1px 1px 3px 1px rgb(155, 153, 153);
 }
@@ -29,13 +30,11 @@
 }
 /* Container for Radio Buttons */
 .answers-ctnr{
-    /* background-color: red; */
     padding-top: 1em;
     padding-left: 1em;
 }
 
 /* Style for Each answer */
 .answer-ctnr{
-    /* background-color: green; */
     padding-bottom: 1em;
 }
