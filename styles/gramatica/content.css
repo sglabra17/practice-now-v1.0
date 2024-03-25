@@ -38,3 +38,8 @@
 .answer-ctnr{
     padding-bottom: 1em;
 }
+
+/* labels for radio btns - radio group */
+.answer-ctnr label{
+    padding-left: .5em;
+}
