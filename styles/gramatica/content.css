@@ -27,6 +27,7 @@
     padding-bottom: .25em;
     font-weight: bold;
     color: #5567bf;
+    word-spacing: .25em;
 }
 /* Container for Radio Buttons */
 .answers-ctnr{

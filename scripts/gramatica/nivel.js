@@ -1,18 +1,10 @@
+import { qnsObj } from "./questions.js";
+
 // predefined headers
 const levelHeaders = {
     'basico' : [' - Nivel Básico',
     'Empieza a practicar inglés con ejercicios de gramática de nivel básico.'],
 };
-
-// predefined questions
-const questions = [
-    {
-        num      : 1,
-        question : 'Who is Kate? Kate is my friend. ___ is a teacher.',
-        options  : ['Her','He','She','His'],
-        answer   : 'She'
-    }
-];
 
 // get url value
 let nivel = location.search.split("=")[1];
@@ -29,8 +21,8 @@ title.innerHTML    += levelHeaders[nivel][0];
 subTitle.innerHTML =  levelHeaders[nivel][1];
 
 
-
 // Dynamic Content
+const questions = qnsObj[nivel];
 for (const question of questions) {
     // Create <div> question container
     const qCtnr = document.createElement('div');
@@ -63,9 +55,9 @@ for (const question of questions) {
         // create radio button
         const inRadio = document.createElement('input');
         inRadio.type  = 'radio';
-        inRadio.setAttribute('id',op.toLocaleLowerCase());
+        inRadio.setAttribute('id',op.toLowerCase());
         inRadio.name    = `answer${question['num']}`;
-        inRadio.value   = op.toLocaleLowerCase();
+        inRadio.value   = op.toLowerCase();
         inRadio.checked = question['options'].indexOf(op) === 0 ? true : false;
         awrCtnr.append(inRadio);
 
