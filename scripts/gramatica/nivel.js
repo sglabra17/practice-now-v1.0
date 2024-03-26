@@ -1,4 +1,4 @@
-import { qnsObj } from "./questions.js";
+// import { qnsObj } from "./questions.js";
 
 // predefined headers
 const levelHeaders = {

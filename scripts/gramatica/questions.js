@@ -64,4 +64,4 @@ const qnsObj = {
 
 }
 
-export { qnsObj };
+// export { qnsObj };
