@@ -37,6 +37,7 @@ for (const question of questions) {
 
     // Create <p> with Question Text
     const qnTag     = document.createElement('p');
+    qnTag.id = `qp${question['num']}`;
     qnTag.innerText = `${question['question']}`;
     qCtnr.append(qnTag);
 
@@ -55,25 +56,58 @@ for (const question of questions) {
         // create radio button
         const inRadio = document.createElement('input');
         inRadio.type  = 'radio';
-        inRadio.setAttribute('id',op.toLowerCase());
+        inRadio.setAttribute('id',`${op}${question['num']}`);
         inRadio.name    = `answer${question['num']}`;
-        inRadio.value   = op.toLowerCase();
+        inRadio.value   = op;
         inRadio.checked = question['options'].indexOf(op) === 0 ? true : false;
         awrCtnr.append(inRadio);
 
         // create label
         const radioLabel = document.createElement('label');
-        radioLabel.setAttribute('for',`${op.toLowerCase()}`);
+        radioLabel.setAttribute('for',`${op}${question['num']}`);
         radioLabel.innerText = op;
         awrCtnr.append(radioLabel);
     }
 }
 
 // create solve button
-const btnSolve = document.createElement('button');
+const btnSolve       = document.createElement('a');
 btnSolve.textContent = 'Resolver';
+btnSolve.href        = '#qns-ctnr';
 btnSolve.classList.add('button-solve');
 qnsCtnr.append(btnSolve);
 
 
-// Validate Answers
+// Solve Button - Event
+const qnsHdr = document.querySelector('#qns-hdr');
+btnSolve.addEventListener('click',()=>{
+    let correctas = 0;
+    qnsHdr.innerText = 'Resultado:';
+
+    // Validate Answers
+    for (const question of questions) {
+        const pTag        = document.querySelector(`#qp${question['num']}`);
+        const correct     = question['answer'];
+        const tagCorrect  = document.querySelector(`#${correct}${question['num']}`);
+        const isCorrect   = tagCorrect.checked;
+        
+        if(isCorrect){
+            correctas++;
+            pTag.innerHTML = `<span class="span-resC">Correcta</span>${pTag.innerText}`;
+        }else{
+            pTag.innerHTML = `<span class="span-resI">Incorrecta</span>${pTag.innerText}`;
+        }
+    }
+
+    qnsHdr.innerHTML = `${qnsHdr.innerText}<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
+    qnsCtnr.removeChild(btnSolve);
+
+    // create solve button
+    const btnRetry       = document.createElement('a');
+    btnRetry.textContent = 'Reintentar';
+    btnRetry.classList.add('button-solve');
+    btnRetry.href = `gramatica.html?lvl=${nivel}`;
+    qnsCtnr.append(btnRetry);
+});
+
+

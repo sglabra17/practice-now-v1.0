@@ -1,7 +1,6 @@
 /* Contains Form */
 .container-section{
     /* background-color: green; */
-
     margin: 1em;
     margin-top: 2em;
     padding: 1em 2em 2em 2em;
@@ -49,6 +48,7 @@
 
 /* Button - Solve Form */
 .button-solve{
+    display: inline-block;
     margin-top: 2em;
     padding: .5em 1.5em;
     background-color: #5567bf;
@@ -56,8 +56,26 @@
     border: none;
     border-radius: 2em;
     font-size: inherit;
+    text-decoration: none;
 }
 
-.button-solve:hover{
-    cursor: pointer;
+/* span for right/wrong answer */
+.span-resC{
+    color: green;
+    padding-right: 1em;
+    font-weight: 600;
+}
+
+.span-resI{
+    color: red;
+    padding-right: 1em;
+    font-weight: 600;
+}
+
+/* span for final result */
+.span-finalRes{
+    /* background-color: red; */
+    padding-left: 1em;
+    font-weight: 500;
+    word-spacing: 0.25rem;
 }
