@@ -63,8 +63,17 @@ for (const question of questions) {
 
         // create label
         const radioLabel = document.createElement('label');
-        radioLabel.setAttribute('for',`${op.toLowerCase}`);
+        radioLabel.setAttribute('for',`${op.toLowerCase()}`);
         radioLabel.innerText = op;
         awrCtnr.append(radioLabel);
     }
 }
+
+// create solve button
+const btnSolve = document.createElement('button');
+btnSolve.textContent = 'Resolver';
+btnSolve.classList.add('button-solve');
+qnsCtnr.append(btnSolve);
+
+
+// Validate Answers

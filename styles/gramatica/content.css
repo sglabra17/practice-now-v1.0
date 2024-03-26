@@ -1,6 +1,7 @@
 /* Contains Form */
 .container-section{
-    /* background-color: red; */
+    /* background-color: green; */
+
     margin: 1em;
     margin-top: 2em;
     padding: 1em 2em 2em 2em;
@@ -43,4 +44,20 @@
 /* labels for radio btns - radio group */
 .answer-ctnr label{
     padding-left: .5em;
+}
+
+
+/* Button - Solve Form */
+.button-solve{
+    margin-top: 2em;
+    padding: .5em 1.5em;
+    background-color: #5567bf;
+    color: #e8eaf0;
+    border: none;
+    border-radius: 2em;
+    font-size: inherit;
+}
+
+.button-solve:hover{
+    cursor: pointer;
 }
