@@ -1,5 +1,3 @@
-// import { qnsObj } from "./questions.js";
-
 // predefined headers
 const levelHeaders = {
     'basico' : [' - Nivel Básico',
@@ -64,6 +62,7 @@ for (const question of questions) {
 
         // create label
         const radioLabel = document.createElement('label');
+        radioLabel.id = `lbl-${question['num']}-${op}`;
         radioLabel.setAttribute('for',`${op}${question['num']}`);
         radioLabel.innerText = op;
         awrCtnr.append(radioLabel);
@@ -73,7 +72,7 @@ for (const question of questions) {
 // create solve button
 const btnSolve       = document.createElement('a');
 btnSolve.textContent = 'Resolver';
-btnSolve.href        = '#qns-ctnr';
+btnSolve.href        = '#principal';
 btnSolve.classList.add('button-solve');
 qnsCtnr.append(btnSolve);
 
@@ -86,23 +85,47 @@ btnSolve.addEventListener('click',()=>{
 
     // Validate Answers
     for (const question of questions) {
-        const pTag        = document.querySelector(`#qp${question['num']}`);
-        const correct     = question['answer'];
-        const tagCorrect  = document.querySelector(`#${correct}${question['num']}`);
-        const isCorrect   = tagCorrect.checked;
-        
+        const pTag         = document.querySelector(`#qp${question['num']}`);
+        const correct      = question['answer'];
+        const radioCorrect = document.querySelector(`#${correct}${question['num']}`);
+        const lblCorrect   = document.querySelector(`#lbl-${question['num']}-${correct}`);
+        const isCorrect    = radioCorrect.checked;
+
+        // Replace Blank Space
+        console.log(pTag.innerText);
+        const [txt1,txt2] = pTag.innerText.split('___');       
+        const finalAns    = `${txt1}<span class="p-ansTxt">${correct}</span>${txt2}`;
+
+        // Retro for Usr
         if(isCorrect){
             correctas++;
-            pTag.innerHTML = `<span class="span-resC">Correcta</span>${pTag.innerText}`;
+            pTag.innerHTML = `<span class="span-resC">Correcta</span>${finalAns}`;
         }else{
-            pTag.innerHTML = `<span class="span-resI">Incorrecta</span>${pTag.innerText}`;
+            pTag.innerHTML = `<span class="span-resI">Incorrecta</span>${finalAns}`;
         }
+        
+        // uncheck radio btns, and <del> wrong asnwer
+        for (const res of question['options']) {
+            // disable radio buttons - asnwr options
+            const rad    = document.querySelector(`#${res}${question['num']}`);
+            rad.disabled = true;
+            // <del> wrong answers
+            const radio = document.querySelector(`#${res}${question['num']}`);
+            const lbl   = document.querySelector(`#lbl-${question['num']}-${res}`);
+            if(!isCorrect){
+                lbl.innerHTML = radio.checked ? `<del>${res}</del>` : res;
+            }
+        }
+
+        // correct answer
+        lblCorrect.classList.add('labelCorrect');
     }
 
+    // result text for user
     qnsHdr.innerHTML = `${qnsHdr.innerText}<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
-    qnsCtnr.removeChild(btnSolve);
-
+    
     // create solve button
+    qnsCtnr.removeChild(btnSolve);
     const btnRetry       = document.createElement('a');
     btnRetry.textContent = 'Reintentar';
     btnRetry.classList.add('button-solve');

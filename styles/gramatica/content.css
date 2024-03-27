@@ -59,7 +59,7 @@
     text-decoration: none;
 }
 
-/* span for right/wrong answer */
+/* span for right/wrong answer retro text*/
 .span-resC{
     color: green;
     padding-right: 1em;
@@ -74,8 +74,18 @@
 
 /* span for final result */
 .span-finalRes{
-    /* background-color: red; */
     padding-left: 1em;
     font-weight: 500;
     word-spacing: 0.25rem;
+}
+
+/* span for answer in <p> */
+.p-ansTxt{
+    font-weight: 800;
+}
+
+/* correct answer : label */
+.labelCorrect{
+    color: green;
+    font-weight: 800;
 }
