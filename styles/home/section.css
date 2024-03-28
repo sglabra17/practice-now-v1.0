@@ -22,7 +22,11 @@
 }
 
 .iframe-ctnr{
+<<<<<<< HEAD
     padding: .5em;
+=======
+    padding: 1em;
+>>>>>>> 43c49960de865c3a793ad54c86f2fa5b15016e23
     padding-top: 4em;
 }
 
