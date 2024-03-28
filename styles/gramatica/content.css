@@ -18,9 +18,7 @@
 }
 
 /* Contains Question */
-.question-ctnr{
-    padding-left: 1em;
-}
+.question-ctnr{padding-left: 1em;}
 
 /* Number of the Question */
 .question-num{
@@ -29,6 +27,7 @@
     color: #5567bf;
     word-spacing: .25em;
 }
+
 /* Container for Radio Buttons */
 .answers-ctnr{
     padding-top: 1em;
@@ -36,15 +35,10 @@
 }
 
 /* Style for Each answer */
-.answer-ctnr{
-    padding-bottom: 1em;
-}
+.answer-ctnr{padding-bottom: 1em;}
 
 /* labels for radio btns - radio group */
-.answer-ctnr label{
-    padding-left: .5em;
-}
-
+.answer-ctnr label{padding-left: .5em;}
 
 /* Button - Solve Form */
 .button-solve{
@@ -53,9 +47,9 @@
     padding: .5em 1.5em;
     background-color: #5567bf;
     color: #e8eaf0;
-    border: none;
+    /* border: none; */
     border-radius: 2em;
-    font-size: inherit;
+    /* font-size: inherit; */
     text-decoration: none;
 }
 
@@ -80,9 +74,7 @@
 }
 
 /* span for answer in <p> */
-.p-ansTxt{
-    font-weight: 800;
-}
+.p-ansTxt{font-weight: 800;}
 
 /* correct answer : label */
 .labelCorrect{

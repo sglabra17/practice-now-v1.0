@@ -2,10 +2,10 @@
 .topnav{
     width: 100%;
     padding: 1.75em 1.25em;
-    overflow: hidden;/*importante*/
+    /*importante*/
+    overflow: hidden;
     position: fixed;
-
-    background-color: #293DA3;
+    background-color: #293DA3;/*También color de texto para <main>*/
     border-radius: 0 0 1em 1em;
     box-shadow: 0 3px 2px 0 #706f6f;
     /* background image */
@@ -47,7 +47,7 @@
 
 /* <nav> items and links */
 .topnav nav ul li{
-    padding-right: 1.50em;
+    padding-right: 1.5em;
     list-style: none;
 }
 
@@ -55,14 +55,14 @@
 
 .topnav nav ul li a:not(.active-navlink):hover{
     background-color: #f0e4d859;
-    border-radius: 0.50em;
+    border-radius: .5em;
     font-weight: 800;
 }
 
 .active-navlink{
     background-color: #F0E4D8;
     color: #293DA3;
-    border-radius: 0.50em;
+    border-radius: .5em;
     font-weight: 800;
 }
 
@@ -81,16 +81,16 @@
         border: none;
     }
     .topnav{background-image: none;}
-    .topnav{
-        width: 100%;
-        position: fixed;
-    }
+    /* .topnav{ */
+        /* width: 100%; */
+        /* position: fixed; */
+    /* } */
 }
 
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
 @media screen and (max-width: 1000px){
-    .topnav.responsive {background-image: none;}
-    .topnav.responsive {position: relative;}
+    /* .topnav.responsive {background-image: none;} */
+    /* .topnav.responsive {position: relative;} */
 
     .topnav.responsive .icon{
         position: absolute;
@@ -112,19 +112,20 @@
 
     .logo-ctnr .responsive-logo{display: none;}
 
-    .topnav.responsive{
-        width: 100%;
-        position: fixed;
-        z-index: 50;
-    }
+    /* .topnav.responsive{ */
+        /* width: 100%; */
+        /* position: fixed; */
+        /* z-index: 50; */
+    /* } */
 
-    .whole{
-        width: 100%;    
-        position: absolute;
-        margin-top: 8em;
-        z-index: -1;
-        background-color: #DEE1ED;/*Color de Fondo Primario*/
-    }
+    /* .whole{ */
+        /* width: 100%;     */
+        /* position: absolute; */
+        /* margin-top: 8em; */
+        /* z-index: -1; */
+        /*Color de Fondo Primario*/
+        /* background-color: #DEE1ED; */
+    /* } */
 }
 
 /* Responsive Logo */
@@ -135,6 +136,7 @@
         width: 80px;
         border-radius: 50%;
     }
+
     .logo-ctnr .responsive-logo{
         display: block;
         width: 50px;
@@ -142,6 +144,6 @@
 }
 
 /* Navbar bg image - responsive */
-@media screen and (max-width:400px){
-    .topnav{background-image: none;}
-}
+/* @media screen and (max-width:400px){ */
+    /* .topnav{background-image: none;} */
+/* } */

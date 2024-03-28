@@ -3,7 +3,7 @@
     color: #293DA3;/*Color de Texto Principal - Normal*/
     text-align: center;
     line-height: 3rem;
-    font-size: 1.80rem;/*Título Grande*/
+    font-size: 1.8rem;/*Título Grande*/
 }
 
 .section-text p{
@@ -13,7 +13,7 @@
 
 /* (Estilos para Home Page) Container de las Cards */
 .container-section1{
-    width: 100%;
+    /* width: 100%; */
     padding-top: 4em;
     /* flexbox */
     display: flex;
@@ -22,11 +22,7 @@
 }
 
 .iframe-ctnr{
-<<<<<<< HEAD
     padding: .5em;
-=======
-    padding: 1em;
->>>>>>> 43c49960de865c3a793ad54c86f2fa5b15016e23
     padding-top: 4em;
 }
 
