@@ -2,6 +2,9 @@
 const levelHeaders = {
     'basico' : [' - Nivel Básico',
     'Empieza a practicar inglés con ejercicios de gramática de nivel básico.'],
+
+    'intermedio': [' - Nivel Intermedio',
+    'Ejercicios para aquellos que dominan los conceptos básicos del lenguaje.'],
 };
 
 // get url value
@@ -35,7 +38,7 @@ for (const question of questions) {
 
     // Create <p> with Question Text
     const qnTag     = document.createElement('p');
-    qnTag.id = `qp${question['num']}`;
+    qnTag.id        = `qp${question['num']}`;
     qnTag.innerText = `${question['question']}`;
     qCtnr.append(qnTag);
 
@@ -92,7 +95,7 @@ btnSolve.addEventListener('click',()=>{
         const isCorrect    = radioCorrect.checked;
 
         // Replace Blank Space
-        console.log(pTag.innerText);
+        // console.log(pTag.innerText);
         const [txt1,txt2] = pTag.innerText.split('___');       
         const finalAns    = `${txt1}<span class="p-ansTxt">${correct}</span>${txt2}`;
 
@@ -110,10 +113,10 @@ btnSolve.addEventListener('click',()=>{
             const rad    = document.querySelector(`#${res}${question['num']}`);
             rad.disabled = true;
             // <del> wrong answers
-            const radio = document.querySelector(`#${res}${question['num']}`);
+            // const radio = document.querySelector(`#${res}${question['num']}`);
             const lbl   = document.querySelector(`#lbl-${question['num']}-${res}`);
             if(!isCorrect){
-                lbl.innerHTML = radio.checked ? `<del>${res}</del>` : res;
+                lbl.innerHTML = rad.checked ? `<del>${res}</del>` : res;
             }
         }
 
@@ -122,9 +125,10 @@ btnSolve.addEventListener('click',()=>{
     }
 
     // result text for user
-    qnsHdr.innerHTML = `${qnsHdr.innerText}<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
+    // qnsHdr.innerHTML = `${qnsHdr.innerText}<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
+    qnsHdr.innerHTML += `<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
     
-    // create solve button
+    // create retry button
     qnsCtnr.removeChild(btnSolve);
     const btnRetry       = document.createElement('a');
     btnRetry.textContent = 'Reintentar';

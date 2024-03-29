@@ -61,6 +61,56 @@ const qnsObj = {
             answer   : 'them',
         },
     ],
+    intermedio: [
+        {
+            num      : 1,
+            question : 'There is ___ in the bathroom at the moment.',
+            options  : ['anybody','somebody','something','some'],
+            answer   : 'somebody'
+        },
+        {
+            num      : 2,
+            question : "I am bored, there isn't ___ to do here.",
+            options  : ['everything','nothing','something','anything'],
+            answer   : 'anything'
+        },
+        {
+            num      : 3,
+            question : "I am bored, there is ___ to do here.",
+            options  : ['everything','nothing','something','anything'],
+            answer   : 'nothing'
+        },
+        {
+            num      : 4,
+            question : "I can't find my keys ___!",
+            options  : ['anywhere','somewhere','nowhere','everywhere'],
+            answer   : 'anywhere'
+        },
+        {
+            num      : 5,
+            question : "___ at the party had a great time.",
+            options  : ['Anybody','Somebody','Everyone','All'],
+            answer   : 'Everyone'
+        },
+        {
+            num      : 6,
+            question : "Is there ___ in that bag?",
+            options  : ['nothing','anything','something','none'],
+            answer   : 'anything'
+        },
+        {
+            num      : 7,
+            question : "Are there ___ lemons? No, there are none.",
+            options  : ['some','none','no','any'],
+            answer   : 'any'
+        },
+        {
+            num      : 8,
+            question : "I have two children. ___ play tennis.",
+            options  : ['Both','Two','All','Some'],
+            answer   : 'Both'
+        },
+    ]
 
 }
 
