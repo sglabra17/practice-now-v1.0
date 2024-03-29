@@ -110,6 +110,68 @@ const qnsObj = {
             options  : ['Both','Two','All','Some'],
             answer   : 'Both'
         },
+    ],
+    avanzado : [
+        {
+            num      : 1,
+            question : "I ___ walked in the door. Can I call you later?",
+            options  : ['already','just','still','yet'],
+            answer   : 'just'
+        },
+        {
+            num      : 2,
+            question : "We are ___ rehearsing for the concert.",
+            options  : ['already','just','still','yet'],
+            answer   : 'still'
+        },
+        {
+            num      : 3,
+            question : "Thanks for the invitation, but I have ___ seen that film.",
+            options  : ['already','just','still','yet'],
+            answer   : 'already'
+        },
+        {
+            num      : 4,
+            question : "Have you gone to the store ___?",
+            options  : ['already','just','still','yet'],
+            answer   : 'yet'
+        },
+        {
+            num      : 5,
+            question : "You ___ started that new job and you are already complaining.",
+            options  : ['already','just','still','yet'],
+            answer   : 'just'
+        },
+        {
+            num      : 6,
+            question : "They hurried to the store, but it was ___ closed.",
+            options  : ['already','just','still','yet'],
+            answer   : 'already'
+        },
+        {
+            num      : 7,
+            question : "Are you ___ dating Jim?",
+            options  : ['already','just','still','yet'],
+            answer   : 'still'
+        },
+        {
+            num      : 8,
+            question : "Michael hasn't paid me all the money he owes me ___.",
+            options  : ['already','just','still','yet'],
+            answer   : 'yet'
+        },
+        {
+            num      : 9,
+            question : "Michael ___ hasn't paid me all the money he owes me.",
+            options  : ['already','just','still','yet'],
+            answer   : 'still'
+        },
+        {
+            num      : 10,
+            question : "Michael said he ___ paid you the money.",
+            options  : ['already','just','still','yet'],
+            answer   : 'already'
+        },
     ]
 
 }

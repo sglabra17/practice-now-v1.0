@@ -5,6 +5,9 @@ const levelHeaders = {
 
     'intermedio': [' - Nivel Intermedio',
     'Ejercicios para aquellos que dominan los conceptos básicos del lenguaje.'],
+
+    'avanzado' :  [' - Nivel Avanzado',
+    'Dirigido a usuarios avanzados, para los que quieren perfeccionar su inglés.']
 };
 
 // get url value
