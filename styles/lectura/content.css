@@ -1,20 +1,64 @@
 /* Contains Form */
 .container-section{
+    /* background-color: #ccceda; */
     margin: 1em;
-    margin-top: 2em;
+    margin-top: 4em;
     padding: 1em 2em 2em 2em;
-    color: #293DA3;
-    font-size: 1.4rem;
     border-radius: .5em;
-    box-shadow: -1px 1px 3px 1px rgb(155, 153, 153);
+    font-size: 1.4rem;
+    box-shadow: -1px 1px 3px 1px rgb(179, 176, 176);
+    color: #293DA3;
 }
 
 /* Title of the Form */
 .formHeader{
     margin-bottom: 1em;
-    font-size: 1.7rem;
     font-weight: 600;
 }
+
+.span-description{
+    font-weight: normal;
+}
+
+/* reading container */
+.reading-ctnr{
+    /* background-color: rgba(250, 103, 103, 0.502); */
+    margin: 2em auto;
+    text-align: left;
+}
+
+/* reading title */
+.reading-ctnr > p:first-child{
+    margin-bottom: 1em;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* paragraphs container */
+.reading{
+    /* background-color: #cbcdd9; */
+    background-color: #cdcdd86f;
+    color: #404d8c;
+    padding: .75em;
+    text-align: left;
+    font-weight: normal;
+    word-spacing: .25rem;
+    border-radius: .5em;
+}
+
+/* each reading paragraph */
+.reading p{
+    margin-bottom: 1em;
+}
+
+
+
+/**   
+    ----------------------------------
+    STYLES - QUESTIONS 
+    ----------------------------------
+**/
 
 /* Contains Question */
 .question-ctnr{padding-left: 1em;}
