@@ -49,13 +49,7 @@ const qnsObj = {
             answer   : "Public transport and its advantages."
         },
     ],
-
-
-
-
-
-
-
+    
     intermedio: [
         {
             num      : 1,
