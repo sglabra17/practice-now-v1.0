@@ -11,7 +11,7 @@ const str1 =
 "and contributes to a cleaner, healthier environment.</p>"+
 "<p>However, there are some challenges associated with public transport. One common issue is the reliability"+
 "of schedules. Delays can occur due to traffic, weather, or technical problems, which can inconvenience passengers.</p>"+
-"<p>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
+"<p id='lastP'>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
 "desired destinations conveniently.</p>";
 
 
@@ -22,7 +22,7 @@ const readingsObj = {
         inrHtml : str1,
     },
     intermedio : {
-        title   : 'Public Transport',
+        title   : 'Adoption: Building Families through Love',
         inrHtml : str1,
     },
     avanzado : {

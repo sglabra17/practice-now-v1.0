@@ -4,7 +4,7 @@ const levelHeaders = {
     'Ejercicio de compresión lectora orientado a usuarios con nivel principiante del idioma.'],
 
     'intermedio': [' - Nivel Intermedio',
-    'sss'],
+    'El siguiente ejercicio es recomendado para un nivel B1 de inglés.'],
 
     'avanzado' :  [' - Nivel Avanzado',
     'sss']
@@ -45,13 +45,10 @@ rdingTxt.innerHTML = readingsObj[nivel]['inrHtml'];
 
 // create another form header
 const secondHdr = document.createElement('p');
+secondHdr.id = 'scndHdr';
 secondHdr.classList.add('formHeader');
 secondHdr.innerText = 'Elige la respuesta correcta.';
 qnsCtnr.append(secondHdr);
-
-
-
-
 
 /** 
  * ---------------------------------------
@@ -61,6 +58,8 @@ qnsCtnr.append(secondHdr);
 // Dynamic Content
 const questions = qnsObj[nivel];
 for (const question of questions) {
+    const qnNum = question['num'];
+
     // Create <div> question container
     const qCtnr = document.createElement('div');
     qCtnr.classList.add('question-ctnr');
@@ -69,13 +68,13 @@ for (const question of questions) {
     // Create <p> with No. of Question
     const qNumTag  = document.createElement('p');
     qNumTag.classList.add('question-num');
-    qNumTag.innerText = `${question['num']} de ${questions.length}`;
+    qNumTag.innerText = `${qnNum} de ${questions.length}`;
     qCtnr.append(qNumTag);
 
     // Create <p> with Question Text
     const qnTag     = document.createElement('p');
-    qnTag.id        = `qp${question['num']}`;
-    qnTag.innerText = `${question['question']}`;
+    qnTag.id        = `qp${qnNum}`;
+    qnTag.innerText = question['question'];
     qCtnr.append(qnTag);
 
     // Create <div> answers container
@@ -85,24 +84,26 @@ for (const question of questions) {
 
     // Create answers
     for (const op of question['options']) {
+        const indx = question['options'].indexOf(op);
+
         // create answer container
         const awrCtnr = document.createElement('div');
         awrCtnr.classList.add('answer-ctnr');
         ansCtnr.append(awrCtnr);
 
         // create radio button
-        const inRadio = document.createElement('input');
-        inRadio.type  = 'radio';
-        inRadio.setAttribute('id',`${op}${question['num']}`);
-        inRadio.name    = `answer${question['num']}`;
+        const inRadio   = document.createElement('input');
+        inRadio.type    = 'radio';
+        inRadio.id      = `q${qnNum}op${indx}`;
+        inRadio.name    = `answer${qnNum}`;
         inRadio.value   = op;
-        inRadio.checked = question['options'].indexOf(op) === 0 ? true : false;
+        inRadio.checked = indx === 0 ? true : false;
         awrCtnr.append(inRadio);
 
         // create label
         const radioLabel = document.createElement('label');
-        radioLabel.id = `lbl-${question['num']}-${op}`;
-        radioLabel.setAttribute('for',`${op}${question['num']}`);
+        radioLabel.id    = `lbl-q${qnNum}-${indx}`;
+        radioLabel.setAttribute('for',inRadio.id);
         radioLabel.innerText = op;
         awrCtnr.append(radioLabel);
     }
@@ -111,30 +112,35 @@ for (const question of questions) {
 // create solve button
 const btnSolve       = document.createElement('a');
 btnSolve.textContent = 'Resolver';
-btnSolve.href        = '#principal';
+btnSolve.href        = '#lastP';
 btnSolve.classList.add('button-solve');
 qnsCtnr.append(btnSolve);
-
 
 // Solve Button - Event
 const qnsHdr = document.querySelector('#qns-hdr');
 btnSolve.addEventListener('click',()=>{
     let correctas = 0;
-    qnsHdr.innerText = 'Resultado:';
+    secondHdr.innerText = 'Resultado:';
 
     // Validate Answers
     for (const question of questions) {
-        const pTag         = document.querySelector(`#qp${question['num']}`);
-        const correct      = question['answer'];
-        const radioCorrect = document.querySelector(`#${correct}${question['num']}`);
-        const lblCorrect   = document.querySelector(`#lbl-${question['num']}-${correct}`);
-        const isCorrect    = radioCorrect.checked;
+        const qNumber = question['num'];
+        const pTag    = document.querySelector(`#qp${qNumber}`);
+        const correct = question['answer'];
+        let radioCorrect;
+        let lblCorrect;
 
-        // Replace Blank Space
-        // console.log(pTag.innerText);
-        const [txt1,txt2] = pTag.innerText.split('___');       
-        const finalAns    = `${txt1}<span class="p-ansTxt">${correct}</span>${txt2}`;
-
+        for (const opt of question['options']) {
+            const indx = question['options'].indexOf(opt);
+            if(opt===correct){
+                radioCorrect = document.querySelector(`#q${qNumber}op${indx}`);
+                lblCorrect   = document.querySelector(`#lbl-q${qNumber}-${indx}`);
+            }
+        }
+        const isCorrect = radioCorrect.checked;    
+        let finalAns    = pTag.innerText.replace('Correcta','').replace('Incorrecta','');
+        console.log(finalAns);
+        
         // Retro for Usr
         if(isCorrect){
             correctas++;
@@ -143,26 +149,26 @@ btnSolve.addEventListener('click',()=>{
             pTag.innerHTML = `<span class="span-resI">Incorrecta</span>${finalAns}`;
         }
         
-        // uncheck radio btns, and <del> wrong asnwer
+        // disable radio btns, and <del> wrong asnwer
         for (const res of question['options']) {
+            const indx   = question['options'].indexOf(res);
             // disable radio buttons - asnwr options
-            const rad    = document.querySelector(`#${res}${question['num']}`);
+            const rad    = document.querySelector(`#q${qNumber}op${indx}`);
             rad.disabled = true;
             // <del> wrong answers
             // const radio = document.querySelector(`#${res}${question['num']}`);
-            const lbl   = document.querySelector(`#lbl-${question['num']}-${res}`);
+            const lbl    = document.querySelector(`#lbl-q${qNumber}-${indx}`);
             if(!isCorrect){
                 lbl.innerHTML = rad.checked ? `<del>${res}</del>` : res;
             }
         }
-
         // correct answer
         lblCorrect.classList.add('labelCorrect');
     }
 
     // result text for user
     // qnsHdr.innerHTML = `${qnsHdr.innerText}<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
-    qnsHdr.innerHTML += `<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
+    secondHdr.innerHTML += `<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
     
     // create retry button
     qnsCtnr.removeChild(btnSolve);
@@ -172,3 +178,4 @@ btnSolve.addEventListener('click',()=>{
     btnRetry.href = `lectura.html?lvl=${nivel}`;
     qnsCtnr.append(btnRetry);
 });
+
