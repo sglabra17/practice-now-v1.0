@@ -7,7 +7,7 @@ const levelHeaders = {
     'El siguiente ejercicio es recomendado para un nivel B1 de inglés.'],
 
     'avanzado' :  [' - Nivel Avanzado',
-    '']
+    'Lectura recomendada para un nivel B2 / C1 de inglés.']
 };
 
 // get url value

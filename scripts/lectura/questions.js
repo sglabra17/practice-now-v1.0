@@ -137,9 +137,11 @@ const qnsObj = {
     avanzado : [
         {
             num      : 1,
-            question : "I ___ walked in the door. Can I call you later?",
-            options  : ['already','just','still','yet'],
-            answer   : 'just'
+            question : "x",
+            options  : ["x",
+                        "x",
+                        "x"],
+            answer   : "x"
         },
     ]
 }

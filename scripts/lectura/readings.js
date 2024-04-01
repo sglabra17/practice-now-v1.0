@@ -42,7 +42,10 @@ const str2 =
 "<p id='lastP'>To sum up, adoption is a beautiful way to build families through love. It offers children the chance to have a better life,"+
 " provides loving parents the opportunity to fulfill their dreams of parenthood, and fosters a sense of unity and support within society.</p>";
 
-
+const str3 = 
+"<p>Animals, much like humans, navigate a spectrum of emotions, challenging preconceived notions about the depth of their"+
+" inner lives. Recent scientific endeavors explore the fascinating realm of animal emotions, shedding light on the rich tapestry"+
+" that defines their experiences.</p>";
 
 const readingsObj = {
     basico : {
@@ -54,7 +57,7 @@ const readingsObj = {
         inrHtml : str2,
     },
     avanzado : {
-        title   : 'Public Transport',
-        inrHtml : str1,
+        title   : 'Animal Emotions',
+        inrHtml : str3,
     }
 }
