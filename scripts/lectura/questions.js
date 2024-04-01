@@ -49,36 +49,91 @@ const qnsObj = {
             answer   : "Public transport and its advantages."
         },
     ],
-    
+
     intermedio: [
         {
             num      : 1,
-            question : 'There is ___ in the bathroom at the moment.',
-            options  : ['anybody','somebody','something','some'],
-            answer   : 'somebody'
+            question : 'What is adoption?',
+            options  : ['A process where children become biologically related to their new parents.',
+                        'A legal process where individuals or couples become the parents of a child not biologically theirs.',
+                        'A process of giving up parental rights.'],
+            answer   : "A legal process where individuals or couples become the parents of a child not biologically theirs."
+        },
+        {
+            num      : 2,
+            question : 'What type of adoption involves ongoing contact between adoptive and birth parents?',
+            options  : ['Open adoption',
+                        'Closed adoption',
+                        'International adoption'],
+            answer   : "Open adoption"
+        },
+        {
+            num      : 3,
+            question : 'What is a challenge some adopted children may face?',
+            options  : ['Difficulty in school',
+                        'Identity issues or a desire to find their birth parents',
+                        'Financial problems'],
+            answer   : "Identity issues or a desire to find their birth parents"
+        },
+        {
+            num      : 4,
+            question : 'What is the primary benefit of adoption for adoptive parents?',
+            options  : ['Financial support',
+                        'Joy of parenthood and satisfaction of providing a loving home',
+                        'Recognition in the community'],
+            answer   : "Joy of parenthood and satisfaction of providing a loving home"
+        },
+        {
+            num      : 5,
+            question : 'What can be emotionally challenging about the adoption process?',
+            options  : ['The cost of adoption',
+                        'Wating for the right match and navigating legal procedures',
+                        'Finding a suitable adoption agency'],
+            answer   : "Wating for the right match and navigating legal procedures"
+        },
+        {
+            num      : 6,
+            question : 'What is the significance of background checks and home studies in the adoption process?',
+            options  : ["They determine the child's elegibility for adoption.",
+                        'They ensure prospective adoptive parents can provide a safe and supportive environment for a child.',
+                        'They speed up the adoption process.'],
+            answer   : "They ensure prospective adoptive parents can provide a safe and supportive environment for a child."
+        },
+        {
+            num      : 7,
+            question : 'How does international adoption differ from other types of adoption?',
+            options  : ["It involves adopting a child from a different country.",
+                        'It is only available to celebrities.',
+                        "It excludes contact with the child's birth parents."],
+            answer   : "It involves adopting a child from a different country."
+        },
+        {
+            num      : 8,
+            question : 'Why is adoption considered a mutually beneficial arrangement?',
+            options  : ["Because it doesn't require any effort from adoptive parents.",
+                        'Because it provides a loving home for children and fulfills the dreams of prospective parents.',
+                        "Because it's a way for children to make money."],
+            answer   : "Because it provides a loving home for children and fulfills the dreams of prospective parents."
+        },
+        {
+            num      : 9,
+            question : 'What is one potential challenge mentioned for adoptive parents?',
+            options  : ["Difficulty in bonding with the adopted child.",
+                        "The stress of the legal process.",
+                        "The lack of support from the adoption agency."],
+            answer   : "The stress of the legal process."
+        },
+        {
+            num      : 10,
+            question : "What is the primary aim of adoption, as stated in the text?",
+            options  : ["To find children a loving family.",
+                        "To create biologically related families.",
+                        "To separate children from their birth parents."],
+            answer   : "To find children a loving family."
         },
     ],
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     avanzado : [
         {
             num      : 1,

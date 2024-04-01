@@ -7,7 +7,7 @@ const levelHeaders = {
     'El siguiente ejercicio es recomendado para un nivel B1 de inglés.'],
 
     'avanzado' :  [' - Nivel Avanzado',
-    'sss']
+    '']
 };
 
 // get url value
@@ -75,6 +75,7 @@ for (const question of questions) {
     const qnTag     = document.createElement('p');
     qnTag.id        = `qp${qnNum}`;
     qnTag.innerText = question['question'];
+    qnTag.classList.add('question-p');
     qCtnr.append(qnTag);
 
     // Create <div> answers container
