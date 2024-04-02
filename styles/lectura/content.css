@@ -11,6 +11,61 @@
     color: #293DA3;
 }
 
+
+
+
+
+
+.rding-subt{
+    /* background-color: aqua; */
+    margin-bottom: .5em;
+}
+
+/* readings : buttons options */
+.rdng-opts{
+    /* background-color: red; */
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reading-option{
+    display: inline-block;
+    /* margin-top: 2em; */
+    padding: .5em 1.5em;
+    background-color: #a2a2aa6f;
+    color: #67676f;
+    /* border: none; */
+    border-radius: 2em;
+    /* font-size: inherit; */
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+}
+.reading-option:hover{
+    cursor: pointer;
+    /* outline: .15em solid white; */
+    box-shadow: 1px 1px 1px 1px rgb(111, 109, 109);
+    transition: 200ms;
+}
+.rop-active{
+    background-color: #abb8f6;
+    color: #2444e1;
+    font-weight: 600;
+}
+.reading-option:active{
+    outline: .25em solid white;
+    /* transition: 200ms; */
+}
+
+
+
+
+
+
+
 /* Title of the Form */
 .formHeader{
     margin-bottom: 1em;

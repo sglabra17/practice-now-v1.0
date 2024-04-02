@@ -1,13 +1,13 @@
 // predefined headers
 const levelHeaders = {
     'basico' : [' - Nivel Básico',
-    'Ejercicio de compresión lectora orientado a usuarios con nivel principiante del idioma.'],
+    'Ejercicios de compresión lectora orientados a usuarios con nivel principiante del idioma.'],
 
     'intermedio': [' - Nivel Intermedio',
-    'El siguiente ejercicio es recomendado para un nivel B1 de inglés.'],
+    'Los siguientes ejercicios son recomendados para un nivel B1 de inglés.'],
 
     'avanzado' :  [' - Nivel Avanzado',
-    'Lectura recomendada para un nivel B2 / C1 de inglés.']
+    'Lecturas recomendadas para un nivel B2 / C1 de inglés.']
 };
 
 // get url value
@@ -17,12 +17,59 @@ console.log(nivel);
 // HTML references - Headers
 const title    = document.querySelector('#subject-title');
 const subTitle = document.querySelector('#subject-subtitle');
+const rdngOpts = document.querySelector('#rdngOpts-ctnr');
 // HTML references - Questions
 const qnsCtnr  = document.querySelector('#qns-ctnr');
 
 // Dynamic Titles
 title.innerHTML    += levelHeaders[nivel][0];
 subTitle.innerHTML =  levelHeaders[nivel][1];
+
+// Chips : reading options 
+const readingsObjArr = readingsObj[nivel];
+
+for (const lectura of readingsObjArr) {
+    const rdngOptBtn      = document.createElement('button');
+    const rdngOptBtnClass = 'reading-option';
+    const activeBtnClass  = 'rop-active';
+    const isFirst         = lectura['rdngId'] === 1;
+    rdngOptBtn.id         = `btn-${lectura['rdngId']}`;
+    rdngOptBtn.classList.add(rdngOptBtnClass,isFirst ? activeBtnClass : null);
+    rdngOptBtn.innerText = `Lectura ${lectura['rdngId']}`;
+
+    rdngOpts.append(rdngOptBtn);
+}
+
+// Chips, reading options : Events
+const rdngBtnsArray = rdngOpts.children;
+
+for (const chip of rdngBtnsArray) {
+    chip.addEventListener('click',()=>{
+        const chipIndx = chip.id.split('-')[1];
+        
+        for (const it of rdngBtnsArray) {
+            const itIndx = it.id.split('-')[1];
+            if(!(itIndx===chipIndx)){
+                it.className = 'reading-option';
+            }else{
+                it.className = 'reading-option rop-active';
+            }
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 // Dynamic content
 // Reading Container
@@ -55,6 +102,7 @@ qnsCtnr.append(secondHdr);
  * QUESTIONS - Multiple Choice
  * ---------------------------------------
  */
+/*
 // Dynamic Content
 const questions = qnsObj[nivel];
 for (const question of questions) {
@@ -180,3 +228,4 @@ btnSolve.addEventListener('click',()=>{
     qnsCtnr.append(btnRetry);
 });
 
+*/

@@ -16,6 +16,8 @@ const strB1 =
 " desired destinations conveniently.</p>";
 
 
+
+
 // Intermedio
 const strI1 = 
 "<p>Adoption is a compassionate and altruistic way of forming families. It is a process"+
@@ -46,6 +48,8 @@ const strI1 =
 " provides loving parents the opportunity to fulfill their dreams of parenthood, and fosters a sense of unity and support within society.</p>";
 
 
+
+
 // Avanzado
 const strA1 = 
 "<p>Animals, much like humans, navigate a spectrum of emotions, challenging preconceived notions about the depth of their"+
@@ -72,18 +76,38 @@ const strA1 =
 
 
 
+
 // JavaScript Object - All Readings
 const readingsObj = {
-    basico : {
-        title   : 'Public Transport',
-        inrHtml : strB1,
-    },
-    intermedio : {
-        title   : 'Adoption: Building Families through Love',
-        inrHtml : strI1,
-    },
-    avanzado : {
-        title   : 'Animal Emotions',
-        inrHtml : strA1,
-    }
+    basico : [
+        {
+            rdngId  : 1,
+            title   : 'Public Transport',
+            inrHtml : strB1,
+        },
+        {
+            rdngId  : 2,
+            title   : 'Lectura 2',
+            inrHtml : strB1,
+        },
+        {
+            rdngId  : 3,
+            title   : 'Lectura 3',
+            inrHtml : strB1,
+        },
+    ],
+          
+    intermedio : [
+        {
+            title   : 'Adoption: Building Families through Love',
+            inrHtml : strI1,
+        },
+    ],
+    
+    avanzado : [
+        {
+            title   : 'Animal Emotions',
+            inrHtml : strA1,
+        }
+    ]
 }
