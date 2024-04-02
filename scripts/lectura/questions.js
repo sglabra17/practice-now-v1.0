@@ -137,11 +137,51 @@ const qnsObj = {
     avanzado : [
         {
             num      : 1,
-            question : "x",
-            options  : ["x",
-                        "x",
-                        "x"],
-            answer   : "x"
+            question : "What is the main focus of the reading?",
+            options  : ["The intelligence of elephants.",
+                        "The emotional lives of animals.",
+                        "The social complexity of primates."],
+            answer   : "The emotional lives of animals."
+        },
+        {
+            num      : 2,
+            question : "According to the text, which animal exhibits mourning rituals similar to humans?",
+            options  : ["Dogs.",
+                        "Elephants.",
+                        "Birds."],
+            answer   : "Elephants."
+        },
+        {
+            num      : 3,
+            question : "How do scientists study the emotional lives of primates, according to the reading?",
+            options  : ["By analyzing their fur patterns.",
+                        "By studying their sleep patterns.",
+                        "By observing facial expressions and vocalizations."],
+            answer   : "By observing facial expressions and vocalizations."
+        },
+        {
+            num      : 4,
+            question : "What surprising revelation does the text make about birds and fish?",
+            options  : ["They lack emotional complexity.",
+                        "They exhibit emotional behaviors.",
+                        "They are indifferent to social bonds."],
+            answer   : "They exhibit emotional behaviors."
+        },
+        {
+            num      : 5,
+            question : "Which domesticated animals are specifically mentioned for their emotional intelligence?",
+            options  : ["Cats and dogs.",
+                        "Birds and fish.",
+                        "Elephants and primates."],
+            answer   : "Cats and dogs."
+        },
+        {
+            num      : 6,
+            question : "What is the primary argument of those who criticize the attribution of human-like emotions to animals?",
+            options  : ["Animals lack any form of emotion.",
+                        "It is an anthropomorphic interpretation.",
+                        "Human emotions are identical to animal emotions."],
+            answer   : "It is an anthropomorphic interpretation."
         },
     ]
 }

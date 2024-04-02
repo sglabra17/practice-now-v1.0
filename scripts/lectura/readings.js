@@ -1,4 +1,5 @@
-const str1 = 
+// Básico
+const strB1 = 
 "<p>Public transport is a convenient and affordable way for people to travel within cities and towns."+
 " It plays a crucial role in reducing traffic congestion, saving money, and benefiting the enviroment.</p>"+
 "<p>Firstly, public transport is cost-effective. It is usually much cheaper than owning and maintaining"+
@@ -14,7 +15,9 @@ const str1 =
 "<p id='lastP'>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
 " desired destinations conveniently.</p>";
 
-const str2 = 
+
+// Intermedio
+const strI1 = 
 "<p>Adoption is a compassionate and altruistic way of forming families. It is a process"+
 " where individuals or couples legally become the parents of a child who is not biologically"+
 " theirs. This act of love and commitment is a heartfelt endeavor, and it plays a significant"+
@@ -42,23 +45,45 @@ const str2 =
 "<p id='lastP'>To sum up, adoption is a beautiful way to build families through love. It offers children the chance to have a better life,"+
 " provides loving parents the opportunity to fulfill their dreams of parenthood, and fosters a sense of unity and support within society.</p>";
 
-const str3 = 
+
+// Avanzado
+const strA1 = 
 "<p>Animals, much like humans, navigate a spectrum of emotions, challenging preconceived notions about the depth of their"+
 " inner lives. Recent scientific endeavors explore the fascinating realm of animal emotions, shedding light on the rich tapestry"+
 " that defines their experiences.</p>"+
-"<p>Consider"
+"<p>Consider the majestic elephant, a creature revered for its intelligence and social complexity. Research suggests that elephants exhibit a wide"+
+" array of emotions, from joy during social interactions to grief and mourning rituals akin to human practices. Observing elephants paying homage to"+
+" their deceased underscores the intricate nature of their emotional landscape.</p>"+
+"<p>Primates, our closest relatives in the animal kingdom, are also noteworthy for their emotional depth. Whether it's the joyous interactions within"+
+" a troop or the stress apparent in challenging situations, primates display a remarkable range of emotions. Scientists employ various methods, including"+
+" the analysis of facial expressions and vocalizations, to decode the nuanced language of primate emotions.</p>"+
+"<p>Moving beyond mammals, studies indicate that even seemingly disparate species such as birds and fish possess emotional complexity. Birds exhibit behaviors"+
+" that hint at feelings of joy, sorrow, and attachment. Fish, often understimated in this regard, display social bonds and reactions to stress that imply"+
+" an emotional capacity beyond conventional understanding.</p>"+
+"<p>The bond between humans and domesticated animals, particularly dogs and cats, is a testament to the emotional intelligence of these creatures. Dogs, renowned"+
+" for their loyalty and companionship, not only experience a spectrum of emotions but also demonstrate an uncanny ability to perceive and respond to human feelings."+
+" Cats, often stereotyped as aloof, form strong emotional connections with their human counterparts, expressing affection through purring and various forms of body"+
+" language.</p>"+
+"<p>While the exploration of animal emotions has unveiled remarkable insights, it is not without controversy. Some argue that attributing human-like emotions to"+
+" animals is an anthropomorphic interpretation, projecting our feelings onto creatures with fundamentally different experiences. Despite debates, proponents highlight"+
+" the shared evolutionary history and neural structures that suggest a continuity of emotional experiences across species.</p>"+
+"<p id='lastP'>In conclusion, the study of animal emotions opens a window into a captivating world of feelings and responses. Whether in the wild or within our homes, animals"+
+" exhibit a profound spectrum of emotions that challenge our understanding and deepen our connection with the diverse life forms that share our planet.</p>";
 
+
+
+// JavaScript Object - All Readings
 const readingsObj = {
     basico : {
         title   : 'Public Transport',
-        inrHtml : str1,
+        inrHtml : strB1,
     },
     intermedio : {
         title   : 'Adoption: Building Families through Love',
-        inrHtml : str2,
+        inrHtml : strI1,
     },
     avanzado : {
         title   : 'Animal Emotions',
-        inrHtml : str3,
+        inrHtml : strA1,
     }
 }
