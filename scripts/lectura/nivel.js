@@ -10,6 +10,8 @@ const levelHeaders = {
     'Lecturas recomendadas para un nivel B2 / C1 de inglés.']
 };
 
+
+
 // get url value
 let nivel = location.search.split("=")[1];
 console.log(nivel);
@@ -24,6 +26,8 @@ const qnsCtnr  = document.querySelector('#qns-ctnr');//<---este
 // Dynamic Titles
 title.innerHTML    += levelHeaders[nivel][0];
 subTitle.innerHTML =  levelHeaders[nivel][1];
+
+
 
 // Chips : reading options 
 const lecturas = readingsObj[nivel];
@@ -40,6 +44,9 @@ for (const lectura of lecturas) {
     rdngOpts.append(rdngOptBtn);
 }
 
+
+
+
 // variables
 const rdngBtnsArray  = rdngOpts.children;
 let indxReading      = 0;
@@ -53,6 +60,9 @@ rdingTxt.innerHTML   = readingsObj[nivel][0]['inrHtml'];
 rdingTxt.classList.add('reading');
 // Initialize : questions
 let questions        = qnsObj[nivel]['lectura1'];
+
+
+
 
 // Chips, reading options : Events -> Active
 for (const chip of rdngBtnsArray) {
@@ -79,6 +89,7 @@ for (const chip of rdngBtnsArray) {
         questions = qnsObj[nivel][`lectura${chipIndx}`];
         console.log(questions);
 
+
         // initialize questions
         const qnContainers = document.querySelectorAll('.question-ctnr');
         const lim = qnContainers.length;
@@ -90,6 +101,7 @@ for (const chip of rdngBtnsArray) {
             qnsCtnr.removeChild(btn);
         }
         
+
 
         // Dynamic Content
         for (const question of questions) {
@@ -217,8 +229,23 @@ for (const chip of rdngBtnsArray) {
         });
 
 
+
     });// on click
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -240,6 +267,21 @@ secondHdr.id    = 'scndHdr';
 secondHdr.classList.add('formHeader');
 secondHdr.innerText = 'Elige la respuesta correcta.';
 qnsCtnr.append(secondHdr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** 
  * ---------------------------------------

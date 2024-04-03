@@ -15,7 +15,13 @@ const strB1 =
 "<p id='lastP'>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
 " desired destinations conveniently.</p>";
 
-const strB2 = "Hola";
+const strB2 = 
+"<p>Hola"
+
+
+
+
+
 const strB3 = "Hola";
 
 

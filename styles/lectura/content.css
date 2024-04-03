@@ -24,16 +24,20 @@
 /* readings : buttons options */
 .rdng-opts{
     /* background-color: red; */
-    padding: 0;
-    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1em;
+    text-align: center;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
 
 .reading-option{
     display: inline-block;
     /* margin-top: 2em; */
+    margin-left: 1em;
     padding: .5em 1.5em;
     background-color: #a2a2aa6f;
     color: #67676f;
