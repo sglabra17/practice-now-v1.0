@@ -53,21 +53,101 @@ const qnsObj = {
         lectura2:[
             {
                 num      : 1,
-                question : 'xxxx',
-                options  : ['xxxx',
-                            'xxxx',
-                            'xxxx'],
-                answer   : "xxxx"
+                question : 'How long have Alice and the narrator been friends?',
+                options  : ['Since high school',
+                            'Since kindergarten',
+                            'Since college'],
+                answer   : "Since kindergarten"
+            },
+            {
+                num      : 2,
+                question : "What do Alice and the narrator have in common?",
+                options  : ["They both enjoy cooking.",
+                            "They both enjoy mystery novels.",
+                            "They both like to travel."],
+                answer   : "They both enjoy mystery novels."
+            },
+            {
+                num      : 3,
+                question : "What is one thing the narrator values the most about their friendship with Alice?",
+                options  : ["Their shared interest in sports.",
+                            "Alice's great sense of humor.",
+                            "Their love for shopping."],
+                answer   : "Alice's great sense of humor."
+            },
+            {
+                num      : 4,
+                question : "How does Alice support the narrator when they have a problem?",
+                options  : ["She ignores them.",
+                            "She listens and offers advice.",
+                            "She criticizes them."],
+                answer   : "She listens and offers advice."
+            },
+            {
+                num      : 5,
+                question : "What is the main topic of the reading?",
+                options  : ["A trip to a foreign country.",
+                            "The narrator's family.",
+                            "My best friend Alice."],
+                answer   : "My best friend Alice."
+            },
+            {
+                num      : 6,
+                question : "What do the narrator and Alice often do together?",
+                options  : ["Play video games.",
+                            "Go to the Gym.",
+                            "Discuss books and watch movies."],
+                answer   : "Discuss books and watch movies."
             },
         ],
         lectura3:[
             {
                 num      : 1,
-                question : 'xxxx',
-                options  : ['xxxx',
-                            'xxxx',
-                            'xxxx'],
-                answer   : "xxxx"
+                question : "How would you describe someone who is not very tall?",
+                options  : ["Short",
+                            "Tall",
+                            "Average height"],
+                answer   : "Short"
+            },
+            {
+                num      : 2,
+                question : "What do you call someone with a thin body type?",
+                options  : ["Overweight",
+                            "Slim",
+                            "Athletic"],
+                answer   : "Slim"
+            },
+            {
+                num      : 3,
+                question : "Which phrase describes hair that is neither long nor short?",
+                options  : ["Long",
+                            "Short",
+                            "Average length"],
+                answer   : "Average length"
+            },
+            {
+                num      : 4,
+                question : "What is a common way to describe someone's eye color?",
+                options  : ["Brown",
+                            "Tall",
+                            "Overweight"],
+                answer   : "Brown"
+            },
+            {
+                num      : 5,
+                question : "What should you mention if someone is wearing glasses?",
+                options  : ["Their favorite color",
+                            "Their height",
+                            "Their eyewear"],
+                answer   : "Their eyewear"
+            },
+            {
+                num      : 6,
+                question : "What might you mention if someone has a tattoo on their arm?",
+                options  : ["Their favorite book",
+                            "Their favorite food",
+                            "Their tattoo"],
+                answer   : "Their tattoo"
             },
         ]
     }

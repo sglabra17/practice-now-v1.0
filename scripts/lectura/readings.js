@@ -16,13 +16,36 @@ const strB1 =
 " desired destinations conveniently.</p>";
 
 const strB2 = 
-"<p>Hola"
+"<p>Alice is my best friend. We met when we were in kindergarten, and we have been inseparable ever since. Alice is a kind"+
+" and caring person, and I am lucky to have her as my friend.</p>"+
+"<p>First of all, Alice is always there for me. Whenever I have a problem or need someone to talk to, she is the first person"+
+" I turn to. She listens to me and offers me advice, and I do the same for her. We support each other no matter what.</p>"+
+"<p>Additionally, Alice and I share a lot of interests. We both love to read books, specially mystery novels. We often spend"+
+" hours discussing our favorite books and recommending new ones to each other. We also enjoy going to the movies and trying out"+
+" new restaurants together.</p>"+
+"<p id='lastP'>Furthermore, Alice has a great sense of humor. She can always make me laugh, even when I'm feeling down. We often joke around"+
+" and have inside jokes that only we understand. Our laughter is one of the things I cherish most about our friendship. In conclusion,"+
+" Alice is not just my best friend; she is like a sister to me. Our friendship is built on trust, shared interests, and a lot of laughter."+
+" I am grateful to have her in my life.</p>";
+
+const strB3 = 
+"<p>When we meet someone new, it's common to describe their physical appearance. Let's talk about some common words and phrases we can use to"+
+" describe how people look.</p>"+
+"<p>Firstly, when describing someone's height, you can say they are tall, short, or average height. For example, \"Sarah is quite tall, while"+
+" Mark is rather short.\"</p>"+
+"<p>Secondly, you can describe a person's build. You might say someone is slim, overweight, or has an athletic build. For instance, \"Emma is"+
+" slim, but David has an athletic build.\"</p>"+
+"<p>Thirdly, you can talk about hair color and style. People can have blonde, brown, black, or red hair. They migth wear it long, short, or in"+
+" a ponytail. For instance, \"Linda has long, brown hair, and John keeps his hair short.\"</p>"+
+"<p>Fourthly, you can describe a person's facial features. You can talk about their eyes, nose, and mouth. You might say, \"Emily has blue eyes,"+
+" a small nose, and a beautiful smile.\"</p>"+
+"<p>Fifthly, clothing can also be part of a person's physical description. Someone might be wearing glasses or have a distinctive style. You could"+
+" say, \"Daniel wears glasses, and he always dresses casually.\"</p>"+
+"<p>Finally, don't forget to mention any special characteristics like tattoos, scars, or piercings if they are visible. You could say, \"Tom has a"+
+" tattoo on his arm, and Sarah has a small scar on her cheek.\"</p>";
 
 
 
-
-
-const strB3 = "Hola";
 
 
 
@@ -95,12 +118,12 @@ const readingsObj = {
         },
         {
             rdngId  : 2,
-            title   : 'Lectura 2',
+            title   : 'My Best Friend Alice',
             inrHtml : strB2,
         },
         {
             rdngId  : 3,
-            title   : 'Lectura 3',
+            title   : 'Physical Description',
             inrHtml : strB3,
         },
     ],
