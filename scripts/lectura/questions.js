@@ -50,6 +50,26 @@ const qnsObj = {
                 answer   : "Public transport and its advantages."
             },
         ],
+        lectura2:[
+            {
+                num      : 1,
+                question : 'xxxx',
+                options  : ['xxxx',
+                            'xxxx',
+                            'xxxx'],
+                answer   : "xxxx"
+            },
+        ],
+        lectura3:[
+            {
+                num      : 1,
+                question : 'xxxx',
+                options  : ['xxxx',
+                            'xxxx',
+                            'xxxx'],
+                answer   : "xxxx"
+            },
+        ]
     }
     
 

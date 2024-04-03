@@ -15,6 +15,8 @@ const strB1 =
 "<p id='lastP'>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
 " desired destinations conveniently.</p>";
 
+const strB2 = "Hola";
+const strB3 = "Hola";
 
 
 
@@ -88,15 +90,17 @@ const readingsObj = {
         {
             rdngId  : 2,
             title   : 'Lectura 2',
-            inrHtml : strB1,
+            inrHtml : strB2,
         },
         {
             rdngId  : 3,
             title   : 'Lectura 3',
-            inrHtml : strB1,
+            inrHtml : strB3,
         },
     ],
           
+
+
     intermedio : [
         {
             title   : 'Adoption: Building Families through Love',
