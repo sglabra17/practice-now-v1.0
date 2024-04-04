@@ -79,6 +79,48 @@ const strI1 =
 " provides loving parents the opportunity to fulfill their dreams of parenthood, and fosters a sense of unity and support within society.</p>";
 
 
+const strI2 =
+"<p>Sarah has always been an independent thinker. She values her own judgement and doesn't easily rely on others for advice. So, when a close"+
+" friend, Mark, finds himself in a tough situation and seeks her counsel, it sparks a dilemma for Sarah.</p>"+
+"<p>First of all, Sarah's approach to giving advice is methodical. She carefully evaluates the situation, considers the pros and cons, and provides"+
+" thoughtful suggestions. This is one of the reasons her friends often turn to her for guidance.</p>"+
+"<p>On the other hand, Mark is facing a personal and emotional problem, which makes the situation more complex. It raises the question: Will Sarah's"+
+" rational and logical advice align with Mark's emotional needs?</p>"+
+"<p>To begin with, Sarah's initial response is to offer Mark practical solutions and logical steps to address his issue. She emphasizes the importance"+
+" of clear communication and setting achievable goals.</p>"+
+"<p>However, Mark seems to be seeking not only advice but also emotional support. He's dealing with a breakup, and his primary need is to cope with the"+
+" emotional pain. This brings up another dilemma: Should Sarah prioritize logical solutions over emotional support?</p>"+
+"<p>Furthermore, Sarah is aware that her friend values her rational thinking, so she fears that offering emotional support might be seen as a deviation"+
+" from her usual advice-giving style.</p>"+
+"<p>In contrast, Sarah knows that true friendship often involves adapting to the emotional needs of the moment, which can sometimes mean being empathetic"+
+" and proving emotional support.</p>"+
+"<p id='lastP'>In conclusion, Sarah is at a crossroads. Will she stick to her methodical advice-giving style, or will she adapt to meet Mark's emotional needs in this"+
+" challenging time?</p>"; 
+
+
+const strI3 =
+"<p>Pets have been cherished companions to humans for centuries, offering love, loyalty, and often, alot of joy. The question of whether you would like to have"+
+" a pet is a personal one, but it's a decision that carries various implications and considerations. In this reading, we'll explore the factors to ponder when"+
+" deciding whether to bring a pet into your life.</p>"+
+"<p>Firstly, pets such as dogs, cats, or birds, can provide companionship. They are known for their loyalty and unconditional love, which can help alleviate"+
+" loneliness. The mere presence of a pet can brighten your day and create a sense of security.</p>"+
+"<p>On the other hand, owning a pet comes with responsibilities. You need to feed, groom, and provide proper healthcare for your furry of feathered friend."+
+" Additionally, you must make time for exercise, play, and training, which are essential for a pet's well-being.</p>"+
+"<p>Secondly, pets can be great stress relievers. Spending time with a pet can reduce anxiety and lower blood pressure. They can help you relax, provide comfort"+
+" in difficult times, and even encourage outdoor activities, benefiting both physical and mental health.</p>"+
+"<p>However, it's important to remember that some pets require more attention and effort than others. For instance, dogs often need daily walks and social"+
+" interaction, which may not be suitable for those with busy lifestyles.</p>"+
+"<p>Moreover, pets are known to be excellent teachers of responsibility, especially for children. Taking care of a pet can instill a sense of accountability"+
+" and empathy, teaching young minds about compassion and the importance of routine.</p>"+
+"<p>Conversely, not everyone is ready for the responsibilities that come with pet ownership. Pets can be costly, and their needs can change as they age. Some"+
+" people may prefer the freedom to travel or move without the constraints of caring for a pet.<p>"+
+"<p id='lastP'>In conclusion, whether or not you'd like to have a pet depends on your lifestyle, personal preferences, and circumstances. It's crucial to weigh the benefits"+
+" of companionship and stress relief against the responsibilities and costs associated with pet ownership.</p>";
+
+
+
+
+
 
 
 // Avanzado
@@ -128,15 +170,26 @@ const readingsObj = {
         },
     ],
           
-
-
     intermedio : [
         {
+            rdngId  : 1,
             title   : 'Adoption: Building Families through Love',
             inrHtml : strI1,
         },
+        {
+            rdngId  : 2,
+            title   : 'Will Sarah Take My Advice?',
+            inrHtml : strI2,
+        },
+        {
+            rdngId  : 3,
+            title   : 'Would You Like to Have a Pet?',
+            inrHtml : strI3, 
+        },
     ],
     
+
+
     avanzado : [
         {
             title   : 'Animal Emotions',

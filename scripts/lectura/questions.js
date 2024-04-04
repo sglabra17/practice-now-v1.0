@@ -150,107 +150,258 @@ const qnsObj = {
                 answer   : "Their tattoo"
             },
         ]
-    }
+    },
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // intermedio: [
-    //     {
-    //         num      : 1,
-    //         question : 'What is adoption?',
-    //         options  : ['A process where children become biologically related to their new parents.',
-    //                     'A legal process where individuals or couples become the parents of a child not biologically theirs.',
-    //                     'A process of giving up parental rights.'],
-    //         answer   : "A legal process where individuals or couples become the parents of a child not biologically theirs."
-    //     },
-    //     {
-    //         num      : 2,
-    //         question : 'What type of adoption involves ongoing contact between adoptive and birth parents?',
-    //         options  : ['Open adoption',
-    //                     'Closed adoption',
-    //                     'International adoption'],
-    //         answer   : "Open adoption"
-    //     },
-    //     {
-    //         num      : 3,
-    //         question : 'What is a challenge some adopted children may face?',
-    //         options  : ['Difficulty in school',
-    //                     'Identity issues or a desire to find their birth parents',
-    //                     'Financial problems'],
-    //         answer   : "Identity issues or a desire to find their birth parents"
-    //     },
-    //     {
-    //         num      : 4,
-    //         question : 'What is the primary benefit of adoption for adoptive parents?',
-    //         options  : ['Financial support',
-    //                     'Joy of parenthood and satisfaction of providing a loving home',
-    //                     'Recognition in the community'],
-    //         answer   : "Joy of parenthood and satisfaction of providing a loving home"
-    //     },
-    //     {
-    //         num      : 5,
-    //         question : 'What can be emotionally challenging about the adoption process?',
-    //         options  : ['The cost of adoption',
-    //                     'Wating for the right match and navigating legal procedures',
-    //                     'Finding a suitable adoption agency'],
-    //         answer   : "Wating for the right match and navigating legal procedures"
-    //     },
-    //     {
-    //         num      : 6,
-    //         question : 'What is the significance of background checks and home studies in the adoption process?',
-    //         options  : ["They determine the child's elegibility for adoption.",
-    //                     'They ensure prospective adoptive parents can provide a safe and supportive environment for a child.',
-    //                     'They speed up the adoption process.'],
-    //         answer   : "They ensure prospective adoptive parents can provide a safe and supportive environment for a child."
-    //     },
-    //     {
-    //         num      : 7,
-    //         question : 'How does international adoption differ from other types of adoption?',
-    //         options  : ["It involves adopting a child from a different country.",
-    //                     'It is only available to celebrities.',
-    //                     "It excludes contact with the child's birth parents."],
-    //         answer   : "It involves adopting a child from a different country."
-    //     },
-    //     {
-    //         num      : 8,
-    //         question : 'Why is adoption considered a mutually beneficial arrangement?',
-    //         options  : ["Because it doesn't require any effort from adoptive parents.",
-    //                     'Because it provides a loving home for children and fulfills the dreams of prospective parents.',
-    //                     "Because it's a way for children to make money."],
-    //         answer   : "Because it provides a loving home for children and fulfills the dreams of prospective parents."
-    //     },
-    //     {
-    //         num      : 9,
-    //         question : 'What is one potential challenge mentioned for adoptive parents?',
-    //         options  : ["Difficulty in bonding with the adopted child.",
-    //                     "The stress of the legal process.",
-    //                     "The lack of support from the adoption agency."],
-    //         answer   : "The stress of the legal process."
-    //     },
-    //     {
-    //         num      : 10,
-    //         question : "What is the primary aim of adoption, as stated in the text?",
-    //         options  : ["To find children a loving family.",
-    //                     "To create biologically related families.",
-    //                     "To separate children from their birth parents."],
-    //         answer   : "To find children a loving family."
-    //     },
-    // ],
+    intermedio: {
+        lectura1:[
+            {
+                num      : 1,
+                question : 'What is adoption?',
+                options  : ['A process where children become biologically related to their new parents.',
+                            'A legal process where individuals or couples become the parents of a child not biologically theirs.',
+                            'A process of giving up parental rights.'],
+                answer   : "A legal process where individuals or couples become the parents of a child not biologically theirs."
+            },
+            {
+                num      : 2,
+                question : 'What type of adoption involves ongoing contact between adoptive and birth parents?',
+                options  : ['Open adoption',
+                            'Closed adoption',
+                            'International adoption'],
+                answer   : "Open adoption"
+            },
+            {
+                num      : 3,
+                question : 'What is a challenge some adopted children may face?',
+                options  : ['Difficulty in school',
+                            'Identity issues or a desire to find their birth parents',
+                            'Financial problems'],
+                answer   : "Identity issues or a desire to find their birth parents"
+            },
+            {
+                num      : 4,
+                question : 'What is the primary benefit of adoption for adoptive parents?',
+                options  : ['Financial support',
+                            'Joy of parenthood and satisfaction of providing a loving home',
+                            'Recognition in the community'],
+                answer   : "Joy of parenthood and satisfaction of providing a loving home"
+            },
+            {
+                num      : 5,
+                question : 'What can be emotionally challenging about the adoption process?',
+                options  : ['The cost of adoption',
+                            'Wating for the right match and navigating legal procedures',
+                            'Finding a suitable adoption agency'],
+                answer   : "Wating for the right match and navigating legal procedures"
+            },
+            {
+                num      : 6,
+                question : 'What is the significance of background checks and home studies in the adoption process?',
+                options  : ["They determine the child's elegibility for adoption.",
+                            'They ensure prospective adoptive parents can provide a safe and supportive environment for a child.',
+                            'They speed up the adoption process.'],
+                answer   : "They ensure prospective adoptive parents can provide a safe and supportive environment for a child."
+            },
+            {
+                num      : 7,
+                question : 'How does international adoption differ from other types of adoption?',
+                options  : ["It involves adopting a child from a different country.",
+                            'It is only available to celebrities.',
+                            "It excludes contact with the child's birth parents."],
+                answer   : "It involves adopting a child from a different country."
+            },
+            {
+                num      : 8,
+                question : 'Why is adoption considered a mutually beneficial arrangement?',
+                options  : ["Because it doesn't require any effort from adoptive parents.",
+                            'Because it provides a loving home for children and fulfills the dreams of prospective parents.',
+                            "Because it's a way for children to make money."],
+                answer   : "Because it provides a loving home for children and fulfills the dreams of prospective parents."
+            },
+            {
+                num      : 9,
+                question : 'What is one potential challenge mentioned for adoptive parents?',
+                options  : ["Difficulty in bonding with the adopted child.",
+                            "The stress of the legal process.",
+                            "The lack of support from the adoption agency."],
+                answer   : "The stress of the legal process."
+            },
+            {
+                num      : 10,
+                question : "What is the primary aim of adoption, as stated in the text?",
+                options  : ["To find children a loving family.",
+                            "To create biologically related families.",
+                            "To separate children from their birth parents."],
+                answer   : "To find children a loving family."
+            },
+        ],
+        lectura2:[
+            {
+                num      : 1,
+                question : "How does Sarah approach giving advice?",
+                options  : ["She offers advice without careful evaluation.",
+                            "She evaluates situations methodically and offers thoughtful suggestions.",
+                            "She gives emotional support without offering practical solutions."],
+                answer   : "She evaluates situations methodically and offers thoughtful suggestions."
+            },
+            {
+                num      : 2,
+                question : "What makes Mark's situation complex for Sarah to advise on?",
+                options  : ["Mark's problem is simple and straightforward.",
+                            "Mark's issue is emotional, which might not align with Sarah's logical advice style.",
+                            "Sarah is not friends with Mark."],
+                answer   : "Mark's issue is emotional, which might not align with Sarah's logical advice style."
+            },
+            {
+                num      : 3,
+                question : "What is Mark primarily seeking from Sarah?",
+                options  : ["Practical solutions to this problem.",
+                            "Emotional support to cope with a breakup.",
+                            "Financial assistance."],
+                answer   : "Emotional support to cope with a breakup."
+            },
+            {
+                num      : 4,
+                question : "Why is Sarah hesistant about providing emotional support to Mark?",
+                options  : ["She doesn't care about her friend's emotional needs.",
+                            "She fears it might deviate from her usual advice-giving style.",
+                            "She believes emotional support is more important than logical solutions."],
+                answer   : "She fears it might deviate from her usual advice-giving style."
+            },
+            {
+                num      : 5,
+                question : "What is the key dilemma Sarah faces in this situation?",
+                options  : ["Whether or not to distance herself from Mark.",
+                            "Whether to prioritize logical solutions or emotional support for her friend.",
+                            "Whether to avoid giving any advice to Mark."],
+                answer   : "Whether to prioritize logical solutions or emotional support for her friend."
+            },
+            {
+                num      : 6,
+                question : "What kind of thinker is Sarah when it comes to giving advice?",
+                options  : ["Impulsive and unthoughtful",
+                            "Methodical and thoughtful",
+                            "Emotional and unpredictable"],
+                answer   : "Methodical and thoughtful"
+            },
+            {
+                num      : 7,
+                question : "What is Mark's primary emotional challenge in the reading?",
+                options  : ["Coping with a medical emergency",
+                            "Dealing with a breakup",
+                            "Finding a new job"],
+                answer   : "Dealing with a breakup"
+            },
+            {
+                num      : 8,
+                question : "Why does Sarah's approach to advising Mark raise a dilemma?",
+                options  : ["Mark doesn't want advice.",
+                            "Mark's situation is too simple.",
+                            "The emotional nature of Mark's problem may clash wit Sarah's usual advice style."],
+                answer   : "The emotional nature of Mark's problem may clash wit Sarah's usual advice style."
+            },
+            {
+                num      : 9,
+                question : "What does Sarah worry about when it comes to providing emotional support?",
+                options  : ["That Mark won't appreciate it.",
+                            "That it might deviate from her typical advice style.",
+                            "That emotional support is never necessary."],
+                answer   : "That it might deviate from her typical advice style."
+            },
+            {
+                num      : 10,
+                question : "What are two key aspects Sarah considers when deciding how to advise Mark?",
+                options  : ["Emotional pain and physical therapy.",
+                            "Rational thinking and adapting to emotional needs.",
+                            "Financial assistance and practical solutions."],
+                answer   : "Rational thinking and adapting to emotional needs."
+            },
+        ],
+        lectura3:[
+            {
+                num      : 1,
+                question : "What is one benefit of having a pet?",
+                options  : ["They require no effort.",
+                            "They can reduce stress.",
+                            "They make you lonely."],
+                answer   : "They can reduce stress."
+            },
+            {
+                num      : 2,
+                question : "What is a drawback of owning a pet?",
+                options  : ["They never require healthcare.",
+                            "They can be expensive and time-consuming.",
+                            "They are excellent teachers."],
+                answer   : "They can be expensive and time-consuming."
+            },
+            {
+                num      : 3,
+                question : "How can pets teach responsibility?",
+                options  : ["By being self-sufficent.",
+                            "By instilling a sense of accountability.",
+                            "By demanding constant care."],
+                answer   : "By instilling a sense of accountability."
+            },
+            {
+                num      : 4,
+                question : "Which factor can affect the decision to have a pet?",
+                options  : ["Personal preferences and circumstances.",
+                            "The popularity of the pet.",
+                            "The pet's age."],
+                answer   : "Personal preferences and circumstances."
+            },
+            {
+                num      : 5,
+                question : "What is a significant role that pets play in human lives?",
+                options  : ["They are known for their selfishness.",
+                            "They offer companionship and loyalty.",
+                            "They make people anxious."],
+                answer   : "They offer companionship and loyalty."
+            },
+            {
+                num      : 6,
+                question : "What is the main drawback of owning a pet mentioned in the reading?",
+                options  : ["They require minimal effort.",
+                            "They are excellent stress relievers.",
+                            "They come with responsibilities."],
+                answer   : "They come with responsibilities."
+            },
+            {
+                num      : 7,
+                question : "What can some pets help reduce?",
+                options  : ["Blood pressure.",
+                            "Responsibility.",
+                            "Loneliness."],
+                answer   : "Blood pressure."
+            },
+            {
+                num      : 8,
+                question : "What can owning a pet instill in children?",
+                options  : ["A sense of boredom.",
+                            "A sense of accountability and empathy.",
+                            "A desire to travel frequently."],
+                answer   : "A sense of accountability and empathy."
+            },
+            {
+                num      : 9,
+                question : "Why might some people prefer not to have pets?",
+                options  : ["Because pets are never costly.",
+                            "Because they prefer routine.",
+                            "Because they want more freedom to travel."],
+                answer   : "Because they want more freedom to travel."
+            },
+            {
+                num      : 10,
+                question : "What should you consider when deciding to have a pet?",
+                options  : ["The pet's popularity.",
+                            "Your lifestyle, personal preferences, and circumstances.",
+                            "The pet's size."],
+                answer   : "Your lifestyle, personal preferences, and circumstances."
+            },
+        ]
+    },
 
 
     // avanzado : [
