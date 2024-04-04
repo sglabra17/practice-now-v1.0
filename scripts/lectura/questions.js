@@ -404,54 +404,240 @@ const qnsObj = {
     },
 
 
-    // avanzado : [
-    //     {
-    //         num      : 1,
-    //         question : "What is the main focus of the reading?",
-    //         options  : ["The intelligence of elephants.",
-    //                     "The emotional lives of animals.",
-    //                     "The social complexity of primates."],
-    //         answer   : "The emotional lives of animals."
-    //     },
-    //     {
-    //         num      : 2,
-    //         question : "According to the text, which animal exhibits mourning rituals similar to humans?",
-    //         options  : ["Dogs.",
-    //                     "Elephants.",
-    //                     "Birds."],
-    //         answer   : "Elephants."
-    //     },
-    //     {
-    //         num      : 3,
-    //         question : "How do scientists study the emotional lives of primates, according to the reading?",
-    //         options  : ["By analyzing their fur patterns.",
-    //                     "By studying their sleep patterns.",
-    //                     "By observing facial expressions and vocalizations."],
-    //         answer   : "By observing facial expressions and vocalizations."
-    //     },
-    //     {
-    //         num      : 4,
-    //         question : "What surprising revelation does the text make about birds and fish?",
-    //         options  : ["They lack emotional complexity.",
-    //                     "They exhibit emotional behaviors.",
-    //                     "They are indifferent to social bonds."],
-    //         answer   : "They exhibit emotional behaviors."
-    //     },
-    //     {
-    //         num      : 5,
-    //         question : "Which domesticated animals are specifically mentioned for their emotional intelligence?",
-    //         options  : ["Cats and dogs.",
-    //                     "Birds and fish.",
-    //                     "Elephants and primates."],
-    //         answer   : "Cats and dogs."
-    //     },
-    //     {
-    //         num      : 6,
-    //         question : "What is the primary argument of those who criticize the attribution of human-like emotions to animals?",
-    //         options  : ["Animals lack any form of emotion.",
-    //                     "It is an anthropomorphic interpretation.",
-    //                     "Human emotions are identical to animal emotions."],
-    //         answer   : "It is an anthropomorphic interpretation."
-    //     },
-    // ]
+    avanzado : {
+        lectura1:[
+            {
+                num      : 1,
+                question : "What is the main focus of the reading?",
+                options  : ["The intelligence of elephants.",
+                            "The emotional lives of animals.",
+                            "The social complexity of primates."],
+                answer   : "The emotional lives of animals."
+            },
+            {
+                num      : 2,
+                question : "According to the text, which animal exhibits mourning rituals similar to humans?",
+                options  : ["Dogs.",
+                            "Elephants.",
+                            "Birds."],
+                answer   : "Elephants."
+            },
+            {
+                num      : 3,
+                question : "How do scientists study the emotional lives of primates, according to the reading?",
+                options  : ["By analyzing their fur patterns.",
+                            "By studying their sleep patterns.",
+                            "By observing facial expressions and vocalizations."],
+                answer   : "By observing facial expressions and vocalizations."
+            },
+            {
+                num      : 4,
+                question : "What surprising revelation does the text make about birds and fish?",
+                options  : ["They lack emotional complexity.",
+                            "They exhibit emotional behaviors.",
+                            "They are indifferent to social bonds."],
+                answer   : "They exhibit emotional behaviors."
+            },
+            {
+                num      : 5,
+                question : "Which domesticated animals are specifically mentioned for their emotional intelligence?",
+                options  : ["Cats and dogs.",
+                            "Birds and fish.",
+                            "Elephants and primates."],
+                answer   : "Cats and dogs."
+            },
+            {
+                num      : 6,
+                question : "What is the primary argument of those who criticize the attribution of human-like emotions to animals?",
+                options  : ["Animals lack any form of emotion.",
+                            "It is an anthropomorphic interpretation.",
+                            "Human emotions are identical to animal emotions."],
+                answer   : "It is an anthropomorphic interpretation."
+            },
+        ],
+        lectura2:[
+            {
+                num      : 1,
+                question : "What has been a significant factor in Spain's economic recovery according to the reading?",
+                options  : ["Strict labor regulations",
+                            "Technological stagnation",
+                            "Comprehensive economic reforms",
+                            "Reduced competitiveness"],
+                answer   : "Comprehensive economic reforms"
+            },
+            {
+                num      : 2,
+                question : "Which industry has exhibited remarkable resilience, contributing to job market recovery?",
+                options  : ["Agriculture",
+                            "Tourism",
+                            "Mining",
+                            "Textiles"],
+                answer   : "Tourism"
+            },
+            {
+                num      : 3,
+                question : "How has the digital revolution impacted Spain's job market?",
+                options  : ["It led to a decline in job opportunities",
+                            "It only affected the technology sector",
+                            "It transformed traditional industries and created new opportunities",
+                            "It had no impact on the job market"],
+                answer   : "It transformed traditional industries and created new opportunities"
+            },
+            {
+                num      : 4,
+                question : "What is mentioned as a challenge to Spain's job market recovery in the reading?",
+                options  : ["Increased exports",
+                            "Youth unemployment",
+                            "Global economic growth",
+                            "Regional collaborations"],
+                answer   : "Youth unemployment"
+            },
+            {
+                num      : 5,
+                question : "What is emphasized as imperative for Spain's sustained growth and prosperity?",
+                options  : ["Strict adherence to existing labor laws",
+                            "Ignoring global economic dynamics",
+                            "Addressing remaining challenges and staying attuned to global economic trends",
+                            "Isolating the economy from international trade"],
+                answer   : "Addressing remaining challenges and staying attuned to global economic trends"
+            },
+            {
+                num      : 6,
+                question : "Which aspect of Spain's job market does the reading highlight as being positively influenced by adaptability?",
+                options  : ["Labor market regulations",
+                            "Technological advancements",
+                            "Regional disparities",
+                            "Geopolitical uncertainties"],
+                answer   : "Labor market regulations"
+            },
+            {
+                num      : 7,
+                question : "What role does the tourism sector play in Spain's job market recovery?",
+                options  : ["It has no impact on job creation",
+                            "It negatively affects other industries",
+                            "It leads to a decline in hospitality jobs",
+                            "It contributes significantly to job creation"],
+                answer   : "It contributes significantly to job creation"
+            },
+            {
+                num      : 8,
+                question : "How does the digital economy impact traditional sectors beyond technology?",
+                options  : ["It has no impact on traditional sectors",
+                            "It leads to the decline of traditional industries",
+                            "It creates job opportunities in complementary sectors",
+                            "It isolates traditional sectors from the job market"],
+                answer   : "It creates job opportunities in complementary sectors"
+            },
+            {
+                num      : 9,
+                question : "What is identified as a potential risk to Spain's economic gains in the reading?",
+                options  : ["Regional collaborations",
+                            "Increased exports",
+                            "Geopolitical uncertainties",
+                            "Youth unemployment"],
+                answer   : "Geopolitical uncertainties"
+            },
+            {
+                num      : 10,
+                question : "What is the main message of the reading regarding Spain's economic journey?",
+                options  : ["Spain's economic growth is isolated from global trends",
+                            "Comprehensive economic reforms have hindered job creation",
+                            "Resilience in key sectors and global adaptability contribute to job market revival",
+                            "Spain's job market recovery is solely dependent on regional factors"],
+                answer   : "Resilience in key sectors and global adaptability contribute to job market revival"
+            },
+        ],
+        lectura3:[
+            {
+                num      : 1,
+                question : "What is the primary focus of the passage?",
+                options  : ["The challenges of implementing AI in healthcare",
+                            "The intersection of AI and healthcare advancements",
+                            "The limitations of machine learning algorithms"],
+                answer   : "The intersection of AI and healthcare advancements"
+            },
+            {
+                num      : 2,
+                question : "In which area has AI made significant strides according to the passage?",
+                options  : ["Dietary planning",
+                            "Diagnostic accuracy",
+                            "Fitness monitoring"],
+                answer   : "Diagnostic accuracy"
+            },
+            {
+                num      : 3,
+                question : "What is one benefit of using AI in diagnostic processes mentioned in the passage?",
+                options  : ["Delaying the diagnostic process",
+                            "Reducing the precision of medical images",
+                            "Expediting the diagnostic process"],
+                answer   : "Expediting the diagnostic process"
+            },
+            {
+                num      : 4,
+                question : "How does AI contribute to preventive care, as per the passage?",
+                options  : ["By ignoring patient data",
+                            "Through reactive interventions",
+                            "By identifying high-risk individuals"],
+                answer   : "By identifying high-risk individuals"
+            },
+            {
+                num      : 5,
+                question : "What does the passage suggest about the impact of AI on healthcare costs?",
+                options  : ["It has no impact",
+                            "It may increase costs",
+                            "It has the potential to reduce costs"],
+                answer   : "It has the potential to reduce costs"
+            },
+            {
+                num      : 6,
+                question : "What is precision medicine, as mentioned in the passage?",
+                options  : ["A type of surgery",
+                            "Tailoring therapies based on individual characteristics",
+                            "A new diagnostic tool"],
+                answer   : "Tailoring therapies based on individual characteristics"
+            },
+            {
+                num      : 7,
+                question : "What are some challenges mentioned in the passage regarding AI in healthcare?",
+                options  : ["The need for faster diagnostics",
+                            "Data privacy, algorithmic bias, and regulatory considerations",
+                            "Lack of technological advancements"],
+                answer   : "Data privacy, algorithmic bias, and regulatory considerations"
+            },
+            {
+                num      : 8,
+                question : "Why is proactive care considered advantageous, according to the passage?",
+                options  : ["It is less effective than reactive care",
+                            "It reduces healthcare costs",
+                            "It leads to delayed interventions"],
+                answer   : "It reduces healthcare costs"
+            },
+            {
+                num      : 9,
+                question : "What, according to the passage, is crucial for responsible use of AI in healthcare?",
+                options  : ["Ignoring ethical considerations",
+                            "Rapid deployment of AI technologies",
+                            "Striking a balance between innovation and ethical considerations"],
+                answer   : "Striking a balance between innovation and ethical considerations"
+            },
+            {
+                num      : 10,
+                question : "In conclusion, what is the overall impact of AI in healthcare, as per the passage?",
+                options  : ["Limited improvement in patient outcomes",
+                            "Unprecedented opportunities for improved diagnostics and personalized treatment",
+                            "No impact on the medical landscape"],
+                answer   : "Unprecedented opportunities for improved diagnostics and personalized treatment"
+            },
+        ]
+    }
+
+
+
+
+
+
+
+
+
+
 }
