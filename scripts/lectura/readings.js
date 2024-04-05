@@ -41,7 +41,7 @@ const strB3 =
 " a small nose, and a beautiful smile.\"</p>"+
 "<p>Fifthly, clothing can also be part of a person's physical description. Someone might be wearing glasses or have a distinctive style. You could"+
 " say, \"Daniel wears glasses, and he always dresses casually.\"</p>"+
-"<p>Finally, don't forget to mention any special characteristics like tattoos, scars, or piercings if they are visible. You could say, \"Tom has a"+
+"<p id='lastP'>Finally, don't forget to mention any special characteristics like tattoos, scars, or piercings if they are visible. You could say, \"Tom has a"+
 " tattoo on his arm, and Sarah has a small scar on her cheek.\"</p>";
 
 

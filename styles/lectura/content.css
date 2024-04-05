@@ -1,23 +1,16 @@
 /* Contains Form */
 .container-section{
-    /* background-color: #ccceda; */
     margin: 1em;
     margin-top: 4em;
-    /* padding: 1em 2em 2em 2em; */
     padding: 1em;
     border-radius: .5em;
-    font-size: 1.4rem;
+    font-size: 1.4rem;/* Tamaño de fuente - Cuestionarios */
     box-shadow: -1px 1px 3px 1px rgb(179, 176, 176);
-    color: #293DA3;
+    color: #293DA3;/* Color de Texto Principal - Normal*/
 }
 
-
-
-
-
-
+/* Reading Styles */
 .rding-subt{
-    /* background-color: aqua; */
     margin-bottom: .5em;
 }
 
@@ -27,51 +20,36 @@
     overflow: auto;
     white-space: nowrap;
     padding: 1em;
-    text-align: center;
     display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .reading-option{
     display: inline-block;
-    /* margin-top: 2em; */
     padding: .5em 1.5em;
-    background-color: #a2a2aa6f;
-    color: #67676f;
-    /* border: none; */
+    background-color: #a2a2aa6f;/* bgcolor : chip */
+    color: #67676f;/* txt color : chip */
+    border: none;
     border-radius: 2em;
-    /* font-size: inherit; */
     text-decoration: none;
     font-weight: 600;
-    border: none;
 }
 .reading-option:hover{
     cursor: pointer;
-    /* outline: .15em solid white; */
     box-shadow: 1px 1px 1px 1px rgb(111, 109, 109);
     transition: 200ms;
 }
 .rop-active{
-    background-color: #abb8f6;
-    color: #2444e1;
+    background-color: #abb8f6;/* bg color : active chip */
+    color: #2444e1;/* txt color : active chip */
     font-weight: 600;
 }
-.reading-option:active{
-    outline: .25em solid white;
-    /* transition: 200ms; */
-}
+.reading-option:active{outline: .25em solid white;}
 
+/* responsive chip margin */
 @media screen and (max-width: 400px){
-    .reading-option{
-        margin-left: 1em;
-    }
+    .reading-option{margin-left: 1em;}
 }
-
-
-
-
 
 
 /* Title of the Form */
@@ -80,13 +58,11 @@
     font-weight: 600;
 }
 
-.span-description{
-    font-weight: normal;
-}
+.span-description{font-weight: normal;}
 
-/* reading container */
+
+/* Reading Container */
 .reading-ctnr{
-    /* background-color: rgba(250, 103, 103, 0.502); */
     margin: 2em auto;
     text-align: left;
 }
@@ -94,7 +70,7 @@
 /* reading title */
 .reading-ctnr > p:first-child{
     margin-bottom: 1em;
-    font-size: 1.7rem;
+    font-size: 1.7rem;/* Tamaño de Fuente : Título Artículo/Lectura */
     font-weight: 600;
     text-align: center;
 }
@@ -112,10 +88,7 @@
 }
 
 /* each reading paragraph */
-.reading p{
-    margin-bottom: 1em;
-}
-
+.reading p{margin-bottom: 1em;}
 
 
 /**   
@@ -125,13 +98,16 @@
 **/
 
 /* Contains Question */
-.question-ctnr{padding-left: 1em;}
+.question-ctnr{
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
 
 /* Number of the Question */
 .question-num{
     padding-bottom: .25em;
     font-weight: bold;
-    color: #5567bf;
+    color: #5567bf;/* txt color : question number */
     word-spacing: .25em;
 }
 
@@ -147,18 +123,19 @@
 /* labels for radio btns - radio group */
 .answer-ctnr label{padding-left: .5em;}
 
+
+
 /* Button - Solve Form */
 .button-solve{
     display: inline-block;
-    margin-top: 2em;
+    margin-top: 1em;
     padding: .5em 1.5em;
     background-color: #5567bf;
     color: #e8eaf0;
-    /* border: none; */
     border-radius: 2em;
-    /* font-size: inherit; */
     text-decoration: none;
 }
+
 
 /* span for right/wrong answer retro text*/
 .span-resC{
@@ -183,12 +160,11 @@
 /* span for answer in <p> */
 .p-ansTxt{font-weight: 800;}
 
+
 /* correct answer : label */
 .labelCorrect{
     color: green;
     font-weight: 800;
 }
 
-.question-p{
-    font-weight: bold;
-}
+.question-p{font-weight: bold;}
