@@ -1,12 +1,12 @@
 // predefined headers
 const levelHeaders = {
-    'basico' : [' - Nivel Básico',
+    'basico'    : [' - Nivel Básico',
     'Empieza a practicar inglés con ejercicios de gramática de nivel básico.'],
 
     'intermedio': [' - Nivel Intermedio',
     'Ejercicios para aquellos que dominan los conceptos básicos del lenguaje.'],
 
-    'avanzado' :  [' - Nivel Avanzado',
+    'avanzado'  : [' - Nivel Avanzado',
     'Dirigido a usuarios avanzados, para los que quieren perfeccionar su inglés.']
 };
 
@@ -34,7 +34,7 @@ for (const question of questions) {
     qnsCtnr.append(qCtnr);
     
     // Create <p> with No. of Question
-    const qNumTag  = document.createElement('p');
+    const qNumTag     = document.createElement('p');
     qNumTag.classList.add('question-num');
     qNumTag.innerText = `${question['num']} de ${questions.length}`;
     qCtnr.append(qNumTag);
@@ -52,28 +52,31 @@ for (const question of questions) {
 
     // Create answers
     for (const op of question['options']) {
+        const indxOp = question['options'].indexOf(op);
+
         // create answer container
         const awrCtnr = document.createElement('div');
         awrCtnr.classList.add('answer-ctnr');
         ansCtnr.append(awrCtnr);
 
         // create radio button
-        const inRadio = document.createElement('input');
-        inRadio.type  = 'radio';
-        inRadio.setAttribute('id',`${op}${question['num']}`);
+        const inRadio   = document.createElement('input');
+        inRadio.type    = 'radio';
+        inRadio.id      = `${op}${question['num']}`;
         inRadio.name    = `answer${question['num']}`;
         inRadio.value   = op;
-        inRadio.checked = question['options'].indexOf(op) === 0 ? true : false;
+        inRadio.checked = indxOp === 0 ? true : false;
         awrCtnr.append(inRadio);
 
         // create label
         const radioLabel = document.createElement('label');
-        radioLabel.id = `lbl-${question['num']}-${op}`;
+        radioLabel.id    = `lbl-${question['num']}-${op}`;
         radioLabel.setAttribute('for',`${op}${question['num']}`);
         radioLabel.innerText = op;
         awrCtnr.append(radioLabel);
     }
 }
+
 
 // create solve button
 const btnSolve       = document.createElement('a');
@@ -98,11 +101,10 @@ btnSolve.addEventListener('click',()=>{
         const isCorrect    = radioCorrect.checked;
 
         // Replace Blank Space
-        // console.log(pTag.innerText);
         const [txt1,txt2] = pTag.innerText.split('___');       
         const finalAns    = `${txt1}<span class="p-ansTxt">${correct}</span>${txt2}`;
 
-        // Retro for Usr
+        // Feedback Text for Usr
         if(isCorrect){
             correctas++;
             pTag.innerHTML = `<span class="span-resC">Correcta</span>${finalAns}`;
@@ -110,14 +112,13 @@ btnSolve.addEventListener('click',()=>{
             pTag.innerHTML = `<span class="span-resI">Incorrecta</span>${finalAns}`;
         }
         
-        // uncheck radio btns, and <del> wrong asnwer
+        // disable radio btns, and <del> wrong asnwer
         for (const res of question['options']) {
             // disable radio buttons - asnwr options
             const rad    = document.querySelector(`#${res}${question['num']}`);
             rad.disabled = true;
             // <del> wrong answers
-            // const radio = document.querySelector(`#${res}${question['num']}`);
-            const lbl   = document.querySelector(`#lbl-${question['num']}-${res}`);
+            const lbl    = document.querySelector(`#lbl-${question['num']}-${res}`);
             if(!isCorrect){
                 lbl.innerHTML = rad.checked ? `<del>${res}</del>` : res;
             }
@@ -128,7 +129,6 @@ btnSolve.addEventListener('click',()=>{
     }
 
     // result text for user
-    // qnsHdr.innerHTML = `${qnsHdr.innerText}<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
     qnsHdr.innerHTML += `<span class="span-finalRes">${correctas} de ${questions.length}</span>`;
     
     // create retry button

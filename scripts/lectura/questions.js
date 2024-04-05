@@ -153,7 +153,6 @@ const qnsObj = {
     },
     
 
-
     intermedio: {
         lectura1:[
             {
@@ -630,14 +629,6 @@ const qnsObj = {
             },
         ]
     }
-
-
-
-
-
-
-
-
 
 
 }

@@ -9,7 +9,7 @@ const themes = [ opGram, opVoca, opLec, opPron ];
 // get url value
 let lvl = location.search.split("=")[1];
 
-// initialize URLs
+// initialize URLs with current level
 for (const theme of themes) {
     const href = theme.getAttribute('href');
     theme.setAttribute('href',href+`?lvl=${lvl}`);

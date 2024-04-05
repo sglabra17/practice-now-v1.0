@@ -1,10 +1,9 @@
 /* Contains Form */
 .container-section{
     margin: 1em;
-    margin-top: 2em;
-    padding: 1em 2em 2em 2em;
+    padding: 2em;
     color: #293DA3;
-    font-size: 1.4rem;
+    font-size: 1.4rem;/* Tamaño de fuente - Cuestionarios*/
     border-radius: .5em;
     box-shadow: -1px 1px 3px 1px rgb(155, 153, 153);
 }
@@ -12,7 +11,7 @@
 /* Title of the Form */
 .formHeader{
     margin-bottom: 1em;
-    font-size: 1.7rem;
+    font-size: 1.7rem;/* Tamaño de fuente - Header:Cuestionarios*/
     font-weight: 600;
 }
 
@@ -23,7 +22,7 @@
 .question-num{
     padding-bottom: .25em;
     font-weight: bold;
-    color: #5567bf;
+    color: #5567bf;/*Color - Número de Pregunta*/
     word-spacing: .25em;
 }
 
@@ -44,15 +43,13 @@
     display: inline-block;
     margin-top: 2em;
     padding: .5em 1.5em;
-    background-color: #5567bf;
-    color: #e8eaf0;
-    /* border: none; */
+    background-color: #5567bf;/* Color Botón */
+    color: #e8eaf0;/* Color - Texto Botón */
     border-radius: 2em;
-    /* font-size: inherit; */
     text-decoration: none;
 }
 
-/* span for right/wrong answer retro text*/
+/* span for right/wrong answer - feedback text*/
 .span-resC{
     color: green;
     padding-right: 1em;
@@ -65,14 +62,14 @@
     font-weight: 600;
 }
 
-/* span for final result */
+/* span for final result - feedback text */
 .span-finalRes{
     padding-left: 1em;
     font-weight: 500;
     word-spacing: 0.25rem;
 }
 
-/* span for answer in <p> */
+/* span for answer in <p> - grammar*/
 .p-ansTxt{font-weight: 800;}
 
 /* correct answer : label */

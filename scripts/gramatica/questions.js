@@ -1,3 +1,4 @@
+
 const qnsObj = {
     basico: [
         {
@@ -175,5 +176,3 @@ const qnsObj = {
     ]
 
 }
-
-// export { qnsObj };

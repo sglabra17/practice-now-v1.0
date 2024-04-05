@@ -1,7 +1,7 @@
-const mainTag = document.getElementsByTagName('main');
+const mainTag = document.querySelector('main');
 const topNav  = document.querySelector('#myTopnav');
 
-mainTag[0].addEventListener('click',()=>{
+mainTag.addEventListener('click',()=>{
     if(topNav.className === 'topnav responsive'){
         topNav.className = 'topnav';
     }

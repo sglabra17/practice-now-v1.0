@@ -70,27 +70,21 @@
 .responsive-logo{display: none;}
 .topnav .icon{display: none;}
 
-/* Disappear options, appear menu icon */
+/* Disappear options, appear burguer-menu icon */
 @media screen and (max-width: 1000px){
     .topnav *:not(:first-child){display: none;}
     .topnav button.icon{
-        float: right;
         display: block;
+        float: right;
         padding-top: 1.5em;
         background-color:  #293DA3;
         border: none;
     }
     .topnav{background-image: none;}
-    /* .topnav{ */
-        /* width: 100%; */
-        /* position: fixed; */
-    /* } */
 }
 
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
 @media screen and (max-width: 1000px){
-    /* .topnav.responsive {background-image: none;} */
-    /* .topnav.responsive {position: relative;} */
 
     .topnav.responsive .icon{
         position: absolute;
@@ -111,24 +105,9 @@
     .logo-ctnr{width: 230px;}
 
     .logo-ctnr .responsive-logo{display: none;}
-
-    /* .topnav.responsive{ */
-        /* width: 100%; */
-        /* position: fixed; */
-        /* z-index: 50; */
-    /* } */
-
-    /* .whole{ */
-        /* width: 100%;     */
-        /* position: absolute; */
-        /* margin-top: 8em; */
-        /* z-index: -1; */
-        /*Color de Fondo Primario*/
-        /* background-color: #DEE1ED; */
-    /* } */
 }
 
-/* Responsive Logo */
+/* Responsive Logo - Mobile*/
 @media screen and (max-width:600px){
     .logo-ctnr .logo{display: none;}
 
@@ -143,12 +122,7 @@
     }
 }
 
-/* Navbar bg image - responsive */
-/* @media screen and (max-width:400px){ */
-    /* .topnav{background-image: none;} */
-/* } */
-
-#opPalabra:hover{
+/* #opPalabra:hover{
     background-color: rgba(255, 255, 255, 0.285);
     border-radius: .5em;
-}
+} */
