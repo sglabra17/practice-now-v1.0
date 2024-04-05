@@ -82,7 +82,7 @@ const dynamiContent = ()=>{
         qnsCtnr.append(qCtnr);
         
         // Create <p> with No. of Question
-        const qNumTag  = document.createElement('p');
+        const qNumTag     = document.createElement('p');
         qNumTag.classList.add('question-num');
         qNumTag.innerText = `${qnNum} de ${questions.length}`;
         qCtnr.append(qNumTag);
@@ -145,7 +145,8 @@ const dynamiContent = ()=>{
             const correct = question['answer'];
             let radioCorrect;
             let lblCorrect;
-    
+
+            // get right options (input,label)
             for (const opt of question['options']) {
                 const indx = question['options'].indexOf(opt);
                 if(opt===correct){
@@ -153,6 +154,8 @@ const dynamiContent = ()=>{
                     lblCorrect   = document.querySelector(`#lbl-q${qNumber}-${indx}`);
                 }
             }
+
+            // validate, is correct opt checked?
             const isCorrect = radioCorrect.checked;    
             let finalAns    = pTag.innerText.replace('Correcta','').replace('Incorrecta','');
             console.log(finalAns);
@@ -172,7 +175,6 @@ const dynamiContent = ()=>{
                 const rad    = document.querySelector(`#q${qNumber}op${indx}`);
                 rad.disabled = true;
                 // <del> wrong answers
-                // const radio = document.querySelector(`#${res}${question['num']}`);
                 const lbl    = document.querySelector(`#lbl-q${qNumber}-${indx}`);
                 if(!isCorrect){
                     lbl.innerHTML = rad.checked ? `<del>${res}</del>` : res;
@@ -203,13 +205,12 @@ dynamiContent();
 // Chips, reading options : Events -> Active
 // Store Chip Buttons : Reading Options
 const rdngBtnsArray  = rdngOpts.children;// all reading <button>
-let indxReading      = 0;
 
 for (const chip of rdngBtnsArray) {
     chip.addEventListener('click',()=>{
         // vars
-        const chipIndx = chip.id.split('-')[1];
-        indxReading    = chipIndx - 1;
+        const chipIndx    = chip.id.split('-')[1];// 1,2,3
+        const indxReading = chipIndx - 1;// 0,1,2
 
         // active / not active btn 
         for (const itm of rdngBtnsArray) {
@@ -230,14 +231,16 @@ for (const chip of rdngBtnsArray) {
         questions = qnsObj[nivel][`lectura${chipIndx}`];
         console.log(questions);
 
-        // initialize questions
+        // store current questions
         const qnContainers = document.querySelectorAll('.question-ctnr');
         const lim          = qnContainers.length;
 
-        for(let i = 0; i < lim; i++){// remove all questions
+        // remove current questions
+        for(let i = 0; i < lim; i++){
             qnsCtnr.removeChild(qnContainers[i]);
         }
-        if(document.querySelector('.button-solve')!==null){// remove btn
+        // remove solve btn
+        if(document.querySelector('.button-solve')!==null){
             const btn = document.querySelector('.button-solve');
             qnsCtnr.removeChild(btn);
         }
