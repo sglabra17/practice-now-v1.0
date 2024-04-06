@@ -13,8 +13,10 @@
         <!-- Home Page styles -->
         <link rel="stylesheet" href="../styles/home/topnav.css">
         <link rel="stylesheet" href="../styles/home/section.css">
-        <link rel="stylesheet" href="../styles/home/card.css">
         <link rel="stylesheet" href="../styles/home/footer.css">
+        <!-- Vocabulario Page - Styles -->
+        <link rel="stylesheet" href="../styles/lectura/content.css">
+        <link rel="stylesheet" href="../styles/vocabulario/content.css">
         <!-- tab icon -->
         <link rel="icon" href="../images/tab-logo.png" type="image/png">
     </head>
@@ -47,11 +49,28 @@
                 <section>
                     <div class="section-text">
                         <h3 id="subject-title">Vocabulario</h3>
-                        <p id="subject-subtitle"></p>
+                        <p id="subject-subtitle" class="rding-subt">Listas de
+                        vocabulario por tema, con ejemplos y ejercicios.</p>
                     </div>
-                    <div class="container-section1">
-                        
-                        
+                    <div class="category-ctnr">
+                        <!-- Dropdown Menu -->
+                        <div class="container">
+                            <button id="btn" class="btn">
+                                Dropdown
+                                <!-- <span id="drop-txt" class="drop-txt"></span> -->
+                                <img id="dropIconDwn" class="drop-iconDwn" src="../images/dropdown-icon.png" alt="icono dropdown">
+                                <img id="dropIconUp" class="drop-iconUp" src="../images/dropdownUp-icon.png" alt="icono dropdown">
+                            </button>
+                            <div id="dropdown" class="dropdown">
+                                <button id="ddFood">Food</button>
+                                <button id="ddNature">Nature</button>
+                                <button id="ddHumanBody">Human Body</button>
+                            </div>
+                        </div>
+                        <!-- Dropdown Menu:End -->
+                    </div>
+                    <div class="container-section">
+
                     </div>
                 </section>
             </main>
@@ -59,7 +78,7 @@
             <footer>
                 <p>2024 &#169; <span>Samuel García Labra</span></p>
                 <p>
-                    <a href="mailto:Sam_Garca99@hotmail.com?Subject=Contacto%20:%20Sitio%20Web%20Para%20Practicar%20Inglés">
+                    <a href="mailto:Sam_Garca99@hotmail.com?Subject=Consulta%20:%20Sitio%20Web%20Para%20Practicar%20Inglés">
                     Contactar</a> / <span><a href="#">Política de Privacidad</a></span> / 
                     <a href="#"><span>Términos y Condiciones de Uso</span></a>
                 </p>
@@ -70,6 +89,7 @@
         <script src="../scripts/utilities/menu-icon.js"></script>
         <script src="../scripts/utilities/navbar-focus.js"></script>
         <!-- Scripts : Vocabulario Page -->
-        <script></script>
+        <script src="../scripts/vocabulario/dropdwn.js"></script>
+        <script src="../scripts/vocabulario/nivel.js"></script>
     </body>
 </html>
