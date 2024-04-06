@@ -2,6 +2,7 @@
 // Store dropdown <button>, and options
 const dpDwnBtn    = document.querySelector('#btn');
 const btnsCtnr    = document.querySelector('#dropdown');
+// DDown - Image Icon
 const dropIconDwn = document.querySelector('#dropIconDwn');
 const dropIconUp  = document.querySelector('#dropIconUp');
 
@@ -20,15 +21,16 @@ dpDwnBtn.addEventListener('click',()=>{
     }
 });
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.btn')) {
-        var dropdowns    = document.getElementsByClassName("dropdown");
-        var openDropdown = dropdowns[0];
 
-        if (openDropdown.classList.contains('onDrop')) {
-            openDropdown.classList.remove('onDrop');
+// Close the dropdown if the user clicks outside of it
+window.onclick = event =>{
+    if (!event.target.matches('.btn')) {
+        let dropdown = document.querySelector(".dropdown");
+
+        if (dropdown.classList.contains('onDrop')) {
+            dropdown.classList.remove('onDrop');
         }
+        
         dropIconDwn.setAttribute('style','display:block');
         dropIconUp.setAttribute('style','display:none');
     }
