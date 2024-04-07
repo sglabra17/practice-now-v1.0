@@ -1,4 +1,6 @@
-
+/**
+ * CATEGORY TEXT
+ */
 // Store dropdown elements
 const catgTxt      = document.querySelector('#catg-txt');
 const dropList     = document.querySelector('#dropdown');
@@ -14,4 +16,8 @@ for (const button of dropChildren) {
     });
 }
 
+
+/**
+ * another
+ */
 

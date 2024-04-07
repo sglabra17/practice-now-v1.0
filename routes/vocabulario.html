@@ -14,8 +14,10 @@
         <link rel="stylesheet" href="../styles/home/topnav.css">
         <link rel="stylesheet" href="../styles/home/section.css">
         <link rel="stylesheet" href="../styles/home/footer.css">
-        <!-- Vocabulario Page - Styles -->
+        <!-- Lectura Page - Styles -->
         <link rel="stylesheet" href="../styles/lectura/content.css">
+        <!-- Vocabulario Page - Styles -->
+        <link rel="stylesheet" href="../styles/vocabulario/dropdown.css">
         <link rel="stylesheet" href="../styles/vocabulario/content.css">
         <!-- tab icon -->
         <link rel="icon" href="../images/tab-logo.png" type="image/png">
@@ -50,8 +52,10 @@
                     <div class="section-text">
                         <h3 id="subject-title">Vocabulario</h3>
                         <p id="subject-subtitle" class="rding-subt">Listas de
-                        vocabulario por tema, con ejemplos y ejercicios.</p>
+                        ejercicios de vocabulario por tema.</p>
                     </div>
+
+
                     <div class="category-ctnr">
                         <!-- Dropdown Menu -->
                         <div class="container">
@@ -61,16 +65,37 @@
                                 <img id="dropIconUp" class="drop-iconUp" src="../images/dropdownUp-icon.png" alt="icono dropdown">
                             </button>
                             <div id="dropdown" class="dropdown">
-                                <button id="ddFood">Classroom</button>
-                                <button id="ddNature">Bedroom</button>
-                                <button id="ddHumanBody">My Family</button>
+                                <button id="ddClassroom">Classroom</button>
+                                <button id="ddBedroom">Bedroom</button>
+                                <button id="ddMyFamily">My Family</button>
                             </div>
                         </div>
                         <!-- Dropdown Menu:End -->
                     </div>
-                    <div class="container-section">
 
+
+
+                    <div id="qns-ctnr" class="container-section">
+                        <header id="qns-hdr" class="formHeader">Escribe la respuesta correcta.</header>
+                        <div class="question-ctnr">
+                            <p class="question-num">1 de 10</p>
+                            <div class="question">
+                                <label for="qIn1" class="inputLabel">Pizarra</label>
+                                <input type="text" id="qIn1" class="inputBox" autofocus>
+                            </div>
+                            <p class="answer-p">Respuesta:<span>Respuesta</span></p>    
+                        </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
                 </section>
             </main>
             <!-- Pie de Página -->
@@ -88,7 +113,8 @@
         <script src="../scripts/utilities/menu-icon.js"></script>
         <script src="../scripts/utilities/navbar-focus.js"></script>
         <!-- Scripts : Vocabulario Page -->
-        <script src="../scripts/vocabulario/dropdwn.js"></script>
+        <script src="../scripts/vocabulario/questionsObj.js"></script>
+        <script src="../scripts/vocabulario/dropdwnLogic.js"></script>
         <script src="../scripts/vocabulario/dropdwnSelect.js"></script>
         <script src="../scripts/vocabulario/nivel.js"></script>
     </body>
