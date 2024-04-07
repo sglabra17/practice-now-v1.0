@@ -16,22 +16,27 @@ dpDwnBtn.addEventListener('click',()=>{
         dropIconUp.setAttribute('style','display:block');
     }else{
         btnsCtnr.className = 'dropdown';
-        dropIconDwn.setAttribute('style','display:block');
         dropIconUp.setAttribute('style','display:none');
+        dropIconDwn.setAttribute('style','display:block');
     }
 });
 
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = event =>{
-    if (!event.target.matches('.btn')) {
+    const condition1 = !event.target.matches('.btn');
+    const condition2 = !event.target.matches('#catg-txt');
+    const condition3 = !event.target.matches('#dropIconDwn');
+
+    if (condition1 && condition2 && condition3) {        
+        console.log('no match',event.target);
         let dropdown = document.querySelector(".dropdown");
 
         if (dropdown.classList.contains('onDrop')) {
             dropdown.classList.remove('onDrop');
         }
-        
-        dropIconDwn.setAttribute('style','display:block');
+        // Icon Image - DropDown
         dropIconUp.setAttribute('style','display:none');
+        dropIconDwn.setAttribute('style','display:block');
     }
 }
