@@ -6,7 +6,7 @@ const btnsCtnr    = document.querySelector('#dropdown');
 const dropIconDwn = document.querySelector('#dropIconDwn');
 const dropIconUp  = document.querySelector('#dropIconUp');
 
-// add event : Dropdown Button
+// add event : Dropdown Button When Clicked
 dpDwnBtn.addEventListener('click',()=>{
     let btnsCtnrClass = btnsCtnr.className;
 
@@ -29,7 +29,7 @@ window.onclick = event =>{
     const condition3 = !event.target.matches('#dropIconDwn');
 
     if (condition1 && condition2 && condition3) {        
-        console.log('no match',event.target);
+        // console.log('no match',event.target);
         let dropdown = document.querySelector(".dropdown");
 
         if (dropdown.classList.contains('onDrop')) {

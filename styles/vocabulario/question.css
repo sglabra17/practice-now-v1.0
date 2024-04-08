@@ -1,0 +1,70 @@
+/* Questinons Ctnr - Header */
+.formHeader{
+    /* background-color: aquamarine; */
+    margin-bottom: 2em;
+    font-size: 1.7rem;
+}
+
+/* Container : Contains 1 Question */
+.question-ctnr{
+    /* background-color: aliceblue; */
+    margin-bottom: 2.5em;
+}
+
+
+/* Container : Contains <label>,<input> */
+.question{
+    /* background-color: red; */
+    padding-left: 1em;
+}
+
+.question * {
+    display: block;
+    margin-bottom: .5em;
+}
+
+/* User Input - <tags> */
+input{outline: none;}
+.inputLabel{
+    /* font */
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.inputBox{
+    padding: 1em;
+    /* colors */
+    background-color: inherit;
+    color: inherit;
+    box-shadow: inset 0 0 5px #293DA3;
+    /* border */
+    border: none;
+    border-radius: .5em;
+    /* font */
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+}
+
+/* respuesta correcta */
+.answer-p{
+    margin-left: 1em;
+}
+.answer-p span{
+    margin-left: .75em;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* responsive <input>,<span> for Mobile */
+@media screen and (max-width: 500px){
+    .inputBox{
+        width: 80%;
+    }
+    .answer-p span{
+        display: block;
+    }
+}
+
+
+
+

@@ -5,19 +5,15 @@
 const catgTxt      = document.querySelector('#catg-txt');
 const dropList     = document.querySelector('#dropdown');
 const dropChildren = dropList.children;
+let chosenCat      = 'Classroom';
 
 // Logic : Dropdown Selection Text
 for (const button of dropChildren) {
     button.addEventListener('click',()=>{
-        const chosenCat   = button.innerHTML;
+        chosenCat         = button.innerHTML;
         catgTxt.innerHTML = chosenCat;
 
-        console.log(catgTxt.innerHTML);
+        // console.log(catgTxt.innerHTML);
     });
 }
-
-
-/**
- * another
- */
 
