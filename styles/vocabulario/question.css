@@ -22,10 +22,15 @@
     display: block;
     margin-bottom: .5em;
 }
+/* Feedback <span> */
+.span-resI,.span-resC{
+    display: inline-block;
+}
 
 /* User Input - <tags> */
 input{outline: none;}
 .inputLabel{
+    display: inline-block;
     /* font */
     font-size: 2rem;
     font-weight: 600;
@@ -53,12 +58,13 @@ input{outline: none;}
     margin-left: .75em;
     font-weight: 600;
     font-size: 1.5rem;
+    color: green;
 }
 
 /* responsive <input>,<span> for Mobile */
 @media screen and (max-width: 500px){
     .inputBox{
-        width: 80%;
+        width: 90%;
     }
     .answer-p span{
         display: block;
