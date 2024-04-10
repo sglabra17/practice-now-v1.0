@@ -1,6 +1,7 @@
 .card-link{margin-bottom: 4em;}
 
 .card{
+    height: 100%;
     width: 220px;
     display: inline-block;
     /* Colors */
@@ -30,6 +31,10 @@
 .title-description-ctnr{
     padding: 1em;
     line-height: 1.5rem;
+    font-size: 1.25rem;
+}
+.title-description-ctnr p{
+    color: #3c51bd;/*Color de Texto*/
 }
 
 /* Card's subject title */

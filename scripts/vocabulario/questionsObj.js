@@ -308,45 +308,317 @@ const objVocQuestions = {
         ]
     },
 
-
-
-
-
-
-
     intermedio : {
         classroom : [
-
+            {
+                num      : 1,
+                question : 'A board whith a smooth, white surface, often attached to a wall.',
+                answer   : "whiteboard"
+            },
+            {
+                num      : 2,
+                question : 'A person who is learning at a college or university.',
+                answer   : "student"
+            },
+            {
+                num      : 3,
+                question : 'Long, thin object, often made of wood, for writing or drawing.',
+                answer   : "pencil"
+            },
+            {
+                num      : 4,
+                question : 'A long, flat piece of plastic, used for measuring or drawing straight lines.',
+                answer   : "ruler"
+            },
+            {
+                num      : 5,
+                question : 'Device used for cutting materials such as paper, made of two sharp blades.',
+                answer   : "scissors"
+            },
+            {
+                num      : 6,
+                question : 'A special pen often used for underlining text.',
+                answer   : "marker"
+            },
+            {
+                num      : 7,
+                question : 'Small piece of rubber used to remove marks made by a pencil.',
+                answer   : "eraser"
+            },
+            {
+                num      : 8,
+                question : 'Small piece of rubber used to remove marks made by a pencil.',
+                answer   : "eraser"
+            },
+            {
+                num      : 9,
+                question : 'A book of plain paper or paper with lines, for writing on.',
+                answer   : "notebook"
+            },
+            {
+                num      : 10,
+                question : 'To make marks that represent letters, words, or numbers on a surface.',
+                answer   : "write"
+            },
+            {
+                num      : 11,
+                question : 'Someone whose job is to teach in a school or college.',
+                answer   : "teacher"
+            },
         ],
         bedroom   : [
-
+            {
+                num      : 1,
+                question : "A cover for a window that is pulled up or down by a string.",
+                answer   : "blind"
+            },
+            {
+                num      : 2,
+                question : "A flat surface, usually supported by four legs, used for putting things on.",
+                answer   : "table"
+            },
+            {
+                num      : 3,
+                question : "A small bed for a baby, specially one that moves side to side.",
+                answer   : "cradle"
+            },
+            {
+                num      : 4,
+                question : "A small table that is kept at the side of a bed.",
+                answer   : "beside table"
+            },
+            {
+                num      : 5,
+                question : "A traditional story written for children.",
+                answer   : "fairy tale"
+            },
+            {
+                num      : 6,
+                question : "A rectangular cloth bag filled with soft material, used for resting in bed.",
+                answer   : "pillow"
+            },
+            {
+                num      : 7,
+                question : "A flat cover made of wool or similiar material, used on a bed.",
+                answer   : "blanket"
+            },
+            {
+                num      : 8,
+                question : "A type of table that you can work at, often one with drawers.",
+                answer   : "desk"
+            },
+            {
+                num      : 9,
+                question : "Small room with a door, used for storing things, like clothes.",
+                answer   : "closet"
+            },
+            {
+                num      : 10,
+                question : "A child's toy in the shape of a small person or baby.",
+                answer   : "doll"
+            },
         ],
         myfamily  : [
-
+            {
+                num      : 1,
+                question : "My mother's son is my:",
+                answer   : "brother"
+            },
+            {
+                num      : 2,
+                question : "My father's sister is my:",
+                answer   : "aunt"
+            },
+            {
+                num      : 3,
+                question : "My aunt's son is my:",
+                answer   : "cousin"
+            },
+            {
+                num      : 4,
+                question : "My aunt's husband is my:",
+                answer   : "uncle"
+            },
+            {
+                num      : 5,
+                question : "My mother's father is my:",
+                answer   : "grandfather"
+            },
+            {
+                num      : 6,
+                question : "My father's mother is my:",
+                answer   : "grandmother"
+            },
+            {
+                num      : 7,
+                question : "My sister's husband is my:",
+                answer   : "brother in law"
+            },
+            {
+                num      : 8,
+                question : "My brother's wife is my:",
+                answer   : "sister in law"
+            },
         ]
     },
 
     avanzado   : {
         classroom : [
-
+            {
+                num      : 1,
+                question : 'A dark surface on the wall that teachers write on with chalk.',
+                answer   : "blackboard"
+            },
+            {
+                num      : 2,
+                question : 'Work that teachers give their students to do at home.',
+                answer   : "homework"
+            },
+            {
+                num      : 3,
+                question : 'The time between the lessons.',
+                answer   : "break"
+            },
+            {
+                num      : 4,
+                question : 'The room where the students and a teacher are.',
+                answer   : "classroom"
+            },
+            {
+                num      : 5,
+                question : 'The person who looks after the school.',
+                answer   : "caretaker"
+            },
+            {
+                num      : 6,
+                question : 'A formal written, spoken or practical test.',
+                answer   : "exam"
+            },
+            {
+                num      : 7,
+                question : 'The people who work at a school.',
+                answer   : "staff"
+            },
+            {
+                num      : 8,
+                question : 'An area of knowledge that is studied in school, college, or university.',
+                answer   : "subject"
+            },
+            {
+                num      : 9,
+                question : 'A mechanical, small handheld device for making a sharp point on pencils.',
+                answer   : "pencil sharpener"
+            },
+            {
+                num      : 10,
+                question : 'A large bag used to carry things on your back, often used by students.',
+                answer   : "backpack"
+            },
         ],
         bedroom   : [
-
+            {
+                num      : 1,
+                question : 'A clock that you can set to wake up at a particular time with a loud noise.',
+                answer   : "alarm clock"
+            },
+            {
+                num      : 2,
+                question : 'A piece of forniture with drawers in wich you keep things such as clothes.',
+                answer   : "chest of drawers"
+            },
+            {
+                num      : 3,
+                question : 'A big bed enough for two people to sleep in.',
+                answer   : "double bed"
+            },
+            {
+                num      : 4,
+                question : 'A large, soft, flat bag filled with feathers used as a covering on bed.',
+                answer   : "duvet"
+            },
+            {
+                num      : 5,
+                question : 'Device for giving light, especially one that has a covering or is contained within something.',
+                answer   : "lamp"
+            },
+            {
+                num      : 6,
+                question : 'A tall cupboard in which you hang your clothes.',
+                answer   : "wardrobe"
+            },
+            {
+                num      : 7,
+                question : 'A device shaped like a box with a screen that displays images.',
+                answer   : "television"
+            },
+            {
+                num      : 8,
+                question : 'A large piece of thin cloth used on a bed for sleeping on or under.',
+                answer   : "sheet"
+            },
+            {
+                num      : 9,
+                question : 'A cloth cover for a pillow that can easily be removed and washed.',
+                answer   : "pillowcase"
+            },
+            {
+                num      : 10,
+                question : 'A place in the wall where electrical devices can be attached to electricity.',
+                answer   : "outlet"
+            },
         ],
         myfamily  : [
-
+            {
+                num      : 1,
+                question : 'Your ___ is your male parent.',
+                answer   : "father"
+            },
+            {
+                num      : 2,
+                question : 'Your ___ is the woman who gave birth to you.',
+                answer   : "mother"
+            },
+            {
+                num      : 3,
+                question : 'Your ___ is the child of your uncle or aunt.',
+                answer   : "cousin"
+            },
+            {
+                num      : 4,
+                question : 'Some people refer to their grandmother as ___.',
+                answer   : "granny"
+            },
+            {
+                num      : 5,
+                question : "Someone's ___ is the woman they are married to.",
+                answer   : "wife"
+            },
+            {
+                num      : 6,
+                question : "Your ___ are your brothers or sisters",
+                answer   : "siblings"
+            },
+            {
+                num      : 7,
+                question : "Your ___ are the members of your family.",
+                answer   : "relatives"
+            },
+            {
+                num      : 8,
+                question : "A ___ is two people who are married or living together.",
+                answer   : "couple"
+            },
+            {
+                num      : 9,
+                question : "The son of my father's brother is my ___.",
+                answer   : "cousin"
+            },
+            {
+                num      : 10,
+                question : "A person who looks after a child not his or her own is a ___.",
+                answer   : "foster parent"
+            },
         ]
     },
-
-
-
-
-
-
-
-
-
-
-
 
 };

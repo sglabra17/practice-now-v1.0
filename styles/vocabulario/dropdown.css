@@ -1,3 +1,13 @@
+/* Category text */
+.category-text{
+    display: inline-block;
+    margin-right: 1em;
+    padding-top: .5em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #293DA3;
+}
+
 /* Contains the Dropdown Menu */
 .category-ctnr{
     /* background-color: rgb(166, 124, 124); */

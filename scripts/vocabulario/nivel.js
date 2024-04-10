@@ -38,6 +38,7 @@ btnSolve.classList.add('button-solve');
 
 // Dynamic Questions : function
 const createQuestions = ()=>{
+    // Initialize Questions
     questionsArr        = objVocQuestions[nivel][varChosenCat];
 
     // Clean Questions Container
@@ -59,13 +60,13 @@ const createQuestions = ()=>{
         qnCtnr.classList.add('question-ctnr');
         qnsCtnr.append(qnCtnr);
 
-        // Question Paragraph
+        // Question Number Paragraph
         const qnParagraph     = document.createElement('p');
         qnParagraph.classList.add("question-num");
         qnParagraph.innerText = `${qNum} de ${questionsArr.length}`;
         qnCtnr.append(qnParagraph);
 
-        // Question Div (<label>,<input>)
+        // Question Div : Contains (<label>,<input>)
         const qnDiv = document.createElement('div');
         qnDiv.id    = `qnDiv-${qNum}`;
         qnDiv.classList.add('question');
@@ -124,7 +125,7 @@ btnSolve.addEventListener('click',()=>{
         qnInput.disabled = true;// disable <input> box
 
         // Get user answer
-        const userAnswer = qnInput.value.toLowerCase().trim() || 'nada';
+        const userAnswer = qnInput.value.toLowerCase().trim() || 'sin respuesta';
         
         // Validate answer
         const isRight    = qAnswer === userAnswer;
@@ -142,9 +143,12 @@ btnSolve.addEventListener('click',()=>{
             span.innerText = 'Incorrecta';   
             qnDiv.prepend(span);
 
-            // change inset shadow color
+            // change inset shadow color, & txt color
             const qnInputStyle = 'box-shadow: inset 0 0 5px #ff00007e;color:#293da37e';
             qnInput.setAttribute('style',qnInputStyle);
+
+            // if not answered
+            if(userAnswer==='sin respuesta'){qnInput.value='sin respuesta';}
 
             // append right answer
             const qnCtnr = document.querySelector(`#qnCtnr-${qNum}`);
@@ -167,12 +171,12 @@ btnSolve.addEventListener('click',()=>{
             qnInput.setAttribute('style',qnInputStyle);
         }
 
-    
     }
 
+    // Final Result
     qnsHeader.innerHTML += `<span class="span-finalRes">${correctas} de ${questionsArr.length}</span>`
 
-    // create retry button
+    // Create Retry Button
     qnsCtnr.removeChild(btnSolve);
     const btnRetry       = document.createElement('a');
     btnRetry.textContent = 'Reintentar';
