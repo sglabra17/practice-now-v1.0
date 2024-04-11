@@ -4,7 +4,8 @@ const opGram = document.querySelector('#opGram');
 const opVoca = document.querySelector('#opVoca');
 const opLec  = document.querySelector('#opLec');
 const opPron = document.querySelector('#opPron');
-const themes = [ opGram, opVoca, opLec, opPron ];
+const opEsc  = document.querySelector('#opEsc');
+const themes = [ opGram, opVoca, opLec, opPron, opEsc ];
 
 // get url value
 let lvl = location.search.split("=")[1];
