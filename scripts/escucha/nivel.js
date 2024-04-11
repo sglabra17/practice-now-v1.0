@@ -19,6 +19,10 @@ const videos = {
 // get url value
 let nivel = location.search.split("=")[1];
 
+// title text
+document.querySelector('#title-txt').innerHTML += nivel==='basico'      ? ' - Básico':
+                                                  nivel==='intermedio'  ? ' - Intermedio': ' - Avanzado';
+
 // html reference - container of videos
 const vidsCtnr = document.querySelector('#vids-ctnr');
 

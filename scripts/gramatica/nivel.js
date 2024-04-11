@@ -1,7 +1,9 @@
 // predefined headers
 const levelHeaders = {
     'basico'    : [' - Nivel Básico',
-    'Empieza a practicar inglés con ejercicios de gramática de nivel básico.'],
+                   'Empieza a practicar inglés con ejercicios de gramática de nivel básico.',
+                  ['personal-pronouns','possessives','demonstrative-pronouns']
+                ],
 
     'intermedio': [' - Nivel Intermedio',
     'Ejercicios para aquellos que dominan los conceptos básicos del lenguaje.'],
@@ -17,74 +19,130 @@ console.log(nivel);
 // HTML references - Headers
 const title    = document.querySelector('#subject-title');
 const subTitle = document.querySelector('#subject-subtitle');
-// HTML references - Questions
+// HTML reference - Theme Options Container
+const optsCtnr = document.querySelector('#grammar-optsCtnr');
+// HTML reference - Questions
 const qnsCtnr  = document.querySelector('#qns-ctnr');
 
 // Dynamic Titles
 title.innerHTML    += levelHeaders[nivel][0];
 subTitle.innerHTML =  levelHeaders[nivel][1];
 
+// Initialize Theme
+const topicsArr = levelHeaders[nivel][2];
+let chosenTheme = 'personal-pronouns';
 
-// Dynamic Content
-const questions = qnsObj[nivel];
-for (const question of questions) {
-    // Create <div> question container
-    const qCtnr = document.createElement('div');
-    qCtnr.classList.add('question-ctnr');
-    qnsCtnr.append(qCtnr);
-    
-    // Create <p> with No. of Question
-    const qNumTag     = document.createElement('p');
-    qNumTag.classList.add('question-num');
-    qNumTag.innerText = `${question['num']} de ${questions.length}`;
-    qCtnr.append(qNumTag);
-
-    // Create <p> with Question Text
-    const qnTag     = document.createElement('p');
-    qnTag.id        = `qp${question['num']}`;
-    qnTag.innerText = `${question['question']}`;
-    qCtnr.append(qnTag);
-
-    // Create <div> answers container
-    const ansCtnr = document.createElement('div');
-    ansCtnr.classList.add('answers-ctnr');
-    qCtnr.append(ansCtnr);
-
-    // Create answers
-    for (const op of question['options']) {
-        const indxOp = question['options'].indexOf(op);
-
-        // create answer container
-        const awrCtnr = document.createElement('div');
-        awrCtnr.classList.add('answer-ctnr');
-        ansCtnr.append(awrCtnr);
-
-        // create radio button
-        const inRadio   = document.createElement('input');
-        inRadio.type    = 'radio';
-        inRadio.id      = `${op}${question['num']}`;
-        inRadio.name    = `answer${question['num']}`;
-        inRadio.value   = op;
-        inRadio.checked = indxOp === 0 ? true : false;
-        awrCtnr.append(inRadio);
-
-        // create label
-        const radioLabel = document.createElement('label');
-        radioLabel.id    = `lbl-${question['num']}-${op}`;
-        radioLabel.setAttribute('for',`${op}${question['num']}`);
-        radioLabel.innerText = op;
-        awrCtnr.append(radioLabel);
-    }
-}
-
+// Initialize Questions
+let questions   = qnsObj[nivel][chosenTheme];
 
 // create solve button
 const btnSolve       = document.createElement('a');
 btnSolve.textContent = 'Resolver';
 btnSolve.href        = '#principal';
 btnSolve.classList.add('button-solve');
-qnsCtnr.append(btnSolve);
 
+
+// Create Grammar Options : Chips
+console.warn('Temas:');
+for (const theme of topicsArr) {
+    const indxTheme    = topicsArr.indexOf(theme);
+    const topicBtn     = document.createElement('button');
+    topicBtn.id        = `btn-${indxTheme}`;
+    topicBtn.classList.add('reading-option');
+    if(indxTheme===0){topicBtn.classList.add('rop-active');}
+    topicBtn.innerText = theme;
+    optsCtnr.append(topicBtn);
+}
+// Topic Buttons List
+const topicBtnsArr = optsCtnr.children;
+
+// Select Grammar Topic
+for (const button of topicBtnsArr) {
+    button.addEventListener('click',()=>{
+        chosenTheme = button.innerText;
+        dynamiContent();
+
+        // get buttons id
+        const chipIndx = button.id.split('-')[1];
+
+        // active / not active btn 
+        for (const itm of topicBtnsArr) {
+            const itmIndx = itm.id.split('-')[1];
+        
+            if(!(itmIndx===chipIndx)){//not active
+                itm.className = 'reading-option';
+            }else{//active
+                itm.className = 'reading-option rop-active';
+            }
+        }
+
+
+    });
+}
+
+// Dynamic Content
+const dynamiContent = () =>{
+    questions = qnsObj[nivel][chosenTheme];
+
+    // clear Container of Questions
+    qnsCtnr.innerHTML = ' <header id="qns-hdr" class="formHeader">Elige la respuesta correcta.</header>';
+
+    for (const question of questions) {
+        // Create <div> question container
+        const qCtnr = document.createElement('div');
+        qCtnr.classList.add('question-ctnr');
+        qnsCtnr.append(qCtnr);
+        
+        // Create <p> with No. of Question
+        const qNumTag     = document.createElement('p');
+        qNumTag.classList.add('question-num');
+        qNumTag.innerText = `${question['num']} de ${questions.length}`;
+        qCtnr.append(qNumTag);
+    
+        // Create <p> with Question Text
+        const qnTag     = document.createElement('p');
+        qnTag.id        = `qp${question['num']}`;
+        qnTag.innerText = `${question['question']}`;
+        qCtnr.append(qnTag);
+    
+        // Create <div> answers container
+        const ansCtnr = document.createElement('div');
+        ansCtnr.classList.add('answers-ctnr');
+        qCtnr.append(ansCtnr);
+    
+        // Create answers
+        for (const op of question['options']) {
+            const indxOp = question['options'].indexOf(op);
+    
+            // create answer container
+            const awrCtnr = document.createElement('div');
+            awrCtnr.classList.add('answer-ctnr');
+            ansCtnr.append(awrCtnr);
+    
+            // create radio button
+            const inRadio   = document.createElement('input');
+            inRadio.type    = 'radio';
+            inRadio.id      = `${op}${question['num']}`;
+            inRadio.name    = `answer${question['num']}`;
+            inRadio.value   = op;
+            inRadio.checked = indxOp === 0 ? true : false;
+            awrCtnr.append(inRadio);
+    
+            // create label
+            const radioLabel = document.createElement('label');
+            radioLabel.id    = `lbl-${question['num']}-${op}`;
+            radioLabel.setAttribute('for',`${op}${question['num']}`);
+            radioLabel.innerText = op;
+            awrCtnr.append(radioLabel);
+        }
+    }
+    
+    // Append Btn Solve
+    qnsCtnr.append(btnSolve);
+}
+
+// Create Questions
+dynamiContent();
 
 // Solve Button - Event
 const qnsHdr = document.querySelector('#qns-hdr');

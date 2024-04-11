@@ -71,7 +71,7 @@
 .topnav .icon{display: none;}
 
 /* Disappear options, appear burguer-menu icon */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     .topnav *:not(:first-child){display: none;}
     .topnav button.icon{
         display: block;
@@ -84,7 +84,7 @@
 }
 
 /* Styles Applied When: Menu Icon is Pressed (.responsive) */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
 
     .topnav.responsive .icon{
         position: absolute;

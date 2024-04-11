@@ -47,11 +47,11 @@
 }
 
 /* Wrap Cards Sooner  */
-@media screen and (max-width: 1000px){
+/* @media screen and (max-width: 1200px){
     .card-link{
-        padding-left: 1em;
+        padding-left: 2em;
     }
-}
+} */
 
 /* Enlarge image If Mobile */
 @media screen and (max-width: 472px){
