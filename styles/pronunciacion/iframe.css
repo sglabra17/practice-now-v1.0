@@ -5,3 +5,11 @@ iframe{
     height: 500px;
     padding: .25em;
 }
+
+/* Title of the Form */
+.formHeader{
+    margin-bottom: 1em;
+    font-size: 1.7rem;/* Tamaño de fuente - Header:Cuestionarios*/
+    font-weight: 600;
+    color: #293DA3;
+}

@@ -8,6 +8,16 @@
     color: #293DA3;
 }
 
+@media screen and (max-width: 500px){
+    .category-text{
+        /* background-color: azure;    */
+        display: block;
+        margin-right: .5em;
+        margin-bottom: .5em;
+        padding-top: 0;
+    }
+}
+
 /* Contains the Dropdown Menu */
 .category-ctnr{
     /* background-color: rgb(166, 124, 124); */
