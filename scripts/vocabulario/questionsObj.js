@@ -347,8 +347,8 @@ const objVocQuestions = {
             },
             {
                 num      : 8,
-                question : 'Small piece of rubber used to remove marks made by a pencil.',
-                answer   : "eraser"
+                question : 'Sticky substance used for joining things together, like paper or cardboard.',
+                answer   : "glue"
             },
             {
                 num      : 9,

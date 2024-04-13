@@ -11,6 +11,17 @@
     margin-bottom: 2.5em;
 }
 
+.vocabImage{
+    width: 300px;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+ 
+@media screen and (max-width: 400px){
+    .vocabImage{
+        width: 100%;
+    }
+}
 
 /* Container : Contains <label>,<input> */
 .question{

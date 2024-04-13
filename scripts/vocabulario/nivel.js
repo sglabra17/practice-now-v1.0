@@ -66,6 +66,15 @@ const createQuestions = ()=>{
         qnParagraph.innerText = `${qNum} de ${questionsArr.length}`;
         qnCtnr.append(qnParagraph);
 
+        // Image
+        if(nivel==='intermedio'&&varChosenCat==='classroom'){
+            const qnImage         = document.createElement('img');
+            qnImage.src           = `../images/vocab-${qAns}.jpg`;
+            qnImage.alt           = `Imagen de ${qAns}`;
+            qnImage.classList.add('vocabImage');
+            qnCtnr.append(qnImage);
+        }
+
         // Question Div : Contains (<label>,<input>)
         const qnDiv = document.createElement('div');
         qnDiv.id    = `qnDiv-${qNum}`;
