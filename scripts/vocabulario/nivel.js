@@ -24,7 +24,6 @@ const qnsCtnr        = document.querySelector('#qns-ctnr');
 const qnsHeader      = document.createElement('header');
 qnsHeader.id         = 'qns-hdr',
 qnsHeader.classList.add('formHeader');
-qnsHeader.innerText  = 'Escribe la respuesta correcta en inglés.';
 
 // Initialize Questions
 let questionsArr     = objVocQuestions[nivel][varChosenCat];
@@ -45,6 +44,7 @@ const createQuestions = ()=>{
     qnsCtnr.innerHTML   = '';
 
     // Append : Questions Header
+    qnsHeader.innerText  = 'Escribe la respuesta correcta en inglés.';
     qnsCtnr.append(qnsHeader);
 
     /** Create Questions **/

@@ -12,8 +12,6 @@ for (const button of dropChildren) {
     button.addEventListener('click',()=>{
         chosenCat         = button.innerHTML;
         catgTxt.innerHTML = chosenCat;
-
-        // console.log(catgTxt.innerHTML);
     });
 }
 

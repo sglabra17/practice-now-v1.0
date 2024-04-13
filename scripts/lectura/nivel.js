@@ -1,6 +1,6 @@
 // predefined headers
 const levelHeaders = {
-    'basico' : [' - Nivel Básico',
+    'basico' :    [' - Nivel Básico',
     'Ejercicios de compresión lectora orientados a usuarios con nivel principiante del idioma.'],
 
     'intermedio': [' - Nivel Intermedio',
@@ -72,7 +72,8 @@ let questions       = qnsObj[nivel]['lectura1'];
 
 // Dynamic Content : Initial Questions
 const dynamiContent = ()=>{
-
+    secondHdr.innerHTML = 'Elige la respuesta correcta.';
+    
     for (const question of questions) {
         const qnNum = question['num'];
     

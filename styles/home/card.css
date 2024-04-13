@@ -46,15 +46,9 @@
     font-style: normal;
 }
 
-/* Wrap Cards Sooner  */
-/* @media screen and (max-width: 1200px){
-    .card-link{
-        padding-left: 2em;
-    }
-} */
-
 /* Enlarge image If Mobile */
-@media screen and (max-width: 472px){
+/* @media screen and (max-width: 570px){ */
+@media screen and (max-width: 1230px){
     .card-link{padding-left: 0;}
 
     .card{

@@ -19,6 +19,12 @@
     gap: 2em;
 }
 
+@media screen and (max-width: 1230px){
+    .container-section1{
+        gap: 1em 8em;
+    }
+}
+
 /* (Estilos para Pronunciacion Page) Iframe, página embebida */
 .iframe-ctnr{
     margin-bottom: 4em;

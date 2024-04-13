@@ -36,7 +36,7 @@
     color: #67676f;/* txt color : chip */
     border: none;
     border-radius: 2em;
-    text-decoration: none;
+    font-size: larger;
     font-weight: 600;
 }
 .reading-option:hover{

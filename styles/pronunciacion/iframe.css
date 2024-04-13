@@ -8,17 +8,24 @@ iframe{
 
 /* Title of the Form */
 .formHeader{
-    margin-left: 1em;
+    margin-left: .25em;
     margin-bottom: 1em;
     font-size: 1.7rem;/* Tamaño de fuente - Header:Cuestionarios*/
     font-weight: 600;
     color: #293DA3;
 }
 
+/* Escucha : Page */
 .video-ctnr{
     box-shadow: -1px 1px 3px 1px rgb(155, 153, 153);
     background-color: #DEE1ED;
     margin-bottom: 3em;
     padding: 1em;
+    padding-top: 2em;
     border-radius: .5em;
+}
+
+/* video title */
+.videoName{
+    font-weight: normal;
 }

@@ -28,8 +28,7 @@ window.onclick = event =>{
     const condition2 = !event.target.matches('#catg-txt');
     const condition3 = !event.target.matches('#dropIconDwn');
 
-    if (condition1 && condition2 && condition3) {        
-        // console.log('no match',event.target);
+    if (condition1 && condition2 && condition3) {    
         let dropdown = document.querySelector(".dropdown");
 
         if (dropdown.classList.contains('onDrop')) {
