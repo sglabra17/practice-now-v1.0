@@ -9,13 +9,15 @@
 }
 
 html{    
-    background-color: #F0E4D8;/*Color de Fondo Secundario*/
+    /* Color de Fondo Secundario */
+    background-color: #F0E4D8;
+    /* Tipo de Fuente */
     font-family: Lato, sans-serif, Arial, Helvetica;
 }
 
 /* body styles */
 body{
     font-family: Lato, sans-serif, Arial, Helvetica;
-    background-color: #DEE1ED;/*Color de Fondo Primario*/
-    color: white;
+    /*Color de Fondo Primario*/
+    background-color: #DEE1ED;
 }

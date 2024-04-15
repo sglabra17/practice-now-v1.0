@@ -2,13 +2,12 @@
 .topnav{
     width: 100%;
     padding: 1.75em 1.25em;
-    /*importante*/
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
-    background-color: #293DA3;/*También color de texto para <main>*/
     border-radius: 0 0 1em 1em;
     box-shadow: 0 3px 2px 0 #706f6f;
     /* background image */
+    background-color: #293DA3;/*También color de texto para <main>*/
     background-image: url('../../images/header-bgImage.png');
     background-position: right;
     background-repeat: no-repeat;
@@ -18,10 +17,11 @@
 
 .whole{
     width: 100%;    
-    position: absolute;
     margin-top: 8em;
+    position: absolute;
     z-index: -1;
-    background-color: #DEE1ED;/*Color de Fondo Primario*/
+    /*Color de Fondo Primario*/
+    background-color: #DEE1ED;
 }
 
 /* logo */
@@ -47,8 +47,8 @@
 
 /* <nav> items and links */
 .topnav nav ul li{
-    padding-right: 1.5em;
     list-style: none;
+    padding-right: 1.5em;
 }
 
 .topnav nav ul li a{padding: 1em;}
@@ -107,7 +107,7 @@
     .logo-ctnr .responsive-logo{display: none;}
 }
 
-/* Responsive Logo - Mobile*/
+/* Responsive Logo - Mobile */
 @media screen and (max-width:600px){
     .logo-ctnr .logo{display: none;}
 
@@ -121,8 +121,3 @@
         width: 50px;
     }
 }
-
-/* #opPalabra:hover{
-    background-color: rgba(255, 255, 255, 0.285);
-    border-radius: .5em;
-} */
