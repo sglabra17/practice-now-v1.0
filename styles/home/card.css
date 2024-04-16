@@ -9,8 +9,8 @@
     color: #293DA3;/*Color de Texto*/
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
-    transition: 0.3s;
     border-radius: 1em;
+    transition: 0.3s;
     /* Font */
     font-family: Lato;
 }
@@ -31,29 +31,26 @@
 .title-description-ctnr{
     padding: 1em;
     line-height: 1.5rem;
+    /* Card's Font Size */
     font-size: 1.25rem;
-}
-.title-description-ctnr p{
-    color: #3c51bd;/*Color de Texto*/
 }
 
 /* Card's subject title */
 .subject-title{
     padding-bottom: 0.75em;
-    font-size: 1.75rem;/* Card Titles Font Size */
+    font-size: 1.75rem;/* Card Title : Font Size */
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+.title-description-ctnr p{color: #3c51bd;/*Color de Texto*/}
+
 
 /* Enlarge image If Mobile */
-/* @media screen and (max-width: 570px){ */
 @media screen and (max-width: 1230px){
-    .card-link{padding-left: 0;}
+    /* .card-link{padding-left: 0;} */
 
-    .card{
-        width: 250px;
-    }
+    .card{width: 250px;}
 
     .subject-image{height: 220px;}
 }

@@ -1,9 +1,10 @@
+/* Title and Subtitle of a Page */
 .section-text{
     margin: 2em 1em;
-    color: #293DA3;/*Color de Texto Principal - Normal*/
+    color: #293DA3;/* Color de Texto Principal - Normal */
     text-align: center;
     line-height: 3rem;
-    font-size: 1.8rem;/*Título Grande*/
+    font-size: 1.8rem;/* Título Grande */
 }
 
 .section-text p{font-size: 1.6rem;/*Subtítulo Grande*/}
@@ -19,13 +20,15 @@
     gap: 2em;
 }
 
+/* Increase Horizontal Gap : Medium-Smaller Devices */
 @media screen and (max-width: 1230px){
     .container-section1{
         gap: 1em 8em;
     }
 }
 
-/* (Estilos para Pronunciacion Page) Iframe, página embebida */
+
+/* (Styles : Pronunciacion Page) Iframe, página embebida */
 .iframe-ctnr{
     margin-bottom: 4em;
     padding-left: .5em;

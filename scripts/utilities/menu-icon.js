@@ -1,14 +1,10 @@
-const burguer = document.querySelector('#burguer-menu');
+const burguer   = document.querySelector('#burguer-menu');
+const topNavDiv = document.querySelector('#myTopnav');
 
 burguer.addEventListener('click',()=>{
 
-    const topNavDiv = document.querySelector('#myTopnav');
-    
-    if(topNavDiv.className === 'topnav'){
-        topNavDiv.className += (' '+'responsive');
-    }else{
-        topNavDiv.className = 'topnav';
-    }
+    topNavDiv.className = topNavDiv.className === 'topnav' ? 'topnav responsive' :
+                                                             'topnav';
 
     console.log(topNavDiv.className);
 });
