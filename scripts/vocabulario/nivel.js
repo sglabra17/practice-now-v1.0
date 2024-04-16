@@ -95,8 +95,7 @@ const createQuestions = ()=>{
         qnInput.id           = `inp-${qNum}`;
         qnInput.classList.add('inputBox');
         qnInput.autocomplete = 'off';
-        qnInput.autofocus    = qNum === 1 ? true : false;
-        qnInput.focus({preventScroll:true});
+        // qnInput.autofocus    = qNum === 1 ? true : false;
         qnDiv.append(qnInput);
     }
 
@@ -195,3 +194,6 @@ btnSolve.addEventListener('click',()=>{
     btnRetry.href        = `vocabulario.html?lvl=${nivel}`;
     qnsCtnr.append(btnRetry);
 });
+
+window.scrollX = 500;
+window.scrollY = 500;
