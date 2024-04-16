@@ -96,6 +96,7 @@ const createQuestions = ()=>{
         qnInput.classList.add('inputBox');
         qnInput.autocomplete = 'off';
         qnInput.autofocus    = qNum === 1 ? true : false;
+        qnInput.focus({preventScroll:true});
         qnDiv.append(qnInput);
     }
 
