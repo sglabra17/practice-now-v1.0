@@ -6,11 +6,11 @@ const btnsCtnr    = document.querySelector('#dropdown');
 const dropIconDwn = document.querySelector('#dropIconDwn');
 const dropIconUp  = document.querySelector('#dropIconUp');
 
-// add event : Dropdown Button When Clicked
+// add event : Dropdown List When Clicked
 dpDwnBtn.addEventListener('click',()=>{
-    let btnsCtnrClass = btnsCtnr.className;
+    const btnsCtnrClass = btnsCtnr.className;
 
-    if(btnsCtnrClass==='dropdown'){
+    if( btnsCtnrClass === 'dropdown' ){
         btnsCtnr.className = 'dropdown onDrop';
         dropIconDwn.setAttribute('style','display:none');
         dropIconUp.setAttribute('style','display:block');
@@ -29,7 +29,7 @@ window.onclick = event =>{
     const condition3 = !event.target.matches('#dropIconDwn');
 
     if (condition1 && condition2 && condition3) {    
-        let dropdown = document.querySelector(".dropdown");
+        const dropdown = document.querySelector(".dropdown");
 
         if (dropdown.classList.contains('onDrop')) {
             dropdown.classList.remove('onDrop');

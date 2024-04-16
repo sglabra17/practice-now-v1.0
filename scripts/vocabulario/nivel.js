@@ -49,10 +49,10 @@ const createQuestions = ()=>{
 
     /** Create Questions **/
     for (const question of questionsArr) {
-        const qIndx = questionsArr.indexOf(question);
+        // const qIndx = questionsArr.indexOf(question);
         const qNum  = question['num'];
         const qOpt  = question['question'];
-        const qAns  = question['answer'];
+        // const qAns  = question['answer'];
 
         // Question Container
         const qnCtnr = document.createElement('div');
@@ -90,11 +90,12 @@ const createQuestions = ()=>{
         qnDiv.append(qnLabel);
 
         // <input>
-        const qnInput     = document.createElement('input');
-        qnInput.type      = 'text';
-        qnInput.id        = `inp-${qNum}`;
+        const qnInput        = document.createElement('input');
+        qnInput.type         = 'text';
+        qnInput.id           = `inp-${qNum}`;
         qnInput.classList.add('inputBox');
         qnInput.autocomplete = 'off';
+        qnInput.autofocus    = qNum === 1 ? true : false;
         qnDiv.append(qnInput);
     }
 

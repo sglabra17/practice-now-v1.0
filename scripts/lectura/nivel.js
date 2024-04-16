@@ -197,7 +197,6 @@ const dynamiContent = ()=>{
         qnsCtnr.append(btnRetry);
     });
 
-
 }
 
 dynamiContent();

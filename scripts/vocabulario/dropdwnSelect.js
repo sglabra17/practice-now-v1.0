@@ -3,8 +3,7 @@
  */
 // Store dropdown elements
 const catgTxt      = document.querySelector('#catg-txt');
-const dropList     = document.querySelector('#dropdown');
-const dropChildren = dropList.children;
+const dropChildren = btnsCtnr.children;
 let chosenCat      = 'Classroom';
 
 // Logic : Dropdown Selection Text

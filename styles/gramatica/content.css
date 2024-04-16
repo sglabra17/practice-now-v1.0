@@ -1,15 +1,14 @@
 /* responsive chip margin */
-@media screen and (max-width: 530px){
+@media screen and (max-width: 760px){
     .reading-option{margin-left: 1em;}
 }
-
 
 /* Contains Form */
 .container-section{
     margin: 1em;
     padding: 2em;
+    font-size: 1.4rem;/* Tamaño de fuente - Cuestionarios */
     color: #293DA3;
-    font-size: 1.4rem;/* Tamaño de fuente - Cuestionarios*/
     border-radius: .5em;
     box-shadow: -1px 1px 3px 1px rgb(155, 153, 153);
 }
@@ -17,69 +16,6 @@
 /* Title of the Form */
 .formHeader{
     margin-bottom: 1em;
-    font-size: 1.7rem;/* Tamaño de fuente - Header:Cuestionarios*/
+    font-size: 1.7rem;/* Tamaño de fuente - Header:Cuestionarios */
     font-weight: 600;
-}
-
-/* Contains Question */
-.question-ctnr{padding-left: 1em;}
-
-/* Number of the Question */
-.question-num{
-    padding-bottom: .25em;
-    font-weight: bold;
-    color: #5567bf;/*Color - Número de Pregunta*/
-    word-spacing: .25em;
-}
-
-/* Container for Radio Buttons */
-.answers-ctnr{
-    padding-top: 1em;
-    padding-left: 1em;
-}
-
-/* Style for Each answer */
-.answer-ctnr{padding-bottom: 1em;}
-
-/* labels for radio btns - radio group */
-.answer-ctnr label{padding-left: .5em;}
-
-/* Button - Solve Form */
-.button-solve{
-    display: inline-block;
-    margin-top: 2em;
-    padding: .5em 1.5em;
-    background-color: #5567bf;/* Color Botón */
-    color: #e8eaf0;/* Color - Texto Botón */
-    border-radius: 2em;
-    text-decoration: none;
-}
-
-/* span for right/wrong answer - feedback text*/
-.span-resC{
-    color: green;
-    padding-right: 1em;
-    font-weight: 600;
-}
-
-.span-resI{
-    color: red;
-    padding-right: 1em;
-    font-weight: 600;
-}
-
-/* span for final result - feedback text */
-.span-finalRes{
-    padding-left: 1em;
-    font-weight: 500;
-    word-spacing: 0.25rem;
-}
-
-/* span for answer in <p> - grammar*/
-.p-ansTxt{font-weight: 800;}
-
-/* correct answer : label */
-.labelCorrect{
-    color: green;
-    font-weight: 800;
 }

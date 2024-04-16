@@ -17,8 +17,7 @@ for (const theme of themes) {
 }
 
 // Change className if Selected (Active Links)
-themes.forEach((theme,indx,themes)=>{
-   
+for (const theme of themes) {
     theme.addEventListener('click',()=>{
         if(!theme.className.length){
             theme.className = 'active-navlink';
@@ -28,5 +27,4 @@ themes.forEach((theme,indx,themes)=>{
             }
         }
     });
-
-});
+}

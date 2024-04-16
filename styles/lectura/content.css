@@ -1,7 +1,4 @@
-.section-text{
-    /* background-color: red; */
-    margin-bottom: 1em;
-}
+.section-text{margin-bottom: 1em;}
 
 /* Contains Form */
 .container-section{
@@ -11,13 +8,11 @@
     border-radius: .5em;
     font-size: 1.4rem;/* Tamaño de fuente - Cuestionarios */
     box-shadow: -1px 1px 3px 1px rgb(179, 176, 176);
-    color: #293DA3;/*Color de Texto Principal - Normal*/
+    color: #293DA3;/* Color de Texto Principal - Normal */
 }
 
 /* Reading Styles */
-.rding-subt{
-    margin-bottom: .5em;
-}
+.rding-subt{margin-bottom: .5em;}
 
 /* readings : buttons options */
 .rdng-opts{
@@ -43,16 +38,17 @@
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px rgb(111, 109, 109);
     transition: 200ms;
+    color: #3b3b3d;
 }
 .rop-active{
     background-color: #abb8f6;/* bg color : active chip */
     color: #2444e1;/* txt color : active chip */
     font-weight: 600;
 }
-.reading-option:active{outline: .25em solid white;}
+.reading-option:active{outline: .15em solid white;}
 
 /* responsive chip margin */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .reading-option{margin-left: 1em;}
 }
 
@@ -73,8 +69,8 @@
 }
 
 /* reading title */
-.reading-ctnr > p:first-child{
-    margin-bottom: 1em;
+.reading-ctnr > p{
+    margin-bottom: 1.15em;
     font-size: 1.7rem;/* Tamaño de Fuente : Título Artículo/Lectura */
     font-weight: 600;
     text-align: center;
@@ -83,13 +79,13 @@
 /* paragraphs container */
 .reading{
     width: 100%;
+    padding: .75em;
     background-color: #cdcdd86f;
     color: #404d8c;
-    padding: .75em;
+    border-radius: .5em;
     text-align: left;
     font-weight: normal;
     word-spacing: .25rem;
-    border-radius: .5em;
 }
 
 /* each reading paragraph */
@@ -111,10 +107,12 @@
 /* Number of the Question */
 .question-num{
     padding-bottom: .25em;
-    font-weight: bold;
     color: #5567bf;/* txt color : question number */
+    font-weight: bold;
     word-spacing: .25em;
 }
+
+.question-p{font-weight: bold;}
 
 /* Container for Radio Buttons */
 .answers-ctnr{
@@ -127,8 +125,6 @@
 
 /* labels for radio btns - radio group */
 .answer-ctnr label{padding-left: .5em;}
-
-
 
 /* Button - Solve Form */
 .button-solve{
@@ -172,4 +168,3 @@
     font-weight: 800;
 }
 
-.question-p{font-weight: bold;}
