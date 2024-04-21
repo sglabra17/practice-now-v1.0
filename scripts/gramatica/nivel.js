@@ -157,6 +157,8 @@ dynamiContent();
 
 // Solve Button - Event
 const qnsHdr = document.querySelector('#qns-hdr');
+qnsHdr.setAttribute('style','text-align:center;');
+
 btnSolve.addEventListener('click',()=>{
     let correctas    = 0;
     qnsHdr.innerHTML = 'Resultado:';

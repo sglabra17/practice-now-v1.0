@@ -10,9 +10,9 @@ const strB1 =
 "<p>In addition to cost savings and reduced congestion, public transport is environmentally friendly. Buses"+
 " and trains produce fewer emissions per passenger compared to individual cars. This helps reduce air pollution"+
 " and contributes to a cleaner, healthier environment.</p>"+
-"<p>However, there are some challenges associated with public transport. One common issue is the reliability"+
+"<p id='lastP'>However, there are some challenges associated with public transport. One common issue is the reliability"+
 " of schedules. Delays can occur due to traffic, weather, or technical problems, which can inconvenience passengers.</p>"+
-"<p id='lastP'>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
+"<p>Furthermore, some areas may have limited public transport options, making it difficult for people to access their"+
 " desired destinations conveniently.</p>";
 
 const strB2 = 
@@ -92,9 +92,9 @@ const strI2 =
 " emotional pain. This brings up another dilemma: Should Sarah prioritize logical solutions over emotional support?</p>"+
 "<p>Furthermore, Sarah is aware that her friend values her rational thinking, so she fears that offering emotional support might be seen as a deviation"+
 " from her usual advice-giving style.</p>"+
-"<p>In contrast, Sarah knows that true friendship often involves adapting to the emotional needs of the moment, which can sometimes mean being empathetic"+
+"<p id='lastP'>In contrast, Sarah knows that true friendship often involves adapting to the emotional needs of the moment, which can sometimes mean being empathetic"+
 " and proving emotional support.</p>"+
-"<p id='lastP'>In conclusion, Sarah is at a crossroads. Will she stick to her methodical advice-giving style, or will she adapt to meet Mark's emotional needs in this"+
+"<p>In conclusion, Sarah is at a crossroads. Will she stick to her methodical advice-giving style, or will she adapt to meet Mark's emotional needs in this"+
 " challenging time?</p>"; 
 
 

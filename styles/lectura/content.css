@@ -55,9 +55,13 @@
 
 /* Title of the Form */
 .formHeader{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    font-size: 1.7rem;
     font-weight: 600;
+    /* text-align: center; */
 }
+
+#scndHdr{text-align: center;}
 
 .span-description{font-weight: normal;}
 

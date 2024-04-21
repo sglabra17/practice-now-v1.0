@@ -31,7 +31,7 @@ let questionsArr     = objVocQuestions[nivel][varChosenCat];
 // Create : Solve Button
 const btnSolve       = document.createElement('a');
 btnSolve.textContent = 'Resolver';
-btnSolve.href        = '#';
+btnSolve.href        = '#catg-ctnr';
 btnSolve.classList.add('button-solve');
 
 
@@ -44,6 +44,7 @@ const createQuestions = ()=>{
     qnsCtnr.innerHTML   = '';
 
     // Append : Questions Header
+    qnsHeader.setAttribute('style','text-align:left;');
     qnsHeader.innerText  = 'Escribe la respuesta correcta en inglés.';
     qnsCtnr.append(qnsHeader);
 
@@ -120,6 +121,7 @@ for (const button of dropChildren){
 btnSolve.addEventListener('click',()=>{
     console.warn('--Validar Respuestas--');
     let correctas        = 0;
+    qnsHeader.setAttribute('style','text-align:center;');
     qnsHeader.innerText  = 'Resultado:';
 
     // Style and Validate Form Tags
@@ -194,6 +196,3 @@ btnSolve.addEventListener('click',()=>{
     btnRetry.href        = `vocabulario.html?lvl=${nivel}`;
     qnsCtnr.append(btnRetry);
 });
-
-window.scrollX = 500;
-window.scrollY = 500;
