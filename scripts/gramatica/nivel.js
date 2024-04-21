@@ -96,6 +96,7 @@ const dynamiContent = () =>{
 
     // append Header of Questions
     qnsHeader.innerText = 'Elige la respuesta correcta.';
+    qnsHeader.style     = 'text-align:left';
     qnsCtnr.append(qnsHeader);
 
     for (const question of questions) {
@@ -157,13 +158,12 @@ dynamiContent();
 
 // Solve Button - Event
 const qnsHdr = document.querySelector('#qns-hdr');
-qnsHdr.setAttribute('style','text-align:center;');
 
 btnSolve.addEventListener('click',()=>{
     let correctas    = 0;
     qnsHdr.innerHTML = 'Resultado:';
-    console.log(qnsHdr.innerHTML);
-
+    qnsHdr.setAttribute('style','text-align:center;');
+    
     // Validate Answers
     for (const question of questions) {
         const pTag         = document.querySelector(`#qp${question['num']}`);
