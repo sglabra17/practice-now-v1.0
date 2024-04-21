@@ -13,22 +13,6 @@ footer{
     border-radius: 1em 1em 0 0;
 }
 
-/* Media Queries : Responsive Footer */
-@media screen and (min-width:1800px) and (max-width:2400px){
-    .boxFooter{
-        height: 190px;
-        background-color: #DEE1ED;
-    }
-}
-
-@media screen and (min-width:2400px){
-    .boxFooter{
-        height: 740px;
-        background-color: #DEE1ED;
-    }
-}
-
-
 footer span{word-spacing: 0.25rem;}
 
 /* footer links */

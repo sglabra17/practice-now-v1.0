@@ -24,6 +24,17 @@
     background-color: #DEE1ED;
 }
 
+/* 1260, 1500 */
+@media screen and (min-width: 1500px){
+    .whole{
+        height: 100%;    
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 /* logo */
 .logo-ctnr{
     padding: 1em;
