@@ -16,23 +16,12 @@
 }
 
 .whole{
-    width: 100%;    
+    width: 100%;
     margin-top: 8em;
     position: absolute;
     z-index: -1;
     /*Color de Fondo Primario*/
     background-color: #DEE1ED;
-}
-
-/* 1260, 1500 */
-@media screen and (min-width: 1500px){
-    .whole{
-        height: 100%;    
-    }
-    footer{
-        position: absolute;
-        bottom: 0;
-    }
 }
 
 /* logo */
