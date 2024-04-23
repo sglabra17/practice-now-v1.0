@@ -1,0 +1,83 @@
+/* Estilos del Contenedor de Palabra del Día */
+.container{
+    display: none;
+    /* dimentions */
+    width: 500px;
+    height: 310px;
+    /* position */
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    /* colors */
+    background-color: beige;
+    /* border */
+    border-radius: 1em;
+}
+
+.container.fixed{
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:550px){
+    .container.fixed{width: 90%;}
+}
+
+
+/* la palabra de hoy es:  */
+.rwHeader{
+    font-size: .75rem;
+    font-style: italic;
+    color: rgb(90, 86, 86);
+}
+
+/* contains word & spanish translation */
+.wordsCtnr{padding-top: 1em;}
+.wordsCtnr span{display: block;}
+
+/* random word styles */
+.rWord{
+    font-size: 1.75rem;
+    color: rgb(46, 45, 45);
+}
+
+.rWordSpa{
+    text-align: right;
+    color: rgb(71, 69, 69);
+    margin-bottom: .5em;
+}
+
+.definition{
+    padding-top: 1em;
+    height: 90px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.example{
+    padding-top: .25em;
+    height: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 1rem;
+    color: rgb(74, 72, 72);
+}
+
+/* Button : Get another Word */
+.btn-ctnr{text-align:right;}
+
+.btn-ctnr button{
+    margin-top: 1em;
+    padding: .75em 1em;
+    border: none;
+    border: solid 1px rgb(90, 86, 86);
+    border-radius: .5em;
+    font-size: 1rem;
+}
+
+.btn-ctnr button:hover{cursor: pointer;}
+.btn-ctnr button:active{box-shadow: inset 1px 1px 1px black;}

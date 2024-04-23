@@ -15,10 +15,31 @@
         <link rel="stylesheet" href="./styles/home/section.css">
         <link rel="stylesheet" href="./styles/home/card.css">
         <link rel="stylesheet" href="./styles/home/footer.css">
+        <!-- Word of the Day Styles -->
+        <link rel="stylesheet" href="./styles/home/dailyWord.css">
         <!-- tab icon -->
         <link rel="icon" href="./images/tab-logo.png" type="image/png">
     </head>
     <body>
+        <!-- Contenedor : Palabra del Día -->
+        <div id="dailyCtnr" class="container">
+            <header class="dailyhdr">
+                <h1 class="rwHeader">La Palabra de Hoy es: </h1>
+                <p class="wordsCtnr">
+                    <span id="rword" class="rWord"></span>
+                    <span id="rwordSpa" class="rWordSpa"></span>
+                </p>
+                <hr>
+                <p id="rwdefinition" class="definition"></p>
+                <p id="rwexample" class="example"></p>
+            </header>
+            <div class="btn-ctnr">
+                <button id="btn-otra">Otra Palabra</button>
+            </div>
+        </div>
+
+
+
         <!-- Cabecera (Logo y Menú de Navegación) -->
         <header>
             <div class="topnav" id="myTopnav">
@@ -111,7 +132,9 @@
             </footer>
         </div>
         <!-- JavaScript links -->
+        <script src="main.js"></script>
         <script src="./scripts/home/homeActive-navlinks.js"></script>
+        <script src="./scripts/home/daily-word-btn.js"></script>
         <script src="./scripts/utilities/menu-icon.js"></script>
         <script src="./scripts/utilities/navbar-focus.js"></script>
     </body>
