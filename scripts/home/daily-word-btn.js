@@ -5,7 +5,6 @@ const topnav     = document.querySelector('#myTopnav');
 opPalabra.addEventListener('click',()=>{
     const dailyClass = dailyCtnr.className;
     topnav.className = 'topnav';
-    console.log(dailyClass);
 
     if(dailyClass === 'container'){
         dailyCtnr.classList.add('fixed');
@@ -14,10 +13,6 @@ opPalabra.addEventListener('click',()=>{
     }
 
 });
-
-document.body.addEventListener('click',()=>{
-    console.log('body');
-})
 
 window.onclick = event =>{
     let condition1 = event.target.matches('#opPalabra');

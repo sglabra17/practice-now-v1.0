@@ -71,10 +71,13 @@ const getWord = ()=>{
                                 rwexample.innerHTML = `<li>${data[0]['meanings'][0]['definitions'][0]['example'] || 'Sin Ejemplo'}</li>`;
                             }else{
                                 defTag.innerHTML    = 'Sin Definición';
+                                rwexample.innerHTML = '<li>Sin Ejemplo</li>';
                                 if(!spaFound){getWord();}
                             }
                         })
                         .catch( err => {
+                            defTag.innerHTML    = 'Sin Definición';
+                            rwexample.innerHTML = '<li>Sin Ejemplo</li>';
                             console.log('--------  Sin Definición',err);
                             if(!spaFound){getWord();}
                         });
