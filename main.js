@@ -50,7 +50,7 @@ const getWord = ()=>{
 
                     if(typeof data[0] !== 'string'){
                         spaFound           = true;
-                        const spaDef       = data[0]['shortdef'][0];
+                        const spaDef       = data[0]['shortdef'][0] || 'Sin Traducción';
                         rwordSpa.innerHTML = spaDef;
                     }else{
                         spaFound           = false;
@@ -72,14 +72,19 @@ const getWord = ()=>{
                             }else{
                                 defTag.innerHTML    = 'Sin Definición';
                                 rwexample.innerHTML = '<li>Sin Ejemplo</li>';
-                                if(!spaFound){getWord();}
+                                if(!spaFound){
+                                    rwordTag.innerHTML = 'Buscando...';
+                                    rwordSpa.innerHTML = 'Buscando...';
+                                    defTag.innerHTML   = 'Buscando...';
+                                    getWord();
+                                }
                             }
                         })
                         .catch( err => {
-                            defTag.innerHTML    = 'Sin Definición';
-                            rwexample.innerHTML = '<li>Sin Ejemplo</li>';
-                            console.log('--------  Sin Definición',err);
-                            if(!spaFound){getWord();}
+                            // defTag.innerHTML    = 'Sin Definición';
+                            // rwexample.innerHTML = '<li>Sin Ejemplo</li>';
+                            // console.log('--------  Sin Definición',err);
+                            // if(!spaFound){getWord();}
                         });
 
 
