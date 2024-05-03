@@ -35,3 +35,25 @@
     padding-right: .5em;
 }
 
+/* Floating Text - Nivel Elegido */
+.floating-tag {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    /* text orientation */
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.floating-tag span{
+    background-color: #720EED;
+    color: #ffffff;
+    padding: .8em .5em;
+    font-size: 1.25rem;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 1100px){
+    .floating-tag{display: block;}
+}
