@@ -8,7 +8,6 @@ let spaFound     = true;
 
 // Define de API URL
 const url = 'https://random-word-api.herokuapp.com/word?lang=en';
-console.log(url);
 
 // Make a GET request
 async function getRandomWord() {
@@ -35,9 +34,9 @@ async function getRandomWordDef(url3) {
 const getWord = ()=>{
     getRandomWord()
         .then((data)=> {
-            console.log(data[0]);
             foundWord          = data[0];
             rwordTag.innerHTML = foundWord;
+            console.log(data[0]);
 
 
             /* GET Word in Spanish */
@@ -49,9 +48,10 @@ const getWord = ()=>{
                     console.log('spanish:',data);
 
                     if(typeof data[0] !== 'string'){
-                        spaFound           = true;
+                        console.log(data[0]['shortdef'][0]);
                         const spaDef       = data[0]['shortdef'][0] || 'Sin Traducción';
                         rwordSpa.innerHTML = spaDef;
+                        spaFound           = true;
                     }else{
                         spaFound           = false;
                         rwordSpa.innerHTML = 'Sin Traducción';
@@ -65,26 +65,25 @@ const getWord = ()=>{
                     getRandomWordDef(url3)
                         .then((data)=>{
                             console.log(data);
-                            if(data['title']!=='No Definitions Found'){
+                            let isArr = data.length ? true : false; 
+
+                            if(isArr){
                                 defTag.innerHTML    = '<strong style="margin-right:.5em;">Def.</strong>';
                                 defTag.innerHTML    += data[0]['meanings'][0]['definitions'][0]['definition'];
                                 rwexample.innerHTML = `<li>${data[0]['meanings'][0]['definitions'][0]['example'] || 'Sin Ejemplo'}</li>`;
                             }else{
-                                defTag.innerHTML    = 'Sin Definición';
+                                defTag.innerHTML    = '<strong style="margin-right:.5em;">Def.</strong>'+'Sin Definición';
                                 rwexample.innerHTML = '<li>Sin Ejemplo</li>';
                                 if(!spaFound){
-                                    rwordTag.innerHTML = 'Buscando...';
-                                    rwordSpa.innerHTML = 'Buscando...';
-                                    defTag.innerHTML   = 'Buscando...';
+                                    rwordTag.innerHTML =  'Buscando...';
+                                    rwordSpa.innerHTML =  'Buscando...';
+                                    defTag.innerHTML   =  '<strong style="margin-right:.5em;">Def.</strong>'+'Buscando...';
                                     getWord();
                                 }
                             }
                         })
                         .catch( err => {
-                            // defTag.innerHTML    = 'Sin Definición';
-                            // rwexample.innerHTML = '<li>Sin Ejemplo</li>';
-                            // console.log('--------  Sin Definición',err);
-                            // if(!spaFound){getWord();}
+                            console.log(err);
                         });
 
 
@@ -94,12 +93,10 @@ const getWord = ()=>{
                 });
 
 
-
         })
         .catch( err => {
             console.log(err);
         });
-
         
 }
 
