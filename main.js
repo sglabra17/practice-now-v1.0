@@ -7,7 +7,8 @@ let foundWord    = '';
 let spaFound     = true;
 
 // Define de API URL
-const url = 'https://random-word-api.herokuapp.com/word?lang=en';
+// const url = 'https://random-word-api.herokuapp.com/word?lang=en';
+const url = 'https://random-word.ryanrk.com/api/en/word/random';
 
 // Make a GET request
 async function getRandomWord() {
@@ -34,8 +35,8 @@ async function getRandomWordDef(url3) {
 const getWord = ()=>{
     getRandomWord()
         .then((data)=> {
-            foundWord          = data[0];
-            rwordTag.innerHTML = foundWord;
+            foundWord = data[0];
+            // rwordTag.innerHTML = foundWord;
             console.log(data[0]);
 
 
@@ -47,8 +48,8 @@ const getWord = ()=>{
                 .then((data)=>{
                     console.log('spanish:',data);
 
-                    if(typeof data[0] !== 'string'){
-                        console.log(data[0]['shortdef'][0]);
+                    if(typeof data[0] !== 'string' && data.length){
+                        console.log(data[0]);
                         const spaDef       = data[0]['shortdef'][0] || 'Sin Traducción';
                         rwordSpa.innerHTML = spaDef;
                         spaFound           = true;
@@ -68,10 +69,13 @@ const getWord = ()=>{
                             let isArr = data.length ? true : false; 
 
                             if(isArr){
+                                rwordTag.innerHTML  = foundWord;
                                 defTag.innerHTML    = '<strong style="margin-right:.5em;">Def.</strong>';
                                 defTag.innerHTML    += data[0]['meanings'][0]['definitions'][0]['definition'];
                                 rwexample.innerHTML = `<li>${data[0]['meanings'][0]['definitions'][0]['example'] || 'Sin Ejemplo'}</li>`;
                             }else{
+                                rwordTag.innerHTML  = foundWord;
+                                console.warn('Sin Definición 1');
                                 defTag.innerHTML    = '<strong style="margin-right:.5em;">Def.</strong>'+'Sin Definición';
                                 rwexample.innerHTML = '<li>Sin Ejemplo</li>';
                                 if(!spaFound){
@@ -83,7 +87,9 @@ const getWord = ()=>{
                             }
                         })
                         .catch( err => {
+                            console.warn('Sin Definición 2');
                             console.log(err);
+                            getWord();
                         });
 
 
@@ -96,6 +102,8 @@ const getWord = ()=>{
         })
         .catch( err => {
             console.log(err);
+            console.warn('Sin Definición 3');
+            getWord();
         });
         
 }
