@@ -1,4 +1,4 @@
-# practice-now-v1.0
+# Sitio Web para practicar Inglés
 
 Practice Now, es un sitio web sin fines lucro
 cuyo objetivo es brindar una herramienta digital
